@@ -117,7 +117,7 @@
 }
 
 .profile {
-  background: url('assets/profile.png');
+  background: url('assets/avatar.png');
   --webkit-background-size: cover;
 
   background-repeat: no-repeat;
