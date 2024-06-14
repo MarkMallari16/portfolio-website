@@ -39,10 +39,10 @@ function Skills() {
             languageName: 'Laravel'
         }]
     return (
-        <div className='mt-40 mx-auto lg:max-w-7xl mb-20'>
+        <div className='mt-40 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium text-center text-3xl font-medium'>Skills</div>
             <div className='mt-10'>
-                <h1 className='font-medium'>Front End</h1>
+               
                 <div className='flex gap-5 justify-center flex-wrap'>
 
                     {
@@ -53,7 +53,7 @@ function Skills() {
                 </div>
             </div>
             <div>
-                <h1 className='font-medium'>Backend</h1>
+                
                 <div className='flex gap-5 justify-center flex-wrap'>
 
                     {
@@ -65,7 +65,7 @@ function Skills() {
             </div>
 
             <div>
-                <h1 className='font-medium'>Others</h1>
+               
                 <div className='flex gap-5 justify-center flex-wrap'>
 
                     {
