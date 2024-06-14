@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ScrollBtn from './components/ScrollBtn'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 function App() {
   const homeRef = useRef('null');
   const aboutRef = useRef('null');
@@ -32,7 +33,7 @@ function App() {
       <section ref={contactRef}>
         <Contact />
       </section>
-
+      <Footer/>
       <ScrollBtn />
     </div>
   )

@@ -39,7 +39,7 @@ function Skills() {
             languageName: 'Laravel'
         }]
     return (
-        <div className='mt-40 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
+    <div className='mt-40 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium text-center text-3xl font-medium'>Skills</div>
             <div className='mt-10'>
                

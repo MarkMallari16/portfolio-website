@@ -2,7 +2,7 @@ import React from 'react'
 import Avatar from '../assets/avatar.png'
 function About() {
   return (
-    <div className='h-1/2 mt-10 mx-auto lg:max-w-7xl'>
+    <div className=' my-40 mx-auto lg:max-w-7xl'>
       <div className='text-medium text-center text-3xl font-medium'>About Me</div>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 items-center mt-20 mx-auto place-items-center'>
@@ -20,7 +20,7 @@ function About() {
 
 
       <div className=' mt-40'>
-      <h1 className='text-center mb-20 text-3xl font-medium'>Education</h1>
+        <h1 className='text-center mb-20 text-3xl font-medium'>Education</h1>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle">
