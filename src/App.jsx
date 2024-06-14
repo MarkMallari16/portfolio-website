@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
+import { motion, useScroll } from "framer-motion";
 import './App.css'
 import About from './components/About'
 import Hero from './components/Hero'
@@ -8,6 +9,7 @@ import Projects from './components/Projects'
 import ScrollBtn from './components/ScrollBtn'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+
 function App() {
   const homeRef = useRef('null');
   const aboutRef = useRef('null');
@@ -15,25 +17,51 @@ function App() {
   const projectsRef = useRef('null');
   const contactRef = useRef('null');
 
+  const { scrollYProgress } = useScroll();
+
   return (
-    <div className='relative'>
+    <div >
+
       <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} />
-      <section ref={homeRef}>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        ref={homeRef}>
         <Hero />
-      </section>
-      <section ref={aboutRef}>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        ref={aboutRef}
+
+      >
         <About />
-      </section>
-      <section ref={skillsRef}>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        ref={skillsRef}>
         <Skills />
-      </section>
-      <section ref={projectsRef}>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        ref={projectsRef}>
         <Projects />
-      </section>
-      <section ref={contactRef}>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        ref={contactRef}>
         <Contact />
-      </section>
-      <Footer/>
+      </motion.section>
+      <Footer />
+
       <ScrollBtn />
     </div>
   )

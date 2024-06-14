@@ -12,11 +12,12 @@ import { DiJavascript } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
+import MobileTodoPicture from '../assets/todo-ss2.png'
 function Projects() {
     return (
         <div className='mt-10 mx-auto lg:max-w-7xl'>
             <div className='text-medium text-center text-3xl font-medium'>Projects</div>
-
+            <p className='text-center text-slate-400'>Here are my recent works</p>
             <div className='px-4 lg:px-0'>
                 <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 '>
                     <div className='w-full h-72 bg-base-300 rounded-xl' style={{
@@ -25,7 +26,7 @@ function Projects() {
                     }}></div>
                     <div className='w-full h-60  rounded-xl mb-20 lg:mb-0'>
                         <h1 className='text-2xl font-medium'>Online Voting System at STI College Bacoor SHS student council</h1>
-                        <p className='mt-4'>This web application allows students to vote easily. It is my first capstone project, and it won Best in User Interface and System Development at the SHS Expo 2024 at our school.</p>
+                        <p className='mt-4 text-lg'>This web application allows students to vote easily. It is my first capstone project, and it won Best in User Interface and System Development at the SHS Expo 2024 at our school.</p>
 
 
                         <div className='flex mt-3 gap-3 flex-wrap'>
@@ -51,7 +52,7 @@ function Projects() {
                     }}></div>
                     <div className='w-full h-60  rounded-xl'>
                         <h1 className='text-2xl font-medium'>To-do List Application</h1>
-                        <p className='mt-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, aperiam voluptate! Illum ducimus doloremque quam, excepturi asperiores error voluptatum voluptates.</p>
+                        <p className='mt-4 text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, aperiam voluptate! Illum ducimus doloremque quam, excepturi asperiores error voluptatum voluptates.</p>
 
                         <div className='flex mt-3 gap-3'>
                             <SkillIcon icon={<FaReact />} languageName='React JS' />
@@ -70,8 +71,6 @@ function Projects() {
                             <a href="" className='btn btn-outline'>
                                 <FaGithub className='text-xl' />
                                 View Repository</a>
-
-
                         </div>
                     </div>
                 </div>

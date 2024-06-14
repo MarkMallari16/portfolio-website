@@ -19,7 +19,7 @@ function Hero() {
                 </div>
 
                 <div className='mt-4 text-xl'>
-                    Aspiring <span className='font-bold text-secondary'>Web Developer</span> from Philippines
+                    Aspiring <span className='font-bold text-secondary'>Web Developer</span> from the Philippines
                 </div>
 
 

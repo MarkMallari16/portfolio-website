@@ -15,7 +15,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
   return (
     <nav className=' mx-6 lg:mx-36'>
       <div className='navbar flex justify-between items-center mt-5 bg-base-100'>
-        <a className='text-2xl font-medium '>
+        <a className='text-2xl font-bold '>
           Mark.Dev
         </a>
         <div className='lg:hidden'>
