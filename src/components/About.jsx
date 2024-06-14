@@ -19,7 +19,7 @@ function About() {
       </div>
 
 
-      <div className=' mt-40'>
+      <div className='mt-40 px-6 lg:px-0'>
         <h1 className='text-center mb-20 text-3xl font-medium'>Educational Background</h1>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>

@@ -23,7 +23,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </button>
         </div>
-        <div className={`lg:flex items-center gap-8`} >
+        <div className={`lg:flex items-center gap-8 ${isMenuOpen ? 'flex' : 'hidden'}`} >
           <a href='#home' onClick={() => scrollIntoSection(homeRef)}>Home</a>
           <a href='#about' onClick={() => scrollIntoSection(aboutRef)}>About</a>
           <a href='#skills' onClick={() => scrollIntoSection(skillsRef)}>Skills</a>
