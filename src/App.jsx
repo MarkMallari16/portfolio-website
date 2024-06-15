@@ -55,17 +55,18 @@ function App() {
         ref={projectsRef}>
         <Projects />
       </motion.section>
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
         ref={contactRef}>
         <Contact />
       </motion.section>
-      <Footer />
+
 
       <ScrollBtn />
     </div>
+
   )
 }
 
