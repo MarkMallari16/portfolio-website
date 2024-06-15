@@ -89,7 +89,7 @@ function Skills() {
     return (
         <div className='mt-40 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium text-center text-3xl font-medium pt-10'>Skills</div>
-            <p className='text-center text-slate-400  mb-10 '>Here are my recent works</p>
+            <p className='text-center text-slate-400  mb-10 font-light'>Here are my recent works</p>
             <motion.div role='tablist' className='tabs flex justify-center text-2xl pb-4' >
                 <a role="tab" className={`tab ${selectedCategory === 'all' ? 'tab-active bg-secondary text-white rounded-lg' : ''}`} onClick={() => handleCategoryChange('all')}>All</a>
                 <a role="tab" className={`tab ${selectedCategory === 'frontend' ? 'tab-active bg-secondary text-white rounded-lg' : ''}`} onClick={() => handleCategoryChange('frontend')}>Frontend</a>

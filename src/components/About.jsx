@@ -4,7 +4,7 @@ function About() {
   return (
     <div className=' my-40 mx-auto lg:max-w-7xl'>
       <div className='text-medium text-center text-3xl font-medium pt-10'>About Me</div>
-
+      <p className="text-center text-slate-400 font-light">Introduction</p>
       <div className='grid grid-cols-1 lg:grid-cols-2 items-center mt-20 mx-auto place-items-center'>
         <div
           className='h-96 w-96 bg-cover bg-center border-2 border-secondary rounded-2xl'
@@ -13,7 +13,7 @@ function About() {
         </div>
         <div className='px-5 pt-8 lg:px-0 lg:pt-0'>
           <p className='text-justify text-xl '>
-            Hello! I'm Mark Christian Mallari, a passionate and dedicated web developer based in the Philippines.
+            Hello! I'm Mark Christian Mallari, a passionate and dedicated web developer based in the Philippines.  I discovered my love for programming at the age of 16 and have since honed my skills through hands-on experience and continuous learning.
           </p>
         </div>
       </div>
@@ -29,7 +29,7 @@ function About() {
             <div className="timeline-start md:text-end mb-10">
               <time className="font-mono italic">Current</time>
               <div className="text-lg font-black">STI College Bacoor</div>
-              
+
             </div>
             <hr />
           </li>
@@ -43,7 +43,7 @@ function About() {
 
               <div className="text-lg font-black">Bacoor National High School Villa Maria Annex</div>
               <div className="text-secondary font-bold">Graduated</div>
-              
+
             </div>
             <hr />
           </li>
@@ -57,7 +57,7 @@ function About() {
 
               <div className="text-lg font-black">Queen's Row Elementary School</div>
               <div className="text-secondary font-bold">Graduated</div>
-            
+
             </div>
             <hr />
           </li>
