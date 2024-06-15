@@ -2,7 +2,7 @@ import React from 'react'
 import Avatar from '../assets/avatar.png'
 function About() {
   return (
-    <div className=' my-40 mx-auto lg:max-w-7xl'>
+    <div className=' mx-auto lg:max-w-7xl'>
       <div className='text-medium text-center text-3xl font-medium pt-10'>About Me</div>
       <p className="text-center text-slate-400 font-light">Introduction</p>
       <div className='grid grid-cols-1 lg:grid-cols-2 items-center mt-20 mx-auto place-items-center'>

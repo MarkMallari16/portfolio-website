@@ -24,10 +24,13 @@ function App() {
   return (
     <div >
       <ProgressBar />
-      <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} />
+      <section>
+        <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} />
+
+      </section>
       <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, transform: 0 }}
+        whileInView={{ opacity: 1, transform: 1 }}
         viewport={{ once: true }}
         ref={homeRef}>
         <Hero />
@@ -35,7 +38,7 @@ function App() {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         ref={aboutRef}
 
       >
@@ -44,21 +47,21 @@ function App() {
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         ref={skillsRef}>
         <Skills />
       </motion.section>
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         ref={projectsRef}>
         <Projects />
       </motion.section>
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         ref={contactRef}>
         <Contact />
       </motion.section>
