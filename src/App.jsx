@@ -9,6 +9,8 @@ import Projects from './components/Projects'
 import ScrollBtn from './components/ScrollBtn'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ProgressBar from './components/ProgressBar';
+
 
 function App() {
   const homeRef = useRef('null');
@@ -17,11 +19,11 @@ function App() {
   const projectsRef = useRef('null');
   const contactRef = useRef('null');
 
-  const { scrollYProgress } = useScroll();
+
 
   return (
     <div >
-
+      <ProgressBar />
       <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} />
       <motion.section
         initial={{ opacity: 0 }}
@@ -53,7 +55,7 @@ function App() {
         ref={projectsRef}>
         <Projects />
       </motion.section>
-      <motion.section
+      <motion.section 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}

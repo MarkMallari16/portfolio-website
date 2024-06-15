@@ -118,7 +118,6 @@
 
 .profile {
   background: url('assets/avatar.png');
-  --webkit-background-size: cover;
 
   background-repeat: no-repeat;
   animation: animate 5s ease-in-out infinite;

@@ -49,7 +49,7 @@ function Skills() {
         }]
     return (
         <div className='mt-40 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
-            <div className='text-medium text-center text-3xl font-medium'>Skills</div>
+            <div className='text-medium text-center text-3xl font-medium pt-10'>Skills</div>
             <p className='text-center text-slate-400  mb-10 '>Here are my recent works</p>
             <div role="tablist" className="tabs">
                 <a role="tab" className="tab">All</a>

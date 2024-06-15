@@ -16,7 +16,7 @@ import MobileTodoPicture from '../assets/todo-ss2.png'
 function Projects() {
     return (
         <div className='mt-10 mx-auto lg:max-w-7xl'>
-            <div className='text-medium text-center text-3xl font-medium'>Projects</div>
+            <div className='text-medium text-center text-3xl font-medium pt-10'>Projects</div>
             <p className='text-center text-slate-400'>Here are my recent works</p>
             <div className='px-4 lg:px-0'>
                 <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 '>
