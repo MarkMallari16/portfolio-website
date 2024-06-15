@@ -30,10 +30,10 @@ function Projects() {
 
 
                         <div className='flex mt-3 gap-3 flex-wrap'>
-                            <SkillIcon icon={<FaReact />} languageName='React JS' />
-                            <SkillIcon icon={<FaLaravel />} languageName='Laravel' />
-                            <SkillIcon icon={<SiMysql />} languageName='MySQL' />
-                            <SkillIcon icon={<SiInertia />} languageName='Inertia' />
+                            <SkillIcon  languageName='React JS' />
+                            <SkillIcon  languageName='Laravel' />
+                            <SkillIcon  languageName='MySQL' />
+                            <SkillIcon  languageName='Inertia' />
                         </div>
 
                         <div className='mt-6'>
@@ -55,8 +55,8 @@ function Projects() {
                         <p className='mt-4 text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, aperiam voluptate! Illum ducimus doloremque quam, excepturi asperiores error voluptatum voluptates.</p>
 
                         <div className='flex mt-3 gap-3'>
-                            <SkillIcon icon={<FaReact />} languageName='React JS' />
-                            <SkillIcon icon={<RiTailwindCssFill />} languageName='Tailwind' />
+                            <SkillIcon  languageName='React JS' />
+                            <SkillIcon  languageName='Tailwind' />
 
                         </div>
 
