@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import SkillIcon from './SkillIcon'
 import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
-import { FaLaravel } from "react-icons/fa6";
+import { FaLaravel, FaJava } from "react-icons/fa6";
 
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiJavascript } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import { SiInertia, SiPhp } from "react-icons/si";
+import { SiInertia, SiPhp, SiCsharp } from "react-icons/si";
 import { motion } from 'framer-motion';
+
 
 function Skills() {
 
@@ -72,7 +73,17 @@ function Skills() {
             icon: <SiInertia />,
             languageName: 'Inertia',
             category: 'other'
+        }, {
+            icon: <FaJava />,
+            languageName: 'Java',
+            category: 'other'
+        }, {
+            icon: <SiCsharp />,
+            languageName: 'C#',
+            category: 'other'
         },
+
+
 
     ]
     return (
