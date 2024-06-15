@@ -55,13 +55,13 @@ function Contact() {
           <form>
             <div className='mb-4'>
 
-              <input type="text" placeholder="Enter your Name" className="input input-bordered w-full" required />
+              <input type="text" placeholder="Enter your Name" className="input input-bordered w-full focus:outline-secondary focus:border-secondary" required />
             </div>
             <div className='mb-4'>
-              <input type="text" placeholder="Enter your Email" className="input input-bordered w-full" />
+              <input type="text" placeholder="Enter your Email" className="input input-bordered w-full focus:outline-secondary focus:border-secondary" />
             </div>
             <div className='mb-4'>
-              <textarea className="textarea textarea-bordered w-full resize-none h-40" placeholder="Enter your Message"></textarea>
+              <textarea className="textarea textarea-bordered w-full resize-none h-40 focus:outline-secondary focus:border-secondary" placeholder="Enter your Message"></textarea>
 
             </div>
             <button type='submit' className='btn btn-secondary'>Send Message
