@@ -16,7 +16,7 @@ function Contact() {
     ]
 
   return (
-    <div className=' my-40 mx-auto lg:max-w-7xl'>
+    <div className='py-40 mx-auto lg:max-w-7xl px-4 lg:px-0'>
       <div className='text-medium text-center text-3xl font-medium pt-10'>Contact</div>
       <p className="text-center text-slate-400 font-light">Reach me!</p>
       <div className='grid grid-cols-1 lg:grid-cols-2 mt-20 gap-16 itemce'>
