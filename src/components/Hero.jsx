@@ -17,10 +17,10 @@ function Hero() {
                     <a href="https://github.com/MarkMallari16" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="Github">
                         <FiGithub className='size-6' />
                     </a>
-                    <a href="https://github.com/MarkMallari16" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="LinkIn">
+                    <a href="https://www.linkedin.com/in/mark-christian-mallari-47850a279/" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="LinkIn">
                         <FiLinkedin className='size-6' />
                     </a>
-                    <a href="https://github.com/MarkMallari16" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="Instagram">
+                    <a href="https://www.instagram.com/mrkymllari/" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="Instagram">
                         <FaInstagram className='size-6'/>
                     </a>
                 </div>

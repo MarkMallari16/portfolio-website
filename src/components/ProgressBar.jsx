@@ -5,8 +5,8 @@ function ProgressBar() {
     const { scrollYProgress } = useScroll();
 
     const scaleX = useSpring(scrollYProgress, {
-        stiffness: 200,
-        damping: 100,
+        stiffness: 100,
+        damping: 20,
         restDelta: 0.001
     })
     return (
