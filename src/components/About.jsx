@@ -4,7 +4,7 @@ import Timeline from './Timeline'
 import { motion } from 'framer-motion'
 function About() {
   return (
-    <div className='mx-auto lg:max-w-7xl'>
+    <div className='mx-auto px-6 lg:px-0 lg:max-w-7xl'>
       <div className='text-medium text-center text-3xl font-medium pt-10'>About Me</div>
       <p className="text-center text-slate-400 font-light">Introduction</p>
       <div className='grid grid-cols-1 lg:grid-cols-2 items-center pt-20 mx-auto place-items-center gap-10 lg:gap-20'>

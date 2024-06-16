@@ -14,7 +14,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
   }
   return (
     <nav >
-      <div className=' mx-auto lg:mx-40'>
+      <div className=' mx-6 lg:mx-40'>
         <div className='navbar flex justify-between items-center py-5'>
           <a className='text-3xl font-medium '>
             Mark.<span className='text-secondary'>Mallari</span>
