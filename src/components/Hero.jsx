@@ -1,9 +1,8 @@
 import React from 'react';
 
 import ResumeBtn from './ResumeBtn';
-import { motion } from 'framer-motion'
+import { easeInOut, motion } from 'framer-motion'
 import { FiGithub, FiLinkedin } from "react-icons/fi";
-import { PiTelegramLogo } from "react-icons/pi";
 import { FaInstagram } from "react-icons/fa";
 
 
@@ -21,13 +20,26 @@ function Hero() {
                         <FiLinkedin className='size-6' />
                     </a>
                     <a href="https://www.instagram.com/mrkymllari/" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="Instagram">
-                        <FaInstagram className='size-6'/>
+                        <FaInstagram className='size-6' />
                     </a>
                 </div>
                 <div>
                     <div className='flex items-center w-full'>
 
-                        <div className='text-6xl font-semibold'>Hey, I'm Mark  <motion.span >👋🏻</motion.span></div>
+                        <div className='text-6xl font-semibold'>Hey, I'm Mark
+                        </div>
+                        <motion.span
+                            className='text-6xl'
+                            initial={{ rotate: 0 }}
+                            animate={{ rotate: [-8.0, -14, -4, 10, 0] }}
+                            exit={{ rotate: 0 }}
+                            transition={{
+                                repeat: Infinity,
+                                ease: "linear",
+                                duration: 1,
+                            }}
+
+                        >👋🏻</motion.span>
 
                     </div>
 
