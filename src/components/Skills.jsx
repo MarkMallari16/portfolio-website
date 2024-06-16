@@ -7,8 +7,9 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { DiJavascript } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import { SiInertia, SiPhp, SiCsharp } from "react-icons/si";
-import { easeIn, easeInOut, motion } from 'framer-motion';
+import { SiInertia, SiPhp, SiCsharp, SiAndroidstudio } from "react-icons/si";
+import { motion } from 'framer-motion';
+
 
 
 function Skills() {
@@ -81,6 +82,10 @@ function Skills() {
             icon: <SiCsharp />,
             languageName: 'C#',
             category: 'other'
+        }, {
+            icon: <SiAndroidstudio />,
+            languageName: 'Android Studio',
+            category: 'other'
         },
     ]
 
@@ -94,12 +99,12 @@ function Skills() {
             y: 0,
             transition: {
                 delay: 0.05 * index,
-               
+
             },
         })
 
     }
-    
+
     return (
         <div className='mt-40 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium text-center text-3xl font-medium pt-10'>My Skills</div>
@@ -118,7 +123,7 @@ function Skills() {
                             .filter((skill) => selectedCategory === 'all' || skill.category === selectedCategory)
                             .map(({ index, icon, languageName }) => (
                                 <motion.li className='flex gap-5 flex-wrap justify-center'
-                                   
+
                                     variants={fadeInAnimationVariants}
                                     initial="initial"
                                     whileInView="animate"
@@ -127,7 +132,7 @@ function Skills() {
                                     }}
                                     custom={index}
                                 >
-                                    <SkillIcon  icon={icon} languageName={languageName} />
+                                    <SkillIcon icon={icon} languageName={languageName} />
                                 </motion.li>
                             ))
                     }

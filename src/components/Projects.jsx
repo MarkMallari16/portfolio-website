@@ -18,14 +18,14 @@ function Projects() {
         <div className='mt-10 mx-auto lg:max-w-7xl'>
             <div className='text-medium text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
-            <div className='px-4 lg:px-0'>
-                <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10 '>
+            <div className='px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-14'>
+                <div className='mt-20 '>
                     <div className='w-full h-72 bg-base-300 rounded-xl' style={{
                         backgroundImage: `url('${OnlineVotingPicture}')`,
                         backgroundSize: 'cover'
                     }}></div>
                     <div className='w-full h-60  rounded-xl mb-20 lg:mb-0'>
-                        <h1 className='text-2xl font-medium'>Online Voting System at STI College Bacoor SHS student council</h1>
+                        <h1 className='pt-8 text-2xl font-medium'>Online Voting System at STI College Bacoor SHS student council</h1>
                         <p className='mt-4 text-lg'>This web application allows students to vote easily. It is my first capstone project, and it won Best in User Interface and System Development at the SHS Expo 2024 at our school.</p>
 
 
@@ -45,14 +45,14 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className='mt-20 grid grid-cols-1 lg:grid-cols-2 gap-10'>
+                <div className='mt-20 '>
                     <div className='w-full h-80 bg-base-300 rounded-xl' style={{
                         backgroundImage: `url('${DesktopTodoPicture}')`,
                         backgroundSize: 'cover'
                     }}></div>
                     <div className='w-full h-60  rounded-xl'>
-                        <h1 className='text-2xl font-medium'>To-do List Application</h1>
-                        <p className='mt-4 text-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, aperiam voluptate! Illum ducimus doloremque quam, excepturi asperiores error voluptatum voluptates.</p>
+                        <h1 className='pt-8 text-2xl font-medium'>To-do List Application</h1>
+                        <p className='mt-4 text-lg'>I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.</p>
 
                         <div className='flex mt-3 gap-3'>
                             <SkillIcon  languageName='React JS' />

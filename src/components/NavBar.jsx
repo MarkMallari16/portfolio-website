@@ -16,7 +16,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
     <nav className='border-b'>
       <div className=' mx-auto lg:mx-40'>
         <div className='navbar flex justify-between items-center py-5 bg-base-100'>
-          <a className='text-2xl font-medium '>
+          <a className='text-3xl font-medium '>
             Mark.<span className='text-secondary'>Mallari</span>
           </a>
 
