@@ -20,7 +20,7 @@ function Contact() {
       <div className='text-medium text-center text-3xl font-medium pt-10'>Contact</div>
       <p className="text-center text-slate-400 font-light">Reach me!</p>
       <div className='flex  justify-center py-20 gap-16 '>
-        <div className='flex justify-center w-full h-full rounded-2xl gap-4'>
+        <div className='flex justify-center flex-wrap w-full h-full rounded-2xl gap-4'>
 
           <ContactDetails contactIcon={contactIcons[0]} contactTitle="Mail" contactDescription="mallariftw01@gmail.com" />
           <ContactDetails contactIcon={contactIcons[1]} contactTitle="Address" contactDescription="Bacoor City, Cavite Philippines" />
