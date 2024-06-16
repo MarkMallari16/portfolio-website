@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 function Hero() {
 
     return (
-        <div className='h-screen grid grid-cols-1 lg:grid-cols-2 items-center lg:items-center lg:justify-center px-8 lg:px-0 mx-auto max-w-7xl gap-20'>
+        <div className='min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center lg:items-center lg:justify-center px-8 lg:px-0 mx-auto max-w-7xl gap-20'>
 
             <div className='flex items-center space-x-10'>
                 <div className='flex flex-col space-y-6 '>

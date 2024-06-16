@@ -22,7 +22,7 @@ function App() {
 
 
   return (
-    <div >
+    <div className='min-h-screen'>
       <ProgressBar />
       <section>
         <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} />

@@ -2,7 +2,8 @@ import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import SkillIcon from './SkillIcon'
 
-function SingeProject({ projectPicture, projectTitle, projectDescripton, projectLiveURL = null, projectGithubRepository }) {
+function SingeProject({ projectPicture, projectTitle, projectDescripton, projectStacks, projectLiveURL = null, projectGithubRepository }) {
+    console.log(projectStacks)
     return (
 
         <div className='py-10'>
@@ -12,11 +13,13 @@ function SingeProject({ projectPicture, projectTitle, projectDescripton, project
             }}></div>
             <div className='w-full h-60  rounded-xl'>
                 <h1 className='pt-8 text-2xl font-medium'>{projectTitle}</h1>
-                <p className='mt-4 text-lg leading-8'>{projectDescripton}</p>
+                <p className='mt-4 text-lg leading-8 text-justify'>{projectDescripton}</p>
 
-                <div className='flex mt-3 gap-3'>
-                    <SkillIcon languageName='React JS' />
-                    <SkillIcon languageName='Tailwind' />
+                <div className='flex flex-wrap mt-6 gap-3'>
+                    {projectStacks.map((stack, index) => (
+                        <SkillIcon key={index} languageName={stack} />
+                    ))}
+
 
                 </div>
 
