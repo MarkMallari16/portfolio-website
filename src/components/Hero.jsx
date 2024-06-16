@@ -12,7 +12,7 @@ function Hero() {
     return (
         <div className='h-screen grid grid-cols-1 lg:grid-cols-2 items-center lg:items-center lg:justify-center px-4 lg:px-0 mx-auto max-w-7xl gap-20'>
 
-            <div className='flex items-center space-x-12'>
+            <div className='flex items-center space-x-10'>
                 <div className='flex flex-col space-y-6 '>
                     <a href="https://github.com/MarkMallari16" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="Github">
                         <FiGithub className='size-6' />
@@ -27,7 +27,7 @@ function Hero() {
                 <div>
                     <div className='flex items-center w-full'>
 
-                        <div className='text-6xl'>Mark Christian Mallari <motion.span >👋🏻</motion.span></div>
+                        <div className='text-6xl font-semibold'>Hey, I'm Mark  <motion.span >👋🏻</motion.span></div>
 
                     </div>
 

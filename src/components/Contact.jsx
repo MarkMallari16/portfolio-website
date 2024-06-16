@@ -16,18 +16,21 @@ function Contact() {
     ]
 
   return (
-    <div className='py-40 mx-auto lg:max-w-7xl px-4 lg:px-0'>
+    <div className='py-20 mx-auto lg:max-w-7xl px-4 lg:px-0'>
       <div className='text-medium text-center text-3xl font-medium pt-10'>Contact</div>
       <p className="text-center text-slate-400 font-light">Reach me!</p>
-      <div className='grid grid-cols-1 lg:grid-cols-2 mt-20 gap-16 itemce'>
-        <div className=' w-full h-full rounded-2xl flex flex-col gap-4'>
+      <div className='flex  justify-center py-20 gap-16 '>
+        <div className='flex justify-center w-full h-full rounded-2xl gap-4'>
 
           <ContactDetails contactIcon={contactIcons[0]} contactTitle="Mail" contactDescription="mallariftw01@gmail.com" />
           <ContactDetails contactIcon={contactIcons[1]} contactTitle="Address" contactDescription="Bacoor City, Cavite Philippines" />
           <ContactDetails contactIcon={contactIcons[2]} contactTitle="Mobile Number" contactDescription=" 09105264925" />
 
         </div>
-        <div className='w-full h'>
+
+
+      </div>
+      {/**<div className='w-full h'>
           <div className='mb-4'>
             <h1 className='text-3xl'>Contact Me!</h1>
           </div>
@@ -50,10 +53,9 @@ function Contact() {
 
             </button>
           </form>
-        </div>
-
-      </div>
+        </div> */}
     </div>
+
   )
 }
 

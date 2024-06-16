@@ -105,10 +105,10 @@ function Skills() {
             <div className='text-medium text-center text-3xl font-medium pt-10'>My Skills</div>
             <p className='text-center text-slate-400  mb-10 font-light'>Here are my recent works</p>
             <motion.div role='tablist' className='tabs flex justify-center  pb-4' >
-                <a role="tab" className={`  tab ${selectedCategory === 'all' ? 'tab-active bg-secondary text-white rounded-lg transition-all ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('all')}>All</a>
-                <a role="tab" className={` tab ${selectedCategory === 'frontend' ? 'tab-active bg-secondary text-white rounded-lg transition-colors ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('frontend')}>Frontend</a>
-                <a role="tab" className={` tab ${selectedCategory === 'backend' ? 'tab-active bg-secondary text-white rounded-lg transition-colors ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('backend')}>Backend</a>
-                <a role="tab" className={` tab ${selectedCategory === 'other' ? 'tab-active bg-secondary text-white rounded-lg transition-colors ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('other')}>Other</a>
+                <a role="tab" className={`tab ${selectedCategory === 'all' ? 'tab-active bg-secondary text-white rounded-lg transition-all ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('all')}>All</a>
+                <a role="tab" className={`tab ${selectedCategory === 'frontend' ? 'tab-active bg-secondary text-white rounded-lg transition-colors ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('frontend')}>Frontend</a>
+                <a role="tab" className={`tab ${selectedCategory === 'backend' ? 'tab-active bg-secondary text-white rounded-lg transition-colors ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('backend')}>Backend</a>
+                <a role="tab" className={`tab ${selectedCategory === 'other' ? 'tab-active bg-secondary text-white rounded-lg transition-colors ease-in-out duration-300' : ''}`} onClick={() => handleCategoryChange('other')}>Other</a>
             </motion.div>
             <div className='mt-5 px-4 lg:p-0'>
                 <ul className='flex gap-5 justify-center flex-wrap '>

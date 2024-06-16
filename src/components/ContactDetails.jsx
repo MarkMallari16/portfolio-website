@@ -2,7 +2,7 @@ import React from 'react'
 
 function ContactDetails({ contactIcon, contactTitle, contactDescription }) {
     return (
-        <div className=' p-3 rounded-xl flex items-center gap-4'>
+        <div className=' px-4 py-2 rounded-xl flex items-center gap-4'>
             <div>
 
                 {contactIcon}
