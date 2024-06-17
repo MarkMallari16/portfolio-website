@@ -1,5 +1,5 @@
 import React from 'react'
-import Avatar from '../assets/avatar.png'
+import AboutImage from '../assets/about1.jpg'
 import Timeline from './Timeline'
 import { motion } from 'framer-motion'
 function About() {
@@ -8,10 +8,14 @@ function About() {
       <div className='text-medium text-center text-3xl font-medium pt-10'>About Me</div>
       <p className="text-center text-slate-400 font-light">Introduction</p>
       <div className='grid grid-cols-1 lg:grid-cols-2 items-center pt-20 mx-auto place-items-center gap-10 lg:gap-20'>
-        <div className="mockup-code h-full w-full">
-          <pre data-prefix="$"><code>npm i mark mallari</code></pre>
-          <pre data-prefix=">" className="text-warning"><code>installing...</code></pre>
-          <pre data-prefix=">" className="text-success"><code>Done!</code></pre>
+        <div className='flex gap-6'>
+
+          <div className='w-80 '>
+            <img src={AboutImage} alt="" className='rounded-r-xl rounded-l-sm' />
+          </div>
+          <div className='mt-28 w-80 '>
+            <img src={AboutImage} alt="" className='rounded-l-xl rounded-r-sm' />
+          </div>
         </div>
         <div className='px-5 pt-8 lg:px-0 lg:pt-0'>
           <div className='flex gap-4 mb-8'>
