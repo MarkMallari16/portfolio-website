@@ -32,7 +32,9 @@ function App() {
   }, []);
   console.log(isLoading)
   return (
-    <Suspense fallback={isLoading ? <Loading /> : null}>
+    isLoading ? (
+      <Loading />
+    ) : (
       <div className='min-h-screen relative'>
 
         <ProgressBar />
@@ -81,7 +83,7 @@ function App() {
 
         <ScrollBtn />
       </div>
-    </Suspense>
+    )
 
 
   )
