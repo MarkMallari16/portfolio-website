@@ -47,7 +47,7 @@ function App() {
           whileInView={{ opacity: 1, transform: 1 }}
           viewport={{ once: true }}
           ref={homeRef}>
-          <Hero />
+          <Hero projectsRef={projectsRef}/>
         </motion.section>
         <motion.section
           initial={{ opacity: 0 }}

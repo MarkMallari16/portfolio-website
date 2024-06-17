@@ -6,8 +6,13 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 
 
-function Hero() {
+function Hero({projectsRef}) {
 
+    const scrollIntoSection = (ref) => {
+        if (ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
     return (
         <div className='min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center lg:items-center lg:justify-center px-8 lg:px-0 mx-auto max-w-7xl gap-20'>
 
@@ -48,14 +53,18 @@ function Hero() {
                     </div>
 
 
-                    <div className='mt-4 flex items-center gap-5'>
+                    <div className='mt-4 flex items-center gap-3'>
+                        <a href='#projects' onClick={() => scrollIntoSection(projectsRef)} className='btn btn-secondary text-white hover:bg-secondary-dark transition-colors duration-300'>Visit Projects</a>
+
                         <ResumeBtn />
                     </div>
+
 
                 </div>
 
 
             </div>
+
             <div className='hidden lg:block'>
                 <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary">
                 </div>
