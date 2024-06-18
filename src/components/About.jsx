@@ -11,11 +11,9 @@ function About() {
         <div className='flex gap-6'>
 
           <div className='w-80 '>
-            <img src={AboutImage} alt="" className='rounded-r-xl rounded-l-sm' />
+            <img src={AboutImage} alt="" className='rounded-xl ' />
           </div>
-          <div className='mt-28 w-80 '>
-            <img src={AboutImage} alt="" className='rounded-l-xl rounded-r-sm' />
-          </div>
+          
         </div>
         <div className='px-5 pt-8 lg:px-0 lg:pt-0'>
           <div className='flex gap-4 mb-8'>
