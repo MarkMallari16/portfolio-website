@@ -10,7 +10,7 @@ function About() {
       <div className='grid grid-cols-1 lg:grid-cols-2 items-center pt-20 mx-auto place-items-center gap-10 lg:gap-20'>
         <div className='flex gap-6'>
 
-          <div className='w-80 '>
+          <div className='w-80'>
             <img src={AboutImage} alt="" className='rounded-xl ' />
           </div>
           
