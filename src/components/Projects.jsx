@@ -1,7 +1,4 @@
 import React from 'react'
-import SkillIcon from './SkillIcon'
-
-import { FaGithub } from "react-icons/fa";
 
 import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
@@ -22,7 +19,23 @@ function Projects() {
             projectPicture: DesktopTodoPicture,
             projectTitle: "To-do List Application",
             projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
-            projectStacks: [ "ReactJS", "TailwindCSS", "Daisy UI"],
+            projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
+            projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
+            projectGithubRepository: ""
+        },
+        {
+            projectPicture: DesktopTodoPicture,
+            projectTitle: "To-do List Application",
+            projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
+            projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
+            projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
+            projectGithubRepository: ""
+        },
+        {
+            projectPicture: DesktopTodoPicture,
+            projectTitle: "To-do List Application",
+            projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
+            projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
             projectGithubRepository: ""
         }

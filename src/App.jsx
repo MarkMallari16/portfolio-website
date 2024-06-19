@@ -47,7 +47,7 @@ function App() {
           whileInView={{ opacity: 1, transform: 1 }}
           viewport={{ once: true }}
           ref={homeRef}>
-          <Hero projectsRef={projectsRef}/>
+          <Hero projectsRef={projectsRef} />
         </motion.section>
         <motion.section
           initial={{ opacity: 0 }}
@@ -80,6 +80,7 @@ function App() {
           <Contact />
         </motion.section>
 
+        <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} />
 
         <ScrollBtn />
       </div>
