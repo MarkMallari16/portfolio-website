@@ -14,14 +14,9 @@ import Loading from './components/Loading';
 import useScrollSection from './hooks/useScrollSection';
 import useLoading from './hooks/useLoading';
 
-
-
 function App() {
-
   const { homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection } = useScrollSection();
-
   const isLoading = useLoading();
-
 
   return (
     isLoading ? (
@@ -46,7 +41,6 @@ function App() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           ref={aboutRef}
-
         >
           <About />
         </motion.section>
@@ -69,7 +63,7 @@ function App() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           ref={contactRef}>
-          <Contact /> 
+          <Contact />
         </motion.section>
 
         <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} scrollIntoSection={scrollIntoSection} />
