@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactDetails from './ContactDetails'
-
+import { motion } from 'framer-motion'
 function Contact() {
   const contactIcons =
     [
@@ -16,23 +16,29 @@ function Contact() {
     ]
 
   return (
-    <div className='py-20 mx-auto lg:max-w-7xl px-4 lg:px-0'>
-      <div className='text-medium text-center text-3xl font-medium pt-10'>Contact</div>
-      <p className="text-center text-slate-400 font-light">Reach me!</p>
-      <div className='flex  justify-center py-20 gap-16 '>
-        <div className='flex justify-center flex-wrap w-full h-full rounded-2xl gap-4'>
+    <div className='py-40 mx-auto lg:max-w-7xl px-4 lg:px-0'>
+      <div className='text-medium text-center text-3xl font-medium pb-10'>Contact Me</div>
+
+      <div className='grid grid-cols-1 lg:grid-cols-2 justify-center pt-10'>
+        <motion.div className='space-y-5 w-full h-full rounded-2xl gap-4'
+          initial={{ x: -20, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: 'easeOut', delay: 0.2 }}
+          viewport={{ once: true }}>
 
           <ContactDetails contactIcon={contactIcons[0]} contactTitle="Mail" contactDescription="mallariftw01@gmail.com" />
           <ContactDetails contactIcon={contactIcons[1]} contactTitle="Address" contactDescription="Bacoor City, Cavite Philippines" />
           <ContactDetails contactIcon={contactIcons[2]} contactTitle="Mobile Number" contactDescription=" 09105264925" />
 
-        </div>
+        </motion.div>
 
-
-      </div>
-      {/**<div className='w-full h'>
+        <motion.div className='w-full'
+          initial={{ x: 20, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ ease: 'easeOut', delay: 0.1 }}
+          viewport={{ once: true }}>
           <div className='mb-4'>
-            <h1 className='text-3xl'>Contact Me!</h1>
+            <h1 className='text-xl uppercase font-medium'>Contact Me!</h1>
           </div>
           <form>
             <div className='mb-4'>
@@ -53,7 +59,9 @@ function Contact() {
 
             </button>
           </form>
-        </div> */}
+        </motion.div>
+      </div>
+      {/** */}
     </div>
 
   )

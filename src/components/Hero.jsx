@@ -28,7 +28,7 @@ function Hero({ projectsRef }) {
                 <div>
                     <div className='flex items-center w-full'>
 
-                        <div className='text-5xl lg:text-6xl font-semibold'>Hey, I'm Mark
+                        <div className='text-5xl lg:text-6xl font-black'>Hey, I'm Mark
                         </div>
                         <motion.span
                             className='text-6xl'

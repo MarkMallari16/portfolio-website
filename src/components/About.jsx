@@ -8,12 +8,12 @@ function About({ contactRef }) {
 
   const { scrollIntoSection } = useScrollSection();
   return (
-    <div className='mx-auto px-6 lg:px-0 lg:max-w-7xl'>
+    <div className='mx-auto pb-20 px-6 lg:px-0 lg:max-w-7xl'>
       <div className='grid grid-cols-1 lg:grid-cols-2  pt-20 mx-auto lg:gap-20'>
         <motion.div className=''
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut' }}
+          transition={{ ease: 'easeOut', delay: 0.1 }}
           viewport={{ once: true }}>
           <div className='bg-secondary rounded-xl lg:w-[35rem]'>
             <img src={Avatar} alt="avatar" />
@@ -23,9 +23,9 @@ function About({ contactRef }) {
         <motion.div className='px-5 pt-8 lg:px-0 lg:pt-0  w-full'
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut' }}
+          transition={{ ease: 'easeOut', delay: 0.1 }}
           viewport={{ once: true }}>
-          <div className='text-xl uppercase font-medium pt-10 pb-6'>About Me</div>
+          <div className='text-xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
           <div className='pb-6'>
             <h1 className='text-3xl font-bold'>"Programs must be written for people to read, and only incidentally for machines to execute."</h1>
 

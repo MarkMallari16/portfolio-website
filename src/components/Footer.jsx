@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer({ homeRef, aboutRef, projectsRef, contactRef, scrollIntoSection }) {
     return (
-        <footer className="footer footer-center p-10 bg-ghost  border-t-2">
+        <footer className="footer footer-center pt-10 bg-ghost  border-t-2">
             <h1 className='text-3xl font-medium'>Mark</h1>
             <nav>
                 <div className="grid grid-flow-col gap-5">

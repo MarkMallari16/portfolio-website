@@ -10,8 +10,6 @@ import { GrMysql } from "react-icons/gr";
 import { SiInertia, SiPhp, SiCsharp, SiAndroidstudio } from "react-icons/si";
 import { motion } from 'framer-motion';
 
-
-
 function Skills() {
 
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -105,7 +103,7 @@ function Skills() {
 
     }
     return (
-        <div className='pt-10 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
+        <div className=' mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium text-center text-3xl font-medium pt-10'>My Skills</div>
             <p className='text-center text-slate-400  mb-10 font-light'>Here are my skills</p>
             <motion.div role='tablist' className='tabs flex justify-center  pb-4' >

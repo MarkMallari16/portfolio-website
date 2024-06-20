@@ -9,7 +9,7 @@ function ContactDetails({ contactIcon, contactTitle, contactDescription }) {
             </div>
             <div >
                 <div className='text-lg text-secondary font-medium'>{contactTitle}</div>
-                <div className='text-xl'>
+                <div className='text-xl '>
                     {contactDescription}
                 </div>
             </div>

@@ -3,13 +3,36 @@ import React from 'react'
 import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
 import SingleProject from './SingeProject';
+import { motion } from 'framer-motion'
 
 function Projects() {
+    const initialRightAnimate =
+    {
+        x: -20,
+        opacity: 0,
+    }
 
+    const rightAnimate =
+    {
+        x: 0,
+        opacity: 1
+    }
+
+    const initialLeftAnimate =
+    {
+        x: 20,
+        opacity: 0
+    }
+
+    const leftAnimate =
+    {
+        x: 0,
+        opacity: 1
+    }
     const projects = [
         {
             projectPicture: OnlineVotingPicture,
-            projectTitle: "Online Voting System at STI College",
+            projectTitle: "Online Voting System at STI College Bacoor",
             projectDescripton: "This web application allows students to vote easily. It is my first capstone project, and it won Best in User Interface and System Development at the SHS Expo 2024 at our school.",
             projectStacks: ["Laravel", "ReactJS", "TailwindCSS", "Material Design", "Inertia", "MySQL"],
             projectLiveURL: "",
@@ -47,14 +70,17 @@ function Projects() {
             <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20 py-10 w-full'>
 
                 {projects.map((project, id) => (
-                    <SingleProject key={id} projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}
-                        projectStacks={project.projectStacks}
-                        projectLiveURL={project.projectLiveURL}
-                        projectGithubRepository={project.projectGithubRepository}
-                    />
-                ))}
-            </div>
-        </div>
+                    <motion.div initial={id % 2 != 0 ? initialLeftAnimate : initialRightAnimate} whileInView={id % 2 != 0 ? leftAnimate : rightAnimate} transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} key={id}>
+                        <SingleProject projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}
+                            projectStacks={project.projectStacks}
+                            projectLiveURL={project.projectLiveURL}
+                            projectGithubRepository={project.projectGithubRepository}
+                        />
+                    </motion.div>
+                ))
+                }
+            </div >
+        </div >
     )
 }
 
