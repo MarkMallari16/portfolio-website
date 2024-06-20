@@ -4,9 +4,9 @@ import Avatar from '../assets/avatar.png';
 import { motion } from 'framer-motion'
 import useScrollSection from '../hooks/useScrollSection';
 
-function About({ aboutRef }) {
+function About({ contactRef }) {
 
-  const {scrollIntoSection} = useScrollSection();
+  const { scrollIntoSection } = useScrollSection();
   return (
     <div className='mx-auto px-6 lg:px-0 lg:max-w-7xl'>
       <div className='grid grid-cols-1 lg:grid-cols-2  pt-20 mx-auto lg:gap-20'>

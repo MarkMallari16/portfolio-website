@@ -42,7 +42,7 @@ function App() {
           viewport={{ once: true }}
           ref={aboutRef}
         >
-          <About />
+          <About contactRef={contactRef} />
         </motion.section>
         <motion.section
           initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ function App() {
           <Contact />
         </motion.section>
 
-        <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} scrollIntoSection={scrollIntoSection} />
+        <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
 
         <ScrollBtn />
       </div>
