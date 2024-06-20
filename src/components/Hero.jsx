@@ -12,16 +12,16 @@ function Hero({ projectsRef }) {
 
     return (
         <div className='min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center lg:items-center lg:justify-center px-8 lg:px-0 mx-auto max-w-7xl gap-20'>
-           
+
             <div className='flex items-center space-x-10'>
-                <div className='flex flex-col space-y-6 dark:text-white'>
-                    <a href="https://github.com/MarkMallari16" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="Github">
+                <div className='flex flex-col space-y-6 '>
+                    <a href="https://github.com/MarkMallari16" className=' tooltip hover:tooltip-open tooltip-right   hover:text-secondary transition-colors duration-200' data-tip="Github">
                         <FiGithub className='size-6' />
                     </a>
-                    <a href="https://www.linkedin.com/in/mark-christian-mallari-47850a279/" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="LinkIn">
+                    <a href="https://www.linkedin.com/in/mark-christian-mallari-47850a279/" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="LinkIn">
                         <FiLinkedin className='size-6' />
                     </a>
-                    <a href="https://www.instagram.com/mrkymllari/" className='tooltip hover:tooltip-open tooltip-right text-slate-800 hover:text-secondary transition-colors duration-200' data-tip="Instagram">
+                    <a href="https://www.instagram.com/mrkymllari/" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="Instagram">
                         <FaInstagram className='size-6' />
                     </a>
                 </div>
