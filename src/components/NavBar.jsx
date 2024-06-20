@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
+function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "emerald"
@@ -15,15 +15,10 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef }) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollIntoSection = (ref) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   const toggleTheme = () => {
     setTheme(prevTheme => (prevTheme === 'emerald' ? 'dark' : 'emerald'));
   }
+  
   return (
     <nav >
       <div className=' mx-6 lg:mx-40'>

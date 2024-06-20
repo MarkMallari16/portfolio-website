@@ -11,18 +11,14 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ProgressBar from './components/ProgressBar';
 import Loading from './components/Loading';
+import useScrollSection from './hooks/useScrollSection';
 
 
 function App() {
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const skillsRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
 
 
   const [isLoading, setIsLoading] = useState(true);
-
+  const { homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection } = useScrollSection();
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -30,7 +26,7 @@ function App() {
     }, 1000);
     return () => clearTimeout(timeout);
   }, []);
-  console.log(isLoading)
+
   return (
     isLoading ? (
       <Loading />
@@ -39,7 +35,7 @@ function App() {
 
         <ProgressBar />
         <section>
-          <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} />
+          <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection}/>
 
         </section>
         <motion.section
@@ -80,7 +76,7 @@ function App() {
           <Contact />
         </motion.section>
 
-        <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} />
+        <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} scrollIntoSection={scrollIntoSection} />
 
         <ScrollBtn />
       </div>

@@ -4,15 +4,12 @@ import ResumeBtn from './ResumeBtn';
 import { easeInOut, motion } from 'framer-motion'
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
+import useScrollSection from '../hooks/useScrollSection';
 
 
-function Hero({projectsRef}) {
-
-    const scrollIntoSection = (ref) => {
-        if (ref.current) {
-            ref.current.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
+function Hero({ projectsRef, }) {
+    const { scrollIntoSection } = useScrollSection();
+    
     return (
         <div className='min-h-screen grid grid-cols-1 lg:grid-cols-2 items-center lg:items-center lg:justify-center px-8 lg:px-0 mx-auto max-w-7xl gap-20'>
 

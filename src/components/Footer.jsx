@@ -1,12 +1,7 @@
 import React from 'react'
 
-function Footer({ homeRef, aboutRef, projectsRef }) {
 
-    const scrollIntoSection = (ref) => {
-        if (ref.current) {
-            ref.current.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
+function Footer({ homeRef, aboutRef, projectsRef, scrollIntoSection }) {
     return (
         <footer className="footer footer-center p-10 bg-ghost  border-t-2">
             <h1 className='text-3xl font-medium'>Mark</h1>
