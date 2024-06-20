@@ -104,7 +104,6 @@ function Skills() {
         })
 
     }
-
     return (
         <div className='pt-10 mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium text-center text-3xl font-medium pt-10'>My Skills</div>
