@@ -121,7 +121,7 @@ function Skills() {
                     {
                         skills
                             .filter((skill) => selectedCategory === 'all' || skill.category === selectedCategory)
-                            .map(({ index, icon, languageName }) => (
+                            .map(({ icon, languageName, index }) => (
                                 <motion.li className='flex gap-5 flex-wrap justify-center'
 
                                     variants={fadeInAnimationVariants}
@@ -132,7 +132,7 @@ function Skills() {
                                     }}
                                     custom={index}
                                 >
-                                    <SkillIcon icon={icon} languageName={languageName} />
+                                    <SkillIcon key={index} icon={icon} languageName={languageName} />
                                 </motion.li>
                             ))
                     }

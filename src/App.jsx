@@ -12,20 +12,16 @@ import Footer from './components/Footer'
 import ProgressBar from './components/ProgressBar';
 import Loading from './components/Loading';
 import useScrollSection from './hooks/useScrollSection';
+import useLoading from './hooks/useLoading';
+
 
 
 function App() {
 
-
-  const [isLoading, setIsLoading] = useState(true);
   const { homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection } = useScrollSection();
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-    return () => clearTimeout(timeout);
-  }, []);
+  const isLoading = useLoading();
+
 
   return (
     isLoading ? (
@@ -35,7 +31,7 @@ function App() {
 
         <ProgressBar />
         <section>
-          <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection}/>
+          <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
 
         </section>
         <motion.section
@@ -73,7 +69,7 @@ function App() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           ref={contactRef}>
-          <Contact />
+          <Contact /> 
         </motion.section>
 
         <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} scrollIntoSection={scrollIntoSection} />

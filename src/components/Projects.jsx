@@ -46,8 +46,8 @@ function Projects() {
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
             <div className='px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-20 py-10 w-full'>
 
-                {projects.map((project) => (
-                    <SingleProject projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}
+                {projects.map((project, id) => (
+                    <SingleProject key={id} projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}
                         projectStacks={project.projectStacks}
                         projectLiveURL={project.projectLiveURL}
                         projectGithubRepository={project.projectGithubRepository}
