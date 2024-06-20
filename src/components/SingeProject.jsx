@@ -6,7 +6,7 @@ function SingeProject({ projectPicture, projectTitle, projectDescripton, project
     console.log(projectStacks)
     return (
 
-        <div className='py-10'>
+        <div className='py-20 lg:py-10'>
             <div className='w-full h-80 bg-base-300 rounded-xl' style={{
                 backgroundImage: `url('${projectPicture}')`,
                 backgroundSize: 'cover'

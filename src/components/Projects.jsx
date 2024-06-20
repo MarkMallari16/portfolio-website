@@ -44,7 +44,7 @@ function Projects() {
         <div className=' mx-auto lg:max-w-7xl'>
             <div className='text-medium text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
-            <div className='px-4 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-20 py-10 w-full'>
+            <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20 py-10 w-full'>
 
                 {projects.map((project, id) => (
                     <SingleProject key={id} projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}

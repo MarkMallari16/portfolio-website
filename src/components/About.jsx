@@ -1,52 +1,47 @@
 import React from 'react'
 import AboutImage from '../assets/about1.jpg'
-
+import Avatar from '../assets/avatar.png';
 import { motion } from 'framer-motion'
-function About() {
+import useScrollSection from '../hooks/useScrollSection';
+
+function About({ aboutRef }) {
+
+  const {scrollIntoSection} = useScrollSection();
   return (
     <div className='mx-auto px-6 lg:px-0 lg:max-w-7xl'>
-      <div className='text-medium text-center text-3xl font-medium pt-10'>About Me</div>
-      <p className="text-center text-slate-400 font-light">Introduction</p>
-      <div className='grid grid-cols-1 lg:grid-cols-2 items-center pt-20 mx-auto place-items-center gap-10 lg:gap-20'>
-        <motion.div className='flex gap-6'
+      <div className='grid grid-cols-1 lg:grid-cols-2  pt-20 mx-auto lg:gap-20'>
+        <motion.div className=''
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut' }}
           viewport={{ once: true }}>
-          <div className='w-80'
-          >
-            <img src={AboutImage} alt="" className='rounded-xl ' />
+          <div className='bg-secondary rounded-xl lg:w-[35rem]'>
+            <img src={Avatar} alt="avatar" />
           </div>
 
         </motion.div>
-        <motion.div className='px-5 pt-8 lg:px-0 lg:pt-0 overflow-hidden w-full'
+        <motion.div className='px-5 pt-8 lg:px-0 lg:pt-0  w-full'
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut' }}
           viewport={{ once: true }}>
-          <div className='flex gap-4 mb-8'>
-            <div className='ring-1 ring-inset w-full py-10 px-6 rounded-xl  hover:bg-secondary hover:text-white transition-colors ease-linear'>
-              <div className='text-4xl font-bold'>12</div>
-              <div className='font-medium'
-              > Web Developer</div>
-            </div>
-            <motion.div className='ring-1 ring-inset w-full py-10 px-6 rounded-xl  hover:bg-secondary hover:text-white transition-colors ease-linear'>
-              <div className='text-4xl font-bold'>12</div>
-              <div className='font-medium'>Mobile Developer</div>
-            </motion.div>
-            <motion.div className='ring-1 ring-inset w-full py-10 px-6 rounded-xl  hover:bg-secondary hover:text-white transition-colors ease-linear'>
-              <div className='text-4xl font-bold'>12</div>
-              <div className='font-medium'>Desktop Developer</div>
-            </motion.div>
+          <div className='text-xl uppercase font-medium pt-10 pb-6'>About Me</div>
+          <div className='pb-6'>
+            <h1 className='text-3xl font-bold'>"Programs must be written for people to read, and only incidentally for machines to execute."</h1>
+
           </div>
-          <p className='text-justify text-xl '>
-            Hello! I'm Mark Christian Mallari, a passionate and dedicated web developer based in the Philippines.  I discovered my love for programming at the age of 16 and have since honed my skills through hands-on experience and continuous learning.
+          <p className='text-justify text-xl leading-9'>
+            Hello! I'm Mark Christian Mallari, a web developer based in the Philippines. I fell in love with programming at 16 years old and have been improving my skills ever since. I enjoy solving programming problems and creating great user experiences.
           </p>
+          <button className='btn btn-outline btn-secondary mt-6 flex items-center justify-center py-3 px-5 text-white  rounded-lg hover:bg-blue-700 transition duration-300' onClick={() => scrollIntoSection(contactRef)}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
+              <path fillRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clipRule="evenodd" />
+            </svg>
+
+            Contact Me
+          </button>
         </motion.div>
       </div>
-
-
-
     </div>
   )
 }
