@@ -14,11 +14,13 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
   return (
     <nav
     >
-      <div className='navbar flex justify-between items-center py-5'>
+      <div className='navbar flex justify-between items-center py-5 px-8 lg:px-0 '>
         <motion.a className='text-3xl font-black cursor-pointer'
+          onClick={() => scrollIntoSection(homeRef)}
           initial={{ y: -10, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut', delay: 0.2 }}>
+          transition={{ ease: 'easeOut', delay: 0.2 }}
+          viewport={{ once: true }}>
           Mark.<span className='text-secondary'>Mallari</span>
         </motion.a>
         <label className="btn btn-square swap swap-rotate lg:hidden" onClick={toggleMenu}>
