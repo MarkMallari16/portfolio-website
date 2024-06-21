@@ -18,10 +18,12 @@ function Hero({ projectsRef }) {
                 whileInView={{ x: 0 }}
                 transition={{ ease: 'easeOut', delay: 0.20 }}
                 viewport={{ once: true }}>
+
                 <motion.div className='flex flex-col space-y-6 '
                     initial={{ y: -20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ ease: 'easeOut', delay: 0.50 }}>
+                    transition={{ ease: 'easeOut', delay: 0.50 }}
+                    viewport={{ once: true }}>
                     <a href="https://github.com/MarkMallari16" className=' tooltip hover:tooltip-open tooltip-right   hover:text-secondary transition-colors duration-200' data-tip="Github">
                         <FiGithub className='size-6' />
                     </a>
@@ -73,7 +75,7 @@ function Hero({ projectsRef }) {
             <motion.div className='hidden lg:block'
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ ease: 'easeInOut', delay: 1 }}
+                transition={{ ease: 'easeInOut', delay: 0.58,duration: 0.3 }}
                 viewport={{ once: true }}>
                 <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary">
                 </div>

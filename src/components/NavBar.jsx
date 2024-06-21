@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import useTheme from '../hooks/useTheme';
 
 function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
@@ -12,11 +12,15 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
   };
 
   return (
-    <nav >
+    <nav
+    >
       <div className='navbar flex justify-between items-center py-5'>
-        <a className='text-3xl font-black'>
+        <motion.a className='text-3xl font-black cursor-pointer'
+          initial={{ y: -10, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ ease: 'easeOut', delay: 0.2 }}>
           Mark.<span className='text-secondary'>Mallari</span>
-        </a>
+        </motion.a>
         <label className="btn btn-square swap swap-rotate lg:hidden" onClick={toggleMenu}>
           <input type="checkbox" />
 

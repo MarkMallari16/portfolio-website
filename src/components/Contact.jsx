@@ -16,8 +16,8 @@ function Contact() {
     ]
 
   return (
-    <div className='py-40 mx-auto lg:max-w-7xl px-4 lg:px-0'>
-      <div className='text-medium text-center text-3xl font-medium pb-10'>Contact Me</div>
+    <div className='py-40 mx-auto lg:max-w-7xl px-6 lg:px-0'>
+      <div className='text-medium text-center text-3xl font-medium  pb-10'>Contact Me</div>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 justify-center pt-10'>
         <motion.div className='space-y-5 w-full h-full rounded-2xl gap-4'
@@ -37,7 +37,7 @@ function Contact() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', delay: 0.3 }}
           viewport={{ once: true }}>
-          <div className='mb-4'>
+          <div className='mt-10 lg:mt-0 mb-4 '>
             <h1 className='text-xl uppercase font-medium'>Contact Me!</h1>
           </div>
           <form>
