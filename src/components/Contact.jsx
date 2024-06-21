@@ -23,7 +23,7 @@ function Contact() {
         <motion.div className='space-y-5 w-full h-full rounded-2xl gap-4'
           initial={{ x: -20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut', delay: 0.2 }}
+          transition={{ ease: 'easeOut', delay: 0.3 }}
           viewport={{ once: true }}>
 
           <ContactDetails contactIcon={contactIcons[0]} contactTitle="Mail" contactDescription="mallariftw01@gmail.com" />
@@ -35,7 +35,7 @@ function Contact() {
         <motion.div className='w-full'
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut', delay: 0.1 }}
+          transition={{ ease: 'easeOut', delay: 0.3 }}
           viewport={{ once: true }}>
           <div className='mb-4'>
             <h1 className='text-xl uppercase font-medium'>Contact Me!</h1>

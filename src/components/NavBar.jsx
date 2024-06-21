@@ -1,36 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import useTheme from '../hooks/useTheme';
 
 function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "emerald"
-  });
-  useEffect(() => {
-    document.body.setAttribute('data-theme', theme);
 
-    localStorage.setItem("theme", theme);
-  }, [theme])
+  const { theme, toggleTheme } = useTheme();
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'emerald' ? 'dark' : 'emerald'));
-  }
-  
   return (
     <nav >
-      <div className=' mx-6 lg:mx-40'>
+      <div className=' mx-auto lg:mx-auto px-6 lg:px-0 lg:max-w-7xl'>
         <div className='navbar flex justify-between items-center py-5'>
           <a className='text-3xl font-black'>
             Mark.<span className='text-secondary'>Mallari</span>
           </a>
-
-
           <label className="btn btn-square swap swap-rotate lg:hidden" onClick={toggleMenu}>
-
-
             <input type="checkbox" />
 
             {/* hamburger icon */}

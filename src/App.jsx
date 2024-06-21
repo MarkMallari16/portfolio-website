@@ -1,5 +1,5 @@
-import { Suspense, useRef, useState, useEffect } from 'react'
-import { motion, useScroll } from "framer-motion";
+
+import { motion } from "framer-motion";
 import './App.css'
 import About from './components/About'
 import Hero from './components/Hero'
@@ -66,7 +66,7 @@ function App() {
           <Contact />
         </motion.section>
 
-        <Footer homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
+        <Footer homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
 
         <ScrollBtn />
       </div>

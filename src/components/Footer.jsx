@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function Footer({ homeRef, aboutRef, projectsRef, contactRef, scrollIntoSection }) {
+function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
     return (
         <footer className="footer footer-center pt-10 bg-ghost  border-t-2">
             <h1 className='text-3xl font-medium'>Mark</h1>
@@ -9,7 +9,7 @@ function Footer({ homeRef, aboutRef, projectsRef, contactRef, scrollIntoSection 
                 <div className="grid grid-flow-col gap-5">
                     <a href='#home' onClick={() => scrollIntoSection(homeRef)}>Home</a>
                     <a href='#about' onClick={() => scrollIntoSection(aboutRef)}>About</a>
-
+                    <a href='#about' onClick={() => scrollIntoSection(skillsRef)}>Skills</a>
                     <a href='#projects' onClick={() => scrollIntoSection(projectsRef)}>Projects</a>
                     <a href='#about' onClick={() => scrollIntoSection(contactRef)}>Contact</a>
                 </div>
@@ -22,7 +22,7 @@ function Footer({ homeRef, aboutRef, projectsRef, contactRef, scrollIntoSection 
                 </div>
             </nav>
 
-            <p className='font-normal'>Copyright &copy; Mark Mallari {new Date().getFullYear()} - All right reserved</p>
+            <p className='font-normal'>Copyright &copy; Mark Christian Mallari {new Date().getFullYear()} - All right reserved</p>
         </footer>
     )
 }
