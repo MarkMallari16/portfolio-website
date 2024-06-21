@@ -48,9 +48,9 @@ function Projects() {
         },
         {
             projectPicture: DesktopTodoPicture,
-            projectTitle: "To-do List Application",
+            projectTitle: "Quadratic Equation Calculator",
             projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
-            projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
+            projectStacks: ["HTML", "CSS", "JavaScript","ChartJS"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
             projectGithubRepository: ""
         },
@@ -67,7 +67,7 @@ function Projects() {
         <div className=' mx-auto lg:max-w-7xl'>
             <div className='text-medium text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
-            <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20 py-10 w-full'>
+            <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20  w-full'>
 
                 {projects.map((project, id) => (
                     <motion.div initial={id % 2 != 0 ? initialLeftAnimate : initialRightAnimate} whileInView={id % 2 != 0 ? leftAnimate : rightAnimate} transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} key={id}>

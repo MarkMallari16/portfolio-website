@@ -3,15 +3,15 @@ import React from 'react'
 
 function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
     return (
-        <footer className="footer footer-center pt-10 bg-ghost  border-t-2">
-            <h1 className='text-3xl font-medium'>Mark</h1>
+        <footer className="footer footer-center pt-10 bg-ghost  border-t-2  border-base-300">
+            <h1 className='text-3xl font-black'>Mark <span className='text-secondary'>Mallari</span></h1>
             <nav>
                 <div className="grid grid-flow-col gap-5">
-                    <a href='#home' onClick={() => scrollIntoSection(homeRef)}>Home</a>
-                    <a href='#about' onClick={() => scrollIntoSection(aboutRef)}>About</a>
-                    <a href='#about' onClick={() => scrollIntoSection(skillsRef)}>Skills</a>
-                    <a href='#projects' onClick={() => scrollIntoSection(projectsRef)}>Projects</a>
-                    <a href='#about' onClick={() => scrollIntoSection(contactRef)}>Contact</a>
+                    <a onClick={() => scrollIntoSection(homeRef)} className='cursor-pointer'>Home</a>
+                    <a onClick={() => scrollIntoSection(aboutRef)} className='cursor-pointer'>About</a>
+                    <a onClick={() => scrollIntoSection(skillsRef)} className='cursor-pointer'>Skills</a>
+                    <a onClick={() => scrollIntoSection(projectsRef)} className='cursor-pointer'>Projects</a>
+                    <a onClick={() => scrollIntoSection(contactRef)} className='cursor-pointer'>Contact</a>
                 </div>
             </nav>
             <nav>
