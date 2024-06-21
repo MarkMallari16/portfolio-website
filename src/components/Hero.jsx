@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ResumeBtn from './ResumeBtn';
-import { easeInOut, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import useScrollSection from '../hooks/useScrollSection';
@@ -11,10 +11,17 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className='min-h-screen lg:max-w-7xl grid grid-cols-1 lg:grid-cols-2 items-center lg:items-center lg:justify-center px-8 lg:px-0 mx-auto  gap-20'>
+        <div className='min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center px-8 lg:px-0 '>
 
-            <div className='flex items-center space-x-10'>
-                <div className='flex flex-col space-y-6 '>
+            <motion.div className='flex items-center space-x-10 w-full'
+                initial={{ x: -20 }}
+                whileInView={{ x: 0 }}
+                transition={{ ease: 'easeOut', delay: 0.20 }}
+                viewport={{ once: true }}>
+                <motion.div className='flex flex-col space-y-6 '
+                    initial={{ y: -20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ ease: 'easeOut', delay: 0.50 }}>
                     <a href="https://github.com/MarkMallari16" className=' tooltip hover:tooltip-open tooltip-right   hover:text-secondary transition-colors duration-200' data-tip="Github">
                         <FiGithub className='size-6' />
                     </a>
@@ -24,11 +31,12 @@ function Hero({ projectsRef }) {
                     <a href="https://www.instagram.com/mrkymllari/" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="Instagram">
                         <FaInstagram className='size-6' />
                     </a>
-                </div>
-                <div>
-                    <div className='flex items-center w-full'>
+                </motion.div>
 
-                        <div className='text-5xl lg:text-6xl font-black'>Hey, I'm Mark
+                <div>
+                    <div className=' w-full'>
+
+                        <div className='text-6xl lg:text-5xl font-black'>Hello, I'm Mark👋🏻
                         </div>
                         <motion.span
                             className='text-6xl'
@@ -37,11 +45,11 @@ function Hero({ projectsRef }) {
                             exit={{ rotate: 0 }}
                             transition={{
                                 repeat: Infinity,
-                                ease: "linear",
+                                ease: "easeIn",
                                 duration: 1,
                             }}
 
-                        >👋🏻</motion.span>
+                        ></motion.span>
 
                     </div>
 
@@ -60,12 +68,16 @@ function Hero({ projectsRef }) {
                 </div>
 
 
-            </div>
+            </motion.div>
 
-            <div className='hidden lg:block'>
+            <motion.div className='hidden lg:block'
+                initial={{ x: 20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ ease: 'easeInOut', delay: 1 }}
+                viewport={{ once: true }}>
                 <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary">
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

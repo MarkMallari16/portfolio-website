@@ -22,8 +22,7 @@ function App() {
     isLoading ? (
       <Loading />
     ) : (
-      <div className='min-h-screen relative'>
-
+      <div className='relative mx-auto lg:max-w-6xl w-full'>
         <ProgressBar />
         <section>
           <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />

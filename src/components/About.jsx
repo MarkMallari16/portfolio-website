@@ -8,7 +8,7 @@ function About({ contactRef }) {
 
   const { scrollIntoSection } = useScrollSection();
   return (
-    <div className='mx-auto pb-20 px-6 lg:px-0 lg:max-w-7xl'>
+    <div className='pt-8 pb-20 px-6 lg:px-0 '>
       <div className='grid grid-cols-1 lg:grid-cols-2  pt-20 mx-auto lg:gap-20'>
         <motion.div className=''
           initial={{ x: -50, opacity: 0 }}
