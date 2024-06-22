@@ -31,7 +31,7 @@ function Skills() {
         },
         {
             icon: <DiJavascript />,
-            languageName: 'JS',
+            languageName: 'JavaScript',
             category: 'frontend'
         },
         {
@@ -89,7 +89,7 @@ function Skills() {
         {
             icon: <TbBrandFramerMotion />,
             languageName: 'Framer Motion',
-            category: 'other'
+            category: 'frontend'
         },
     ]
 
