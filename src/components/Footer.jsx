@@ -3,8 +3,8 @@ import React from 'react'
 
 function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
     return (
-        <footer className="footer flex justify-between items-center py-6 bg-ghost  border-t-2  border-base-300 w-full" >
-            <div className='text-3xl font-black flex'>Mark <span className='text-secondary'>Mallari</span> </div>
+        <footer className="px-6 lg:px-0 footer flex flex-col lg:flex-row justify-start items-center lg:justify-between py-6 bg-ghost  border-t-2 border-base-300 w-full" >
+            <div className='text-4xl lg:text-3xl font-black flex'>Mark <span className='text-secondary'>Mallari</span> </div>
             <nav>
                 <div className="grid grid-flow-col gap-6">
                     <a onClick={() => scrollIntoSection(homeRef)} className='cursor-pointer'>Home</a>
@@ -22,7 +22,7 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
                 </div>
             </nav>
 
-           
+
         </footer>
     )
 }

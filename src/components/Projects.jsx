@@ -6,29 +6,28 @@ import SingleProject from './SingeProject';
 import { motion } from 'framer-motion'
 
 function Projects() {
-    const initialRightAnimate =
-    {
-        x: -20,
-        opacity: 0,
+    const fadeInRightVariants = {
+        hidden: {
+            x: -20,
+            opacity: 0,
+        },
+        visible: {
+            x: 0,
+            opacity: 1
+        }
     }
 
-    const rightAnimate =
-    {
-        x: 0,
-        opacity: 1
+    const fadeInLeftVariants = {
+        hidden: {
+            x: 20,
+            opacity: 0
+        },
+        visible: {
+            x: 0,
+            opacity: 1
+        }
     }
 
-    const initialLeftAnimate =
-    {
-        x: 20,
-        opacity: 0
-    }
-
-    const leftAnimate =
-    {
-        x: 0,
-        opacity: 1
-    }
     const projects = [
         {
             projectPicture: OnlineVotingPicture,
@@ -50,7 +49,7 @@ function Projects() {
             projectPicture: DesktopTodoPicture,
             projectTitle: "Quadratic Equation Calculator",
             projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
-            projectStacks: ["HTML", "CSS", "JavaScript","ChartJS"],
+            projectStacks: ["HTML", "CSS", "JavaScript", "ChartJS"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
             projectGithubRepository: ""
         },
@@ -70,7 +69,8 @@ function Projects() {
             <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20  w-full'>
 
                 {projects.map((project, id) => (
-                    <motion.div initial={id % 2 != 0 ? initialLeftAnimate : initialRightAnimate} whileInView={id % 2 != 0 ? leftAnimate : rightAnimate} transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} key={id}>
+                    <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants}>
+                    
                         <SingleProject projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}
                             projectStacks={project.projectStacks}
                             projectLiveURL={project.projectLiveURL}

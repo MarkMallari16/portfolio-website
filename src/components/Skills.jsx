@@ -8,6 +8,7 @@ import { DiJavascript } from "react-icons/di";
 import { FaBootstrap } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { SiInertia, SiPhp, SiCsharp, SiAndroidstudio } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import { motion } from 'framer-motion';
 
 function Skills() {
@@ -83,6 +84,11 @@ function Skills() {
         }, {
             icon: <SiAndroidstudio />,
             languageName: 'Android Studio',
+            category: 'other'
+        },
+        {
+            icon: <TbBrandFramerMotion />,
+            languageName: 'Framer Motion',
             category: 'other'
         },
     ]

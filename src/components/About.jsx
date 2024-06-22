@@ -7,24 +7,35 @@ import useScrollSection from '../hooks/useScrollSection';
 function About({ contactRef }) {
 
   const { scrollIntoSection } = useScrollSection();
+
+  const fadeRightAnimationVariants = {
+    hidden: { x: -50, opacity: 0 },
+    visible: { x: 0, opacity: 1 }
+  }
+  const fadeLeftAnimationVariants = {
+    hidden: { x: 50, opacity: 0 },
+    visible: { x: 0, opacity: 1 }
+  }
   return (
-    <div className='pb-20 px-6 lg:px-0 '>
+    <div className='py-20 px-6 lg:px-0 '>
       <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-32'>
         <motion.div className=''
-          initial={{ x: -50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.1 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true }}
+          variants={fadeRightAnimationVariants}>
           <div className='bg-secondary rounded-xl lg:w-[35rem]'>
             <img src={Avatar} alt="avatar" />
           </div>
 
         </motion.div>
         <motion.div className='px-5 pt-8 lg:px-0 lg:pt-0  w-full'
-          initial={{ x: 50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.1 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true }}
+          variants={fadeLeftAnimationVariants}>
           <div className='text-xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
           <div className='pb-6'>
             <h1 className='text-3xl font-semibold'>"Programs must be written for people to read, and only incidentally for machines to execute."</h1>

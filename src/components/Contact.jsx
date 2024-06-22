@@ -16,7 +16,7 @@ function Contact() {
     ]
 
   return (
-    <div className='py-40 mx-auto lg:max-w-7xl px-6 lg:px-0'>
+    <div className='py-20 pb-40 mx-auto lg:max-w-7xl px-6 lg:px-0'>
       <div className='text-medium text-center text-3xl font-medium  pb-10'>Contact Me</div>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 justify-center pt-10'>

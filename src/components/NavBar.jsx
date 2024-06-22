@@ -14,7 +14,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
   return (
     <nav
     >
-      <div className='navbar py-5 px-8 lg:px-0  flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center '>
+      <div className='navbar py-8 px-8 lg:px-0  flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center '>
         <motion.a className='text-3xl font-black cursor-pointer '
           onClick={() => scrollIntoSection(homeRef)}
           initial={{ y: -10, opacity: 0 }}
