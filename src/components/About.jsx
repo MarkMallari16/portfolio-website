@@ -18,7 +18,7 @@ function About({ contactRef }) {
   }
   return (
     <div className='py-20 px-6 lg:px-0 '>
-      <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-32'>
+      <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
         <motion.div className=''
           initial="hidden"
           whileInView="visible"

@@ -8,32 +8,38 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
   const { theme, toggleTheme } = useTheme();
 
   const toggleMenu = () => {
-    setIsMenuOpen((prevMenu) => setIsMenuOpen(!prevMenu));
+    setIsMenuOpen(!isMenuOpen);
   };
-  console.log(isMenuOpen);
+
   return (
-    <nav
-    >
+    <nav>
       <div className='navbar py-8 px-8 lg:px-0  flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center '>
-        <motion.a className='text-3xl font-black cursor-pointer '
-          onClick={() => scrollIntoSection(homeRef)}
-          initial={{ y: -10, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ ease: 'easeOut', delay: 0.2 }}
-          viewport={{ once: true }}>
-          Mark.<span className='text-secondary'>Mallari</span>
-        </motion.a>
-        <label className="btn btn-square swap swap-rotate lg:hidden" onClick={toggleMenu}>
-          <input type="checkbox" />
+        <div className='flex justify-between w-full lg:w-auto'>
+          <motion.a className='text-3xl font-black cursor-pointer '
+            onClick={() => scrollIntoSection(homeRef)}
+            initial={{ y: -10, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ ease: 'easeOut', delay: 0.2 }}
+            viewport={{ once: true }}>
+            Mark.<span className='text-secondary'>Mallari</span>
+          </motion.a>
 
-          {/* hamburger icon */}
-          <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
+          <div >
+            <label className="btn btn-square swap swap-rotate lg:hidden">
+              <input type="checkbox" checked={isMenuOpen} onClick={toggleMenu} />
 
-          {/* close icon */}
-          <svg className="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" /></svg>
+              {/* hamburger icon */}
+              <svg className={`swap-off fill-current`} xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
 
-        </label>
-        <ul className={`lg:flex flex-col lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`} >
+              {/* close icon */}
+              <svg className={`swap-on fill-current`} xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" /></svg>
+
+            </label>
+          </div>
+        </div>
+        {/*Hamburger Menu*/}
+
+        <ul className={`lg:flex items-center py-10 lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`} >
           <li>
             <a href='#home' onClick={() => scrollIntoSection(homeRef)} >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
@@ -80,12 +86,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
 
             </a>
           </li>
-
-
-
-
         </ul>
-
         <div className='hidden lg:block'>
           {theme === 'emerald' ? (
             <motion.div
