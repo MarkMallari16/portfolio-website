@@ -19,8 +19,8 @@ function Contact() {
     <div className='py-20 pb-40 mx-auto lg:max-w-7xl px-6 lg:px-0'>
       <div className='text-medium text-center text-3xl font-medium  pb-10'>Contact Me</div>
 
-      <div className='grid grid-cols-1 lg:grid-cols-2 justify-center pt-10'>
-        <motion.div className='space-y-5 w-full h-full rounded-2xl gap-4'
+      <div className='grid grid-cols-1 lg:grid-cols-2 justify-center pt-10 lg:pt-0'>
+        <motion.div className='space-y-4 w-full h-full rounded-2xl gap-4'
           initial={{ x: -20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', delay: 0.3 }}

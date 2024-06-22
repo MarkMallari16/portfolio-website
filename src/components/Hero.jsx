@@ -11,15 +11,15 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className='min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center px-8 lg:px-0 '>
+        <div className='min-h-64 lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0 '>
 
-            <motion.div className='flex items-center space-x-10 w-full'
+            <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full'
                 initial={{ x: -20 }}
                 whileInView={{ x: 0 }}
                 transition={{ ease: 'easeOut', delay: 0.20 }}
                 viewport={{ once: true }}>
 
-                <motion.div className='flex flex-col space-y-6 '
+                <motion.div className='flex flex-row ms-10 mt-6 gap-5 lg:ms-0  lg:gap-0 lg:flex-col lg:space-y-6 '
                     initial={{ y: -20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ ease: 'easeOut', delay: 0.50 }}
@@ -75,7 +75,7 @@ function Hero({ projectsRef }) {
             <motion.div className='hidden lg:block'
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ ease: 'easeInOut', delay: 0.58,duration: 0.3 }}
+                transition={{ ease: 'easeInOut', delay: 0.58, duration: 0.3 }}
                 viewport={{ once: true }}>
                 <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary">
                 </div>

@@ -2,6 +2,7 @@ import React from 'react'
 
 import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
+import PortfolioPicture from '../assets/portfoliopicture.png'
 import SingleProject from './SingeProject';
 import { motion } from 'framer-motion'
 
@@ -54,9 +55,9 @@ function Projects() {
             projectGithubRepository: ""
         },
         {
-            projectPicture: DesktopTodoPicture,
-            projectTitle: "Web Portfolio",
-            projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
+            projectPicture: PortfolioPicture,
+            projectTitle: "Website Portfolio",
+            projectDescripton: "I developed a website portfolio for me which I showcase my projects. I used tailwind CSS and daisyUI for user interface.",
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
             projectGithubRepository: ""
