@@ -39,7 +39,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
         </div>
         {/*Hamburger Menu*/}
 
-        <ul className={`lg:flex items-center py-10 lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`} >
+        <ul className={`lg:flex w-full lg:w-auto   items-center py-10 lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`} >
           <li>
             <a href='#home' onClick={() => scrollIntoSection(homeRef)} >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
