@@ -56,7 +56,7 @@ function Projects() {
         },
         {
             projectPicture: DesktopTodoPicture,
-            projectTitle: "To-do List Application",
+            projectTitle: "Web Portfolio",
             projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
