@@ -13,7 +13,7 @@ function useTheme() {
     }, [theme])
 
     const toggleTheme = () => {
-        setTheme(prevTheme => (prevTheme === 'emerald' ? 'dark' : 'emerald'));
+        setTheme(prevTheme => (prevTheme === 'emerald' ? 'night' : 'emerald'));
     }
 
     return { theme, toggleTheme };

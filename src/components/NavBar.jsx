@@ -24,7 +24,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ ease: 'easeOut', delay: 0.2 }}
             viewport={{ once: true }}>
-            Mark.<span className='text-secondary'>Mallari</span>
+            Mark <span className='text-secondary'>Mallari</span>
           </motion.a>
 
           <div >
