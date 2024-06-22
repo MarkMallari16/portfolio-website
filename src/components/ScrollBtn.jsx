@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import useScroll from '../hooks/useScroll';
 function ScrollBtn() {
-    const [scrollVisible, setIsScrollVisible] = useState(false);
+    const { scrollVisible } = useScroll();
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -10,25 +11,11 @@ function ScrollBtn() {
         });
     }
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const isScrolled = window.scrollY > 5
-
-            setIsScrollVisible(isScrolled);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     const fadeScrollVariants = {
         hidden: { opacity: 0, y: 0 },
         visible: { opacity: scrollVisible ? 1 : 0, y: scrollVisible ? -20 : 0 }
     }
+    
     return (
         <motion.div
             className={`fixed bottom-0 right-0 me-10 mb-10`}

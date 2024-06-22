@@ -18,8 +18,8 @@ function Contact() {
   return (
     <div className='py-20 pb-40 mx-auto lg:max-w-7xl px-6 lg:px-0'>
       <div className='text-medium text-center text-3xl font-medium '>Contact Me</div>
-      <p className='text-center text-slate-400  mb-10 font-light  pb-10'>Reach Me</p>
-      <div className='grid grid-cols-1 lg:grid-cols-2 justify-center pt-10 lg:pt-0'>
+      <p className='text-center text-slate-400  mb-10 font-light  pb-2 lg:pb-10'>Reach Me</p>
+      <div className='grid grid-cols-1 lg:grid-cols-2 justify-center lg:pt-0'>
         <motion.div className='space-y-4 w-full h-full rounded-2xl gap-4'
           initial={{ x: -20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
