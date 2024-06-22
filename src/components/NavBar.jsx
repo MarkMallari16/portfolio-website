@@ -10,7 +10,10 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
+  const fadeTopAnimationVariants = {
+    "hidden": { y: -20, opacity: 0 },
+    "visible": { y: 0, opacity: 1 }
+  }
   return (
     <nav>
       <div className='navbar py-8 px-8 lg:px-0  flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center '>
@@ -41,9 +44,11 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
 
         <motion.ul
           className={`lg:flex w-full lg:w-auto   items-center py-10 lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
-          initial={{ y: -20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ease: 'easeOut',delay: 0.4}} >
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: 'easeOut', delay: 0.4 }}
+          viewport={{once: true}}
+          variants={fadeTopAnimationVariants}>
           <li>
             <a href='#home' onClick={() => scrollIntoSection(homeRef)} >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
