@@ -5,7 +5,7 @@ import useTheme from '../hooks/useTheme'
 function Theme() {
     const { theme, toggleTheme } = useTheme();
     return (
-        <div className='hidden lg:block'>
+        <div className='flex justify-end  w-full lg:w-auto lg:block'>
             <AnimatePresence>
                 {theme === 'emerald' ? (
                     <motion.div
