@@ -14,13 +14,13 @@ function SingeProject({
     return (
 
         <div className='py-20 lg:py-10'>
-            <div className='w-full h-80 bg-base-300 rounded-xl' style={{
+            <div className='w-full h-80 rounded-xl' style={{
                 backgroundImage: `url('${projectPicture}')`,
                 backgroundSize: 'cover'
             }}></div>
             <div className='w-full h-60  rounded-xl'>
                 <h1 className='pt-8 text-2xl font-medium'>{projectTitle}</h1>
-                <p className='mt-4 text-lg leading-8 text-justify text-wrap'>{projectDescripton}</p>
+                <p className='mt-4 text-base-content text-lg lg:text-lg leading-8 text-justify text-wrap'>{projectDescripton}</p>
 
                 <div className='flex flex-wrap mt-6 gap-3'>
                     {projectStacks.map((stack, index) => (
@@ -57,4 +57,5 @@ SingeProject.propTypes = {
     projectLiveURL: PropTypes.string,
     projectGithubRepository: PropTypes.string.isRequired,
 };
+
 export default SingeProject
