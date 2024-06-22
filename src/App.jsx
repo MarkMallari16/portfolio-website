@@ -18,6 +18,11 @@ function App() {
   const { homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection } = useScrollSection();
   const isLoading = useLoading();
 
+  const fadeAnimationVariants = {
+    hidden: { opacity: 0, transform: 0 },
+    visible: { opacity: 1, transform: 1 },
+
+  }
   return (
     isLoading ? (
       <Loading />
@@ -29,38 +34,45 @@ function App() {
 
         </section>
         <motion.section
-          initial={{ opacity: 0, transform: 0 }}
-          whileInView={{ opacity: 1, transform: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
+          transition={{ease:'easeOut',delay: 0.2}}
+          variants={fadeAnimationVariants}
+          
           ref={homeRef}>
           <Hero projectsRef={projectsRef} />
         </motion.section>
         <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
+          variants={fadeAnimationVariants}
           ref={aboutRef}
         >
           <About contactRef={contactRef} />
         </motion.section>
         <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
+          variants={fadeAnimationVariants}
           ref={skillsRef}>
           <Skills />
         </motion.section>
         <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
+          variants={fadeAnimationVariants}
           ref={projectsRef}>
           <Projects />
         </motion.section>
         <motion.section
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial="hidden"
+          whileInView="visible"
           viewport={{ once: true }}
+          variants={fadeAnimationVariants}  
           ref={contactRef}>
           <Contact />
         </motion.section>
