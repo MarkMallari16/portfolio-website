@@ -11,7 +11,7 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className='min-h-64 lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0 '>
+        <div className='min-h-96 lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0 '>
 
             <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full'
                 initial={{ x: -20 }}
