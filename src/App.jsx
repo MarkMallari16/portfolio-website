@@ -37,7 +37,7 @@ function App() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ease:'easeOut',delay: 0.2}}
+          
           variants={fadeAnimationVariants}
           
           ref={homeRef}>
