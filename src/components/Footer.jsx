@@ -2,21 +2,22 @@ import React from 'react'
 
 
 function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
+
     return (
         <footer>
             <div className="px-6 lg:px-0 footer flex flex-col lg:flex-row justify-start items-center lg:justify-between py-6 bg-ghost  border-t-2 border-base-300 w-full" >
                 <div className='text-4xl lg:text-3xl font-black flex'>Mark <span className='text-secondary'>Mallari</span> </div>
                 <nav>
-                    <div className="grid grid-flow-col gap-6">
-                        <a onClick={() => scrollIntoSection(homeRef)} className='cursor-pointer'>Home</a>
-                        <a onClick={() => scrollIntoSection(aboutRef)} className='cursor-pointer'>About</a>
-                        <a onClick={() => scrollIntoSection(skillsRef)} className='cursor-pointer'>Skills</a>
-                        <a onClick={() => scrollIntoSection(projectsRef)} className='cursor-pointer'>Projects</a>
-                        <a onClick={() => scrollIntoSection(contactRef)} className='cursor-pointer'>Contact</a>
+                    <div className="grid grid-flow-col gap-6 ">
+                        <a onClick={() => scrollIntoSection(homeRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Home</a>
+                        <a onClick={() => scrollIntoSection(aboutRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>About</a>
+                        <a onClick={() => scrollIntoSection(skillsRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Skills</a>
+                        <a onClick={() => scrollIntoSection(projectsRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Projects</a>
+                        <a onClick={() => scrollIntoSection(contactRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Contact</a>
                     </div>
                 </nav>
                 <nav>
-                    <div className="grid grid-flow-col gap-3 ">
+                    <div className="grid grid-flow-col gap-3 w-full">
                         <a href='https://www.instagram.com/mrkymllari/' className='p-2 bg-base-300 rounded-md hover:bg-secondary hover:text-base-300 transition-all ease-in-out'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
                         <a href='https://www.youtube.com/channel/UCjmHlbLg0GEGH4SOS04jQPg' className='p-2 bg-base-300 rounded-md hover:bg-secondary hover:text-base-300 transition-all ease-in-out'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" className="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
                         <a href='https://x.com/markymallari16' className='p-2 bg-base-300 rounded-md hover:bg-secondary hover:text-base-300 transition-all ease-in-out'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24 " className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
@@ -26,7 +27,7 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
 
 
             </div>
-         
+
         </footer>
 
     )
