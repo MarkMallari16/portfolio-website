@@ -16,9 +16,7 @@ function ProgressBar() {
             style={{ scaleX: scaleX }}
             initial={{ scaleX: 0 }}
             animate={{ scaleX: scaleX }}
-
         >
-
         </motion.div>
     )
 }

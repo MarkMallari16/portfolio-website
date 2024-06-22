@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
@@ -7,6 +7,8 @@ import SingleProject from './SingeProject';
 import { motion } from 'framer-motion'
 
 function Projects() {
+    const [isExpand, setIsExpand] = useState(false);
+
     const fadeInRightVariants = {
         hidden: {
             x: -20,
@@ -63,15 +65,22 @@ function Projects() {
             projectGithubRepository: ""
         }
     ]
+
+    const sliceProjects = isExpand ? projects : projects.slice(0, 2);
+    
+    const toggleExpand = () => {
+        setIsExpand(!isExpand);
+    }
+
     return (
         <div className=' mx-auto lg:max-w-7xl'>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
             <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20  w-full'>
 
-                {projects.map((project, id) => (
+                {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants}>
-                    
+
                         <SingleProject projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}
                             projectStacks={project.projectStacks}
                             projectLiveURL={project.projectLiveURL}
@@ -80,7 +89,12 @@ function Projects() {
                     </motion.div>
                 ))
                 }
+
+
             </div >
+            <div className='flex justify-center'>
+                <button className='btn btn-ghost text-center' onClick={toggleExpand}>{`${isExpand ? 'See Less' : 'See More'}`}</button>
+            </div>
         </div >
     )
 }
