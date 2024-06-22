@@ -1,9 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { FaGithub } from 'react-icons/fa'
 import SkillIcon from './SkillIcon'
 
-function SingeProject({ projectPicture, projectTitle, projectDescripton, projectStacks, projectLiveURL = null, projectGithubRepository }) {
-    console.log(projectStacks)
+function SingeProject({
+    projectPicture,
+    projectTitle,
+    projectDescripton,
+    projectStacks,
+    projectLiveURL = null,
+    projectGithubRepository }) {
+
     return (
 
         <div className='py-20 lg:py-10'>
@@ -13,7 +20,7 @@ function SingeProject({ projectPicture, projectTitle, projectDescripton, project
             }}></div>
             <div className='w-full h-60  rounded-xl'>
                 <h1 className='pt-8 text-2xl font-medium'>{projectTitle}</h1>
-                <p className='mt-4 text-lg leading-8 text-justify'>{projectDescripton}</p>
+                <p className='mt-4 text-lg leading-8 text-justify text-wrap'>{projectDescripton}</p>
 
                 <div className='flex flex-wrap mt-6 gap-3'>
                     {projectStacks.map((stack, index) => (
@@ -42,4 +49,12 @@ function SingeProject({ projectPicture, projectTitle, projectDescripton, project
     )
 }
 
+SingeProject.propTypes = {
+    projectPicture: PropTypes.string.isRequired,
+    projectTitle: PropTypes.string.isRequired,
+    projectDescription: PropTypes.string.isRequired,
+    projectStacks: PropTypes.arrayOf(PropTypes.string).isRequired,
+    projectLiveURL: PropTypes.string,
+    projectGithubRepository: PropTypes.string.isRequired,
+};
 export default SingeProject

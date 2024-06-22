@@ -11,7 +11,7 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className='min-h-96 lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0 '>
+        <div className='min-h-[80vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0 '>
 
             <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full'
                 initial={{ x: -20 }}
@@ -19,7 +19,7 @@ function Hero({ projectsRef }) {
                 transition={{ ease: 'easeOut', delay: 0.20 }}
                 viewport={{ once: true }}>
 
-                <motion.div className='flex flex-row ms-10 mt-6 gap-5 lg:ms-0  lg:gap-0 lg:flex-col lg:space-y-6 '
+                <motion.div className='flex flex-row ms-10 mt-6 gap-5 lg:ms-0 lg:mt-0 lg:gap-0 lg:flex-col lg:space-y-6 '
                     initial={{ y: -20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ ease: 'easeOut', delay: 0.50 }}
@@ -37,7 +37,6 @@ function Hero({ projectsRef }) {
 
                 <div>
                     <div className=' w-full'>
-
                         <div className='text-6xl lg:text-5xl font-black'>Hello, I'm Mark👋🏻
                         </div>
                         <motion.span

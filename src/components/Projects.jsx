@@ -35,8 +35,8 @@ function Projects() {
             projectTitle: "Online Voting System at STI College Bacoor",
             projectDescripton: "This web application allows students to vote easily. It is my first capstone project, and it won Best in User Interface and System Development at the SHS Expo 2024 at our school.",
             projectStacks: ["Laravel", "ReactJS", "TailwindCSS", "Material Design", "Inertia", "MySQL"],
-            projectLiveURL: "",
-            projectGithubRepository: ""
+
+            projectGithubRepository: "https://github.com/MarkMallari16/Online-Voting-System-Version-2"
         },
         {
             projectPicture: DesktopTodoPicture,

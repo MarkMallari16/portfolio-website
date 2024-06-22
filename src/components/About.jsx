@@ -33,7 +33,7 @@ function About({ contactRef }) {
         <motion.div className='px-5 pt-8 lg:px-0 lg:pt-0  w-full'
           initial="hidden"
           whileInView="visible"
-          transition={{ ease: 'easeOut', delay: 0.1 }}
+          transition={{ ease: 'easeOut', delay: 0.2 }}
           viewport={{ once: true }}
           variants={fadeLeftAnimationVariants}>
           <div className='text-xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
