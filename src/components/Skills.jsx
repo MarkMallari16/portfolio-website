@@ -106,7 +106,6 @@ function Skills() {
 
             },
         })
-
     }
     return (
         <div className=' mx-auto lg:max-w-7xl mb-20 h-1/2 '>

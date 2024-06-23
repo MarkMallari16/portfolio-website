@@ -71,12 +71,12 @@ function Hero({ projectsRef }) {
 
             </motion.div>
 
-            <motion.div className='hidden lg:block'
+            <motion.div className='hidden lg:block '
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ ease: 'easeInOut', delay: 0.58, duration: 0.3 }}
                 viewport={{ once: true }}>
-                <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary">
+                <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary ">
                 </div>
             </motion.div>
         </div>
