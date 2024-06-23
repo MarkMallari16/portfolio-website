@@ -16,17 +16,18 @@ function About({ contactRef }) {
     hidden: { x: 50, opacity: 0 },
     visible: { x: 0, opacity: 1 }
   }
+
   return (
     <div className='py-20 px-6 lg:px-0 '>
       <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
-        <motion.div className=''
+        <motion.div
           initial="hidden"
           whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.1 }}
           viewport={{ once: true }}
           variants={fadeRightAnimationVariants}>
-          <div className='bg-secondary rounded-xl lg:w-[35rem]'>
-            <img src={Avatar} alt="avatar" />
+          <div className='bg-secondary  rounded-xl lg:w-[35rem]'>
+            <img src={Avatar} alt="avatar" className='' />
           </div>
 
         </motion.div>

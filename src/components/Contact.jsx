@@ -47,28 +47,15 @@ function Contact() {
           <ContactDetails contactIcon={contactIcons[1]} contactTitle="Address" contactDescription="Bacoor City, Cavite Philippines" />
           <ContactDetails contactIcon={contactIcons[2]} contactTitle="Mobile Number" contactDescription=" 09105264925" />
 
-          <div className='grid grid-cols-1 lg:grid-cols-2 w-full  h-32 gap-5'>
-            <div className="outline outline-1  w-full rounded-lg p-4">
-              <h1 className='font-bold'>Mark Mallari</h1>
-            </div>
-            <div className="outline outline-1 w-full rounded-lg  p-4">
-              <h1 className='font-bold'>mallariftw01@gmail.com</h1>
-            </div>
-            <div className="outline outline-1 w-full rounded-lg  p-4">
-              <h1 className='font-bold'>Mark Mallari</h1>
-            </div>
-            <div className="outline outline-1 w-full rounded-lg p-4">
-              <h1 className='font-bold'>mallariftw01@gmail.com</h1>
-            </div>
-          </div>
+
         </motion.div>
 
-        <motion.div className='w-full'
+        <motion.div className='w-full '
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', delay: 0.3 }}
           viewport={{ once: true }}>
-          <div className='mt-10 lg:mt-0 mb-4 '>
+          <div className=' mb-4 '>
             <h1 className='text-xl  uppercase font-medium'>Contact Me!</h1>
           </div>
           <form>

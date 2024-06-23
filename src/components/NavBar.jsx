@@ -16,11 +16,11 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
     "hidden": { y: -20, opacity: 0 },
     "visible": { y: 0, opacity: 1 }
   }
-  
+
   return (
-    <nav className={`mx-0 lg:mx-auto`}>
-      <div className={`navbar  lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center `}>
-        <div className={`flex justify-between ${scrollVisible && 'fixed pt-0 '} lg:pt-6 w-full lg:static lg:w-auto z-20 px-8 lg:px-0`}>
+    <nav className={`mx-0 lg:mx-auto `}>
+      <div className={` lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center lg:pt-6`}>
+        <div className={`flex justify-between fixed  pt-6 items-center  w-full lg:static lg:w-auto z-20 px-8 lg:px-0`}>
           <motion.a className='text-3xl font-black cursor-pointer'
             onClick={() => scrollIntoSection(homeRef)}
             initial={{ y: -10, opacity: 0 }}
@@ -45,9 +45,10 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
 
         {/*Hamburger Menu*/}
         <motion.ul
-          className={`pt-32 bg-secondary-content lg:bg-transparent fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center py-20 lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
+          className={`pt-32 bg-secondary-content lg:bg-transparent transit fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center py-20 lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
           initial="hidden"
           whileInView="visible"
+          animate={isMenuOpen ? "visible" : "hidden"}
           transition={{ ease: 'easeOut', delay: 0.4 }}
           viewport={{ once: true }}
           variants={fadeTopAnimationVariants}>
