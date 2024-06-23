@@ -13,13 +13,14 @@ function SingeProject({
 
     return (
 
-        <div className='py-20 lg:py-10'>
-            <div className='w-full h-80 rounded-xl' style={{
+        <div className='py-20 lg:py-16 '>
+            <div className='drop-shadow-md h-80 rounded-xl' style={{
                 backgroundImage: `url('${projectPicture}')`,
                 backgroundSize: 'cover'
             }}></div>
             <div className='w-full h-60  rounded-xl'>
                 <h1 className='pt-8 text-2xl font-medium'>{projectTitle}</h1>
+
                 <p className='mt-4 text-base-content text-lg lg:text-lg leading-8 text-justify text-wrap'>{projectDescripton}</p>
 
                 <div className='flex flex-wrap mt-6 gap-3'>
@@ -30,7 +31,7 @@ function SingeProject({
 
                 </div>
 
-                <div className='mt-6 flex gap-3'>
+                <div className='mt-8 flex items-center gap-3'>
                     {projectLiveURL && (
                         <a href={projectLiveURL} target='_blank' className='btn btn-secondary '>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -43,6 +44,12 @@ function SingeProject({
                     <a href={projectGithubRepository} className='btn btn-outline'>
                         <FaGithub className='text-xl' />
                         View Repository</a>
+                    <div className='flex w-full items-center gap-2'>
+                        <div className='h-1 bg-secondary w-full rounded-lg'>
+
+                        </div>
+                        2024
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,7 +59,7 @@ function SingeProject({
 SingeProject.propTypes = {
     projectPicture: PropTypes.string.isRequired,
     projectTitle: PropTypes.string.isRequired,
-    projectDescription: PropTypes.string.isRequired,
+    projectDescription: PropTypes.string,
     projectStacks: PropTypes.arrayOf(PropTypes.string).isRequired,
     projectLiveURL: PropTypes.string,
     projectGithubRepository: PropTypes.string.isRequired,

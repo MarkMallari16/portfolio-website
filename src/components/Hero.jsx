@@ -11,7 +11,7 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className='min-h-[100vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
+        <div className=' min-h-screen grid grid-cols-1  lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
 
             <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full'
                 initial={{ x: -20 }}
@@ -39,19 +39,6 @@ function Hero({ projectsRef }) {
                     <div className=' w-full'>
                         <div className='text-6xl lg:text-5xl font-black'>Hello, I'm Mark👋🏻
                         </div>
-                        <motion.span
-                            className='text-6xl'
-                            initial={{ rotate: 0 }}
-                            animate={{ rotate: [-8.0, -14, -4, 10, 0] }}
-                            exit={{ rotate: 0 }}
-                            transition={{
-                                repeat: Infinity,
-                                ease: "easeIn",
-                                duration: 1,
-                            }}
-
-                        ></motion.span>
-
                     </div>
 
                     <div className='mt-4 text-xl'>
@@ -59,11 +46,12 @@ function Hero({ projectsRef }) {
                     </div>
 
 
-                    <div className='mt-4 flex items-center gap-3'>
+                    <div className='mt-4 flex items-center gap-3 w-full'>
                         <a href='#projects' onClick={() => scrollIntoSection(projectsRef)} className='btn btn-secondary  hover:bg-secondary-dark transition-colors duration-300'>Visit Projects</a>
 
                         <ResumeBtn />
                     </div>
+
 
 
                 </div>
