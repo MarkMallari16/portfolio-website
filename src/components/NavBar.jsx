@@ -12,6 +12,16 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const fadeTopNameAnimationVariants = {
+    hidden: {
+      y: -10,
+      opacity: 0
+    },
+    visible: {
+      y: 0,
+      opacity: 1
+    }
+  }
   const fadeTopAnimationVariants = {
     "hidden": { y: -20, opacity: 0 },
     "visible": { y: 0, opacity: 1 }
@@ -19,13 +29,14 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
 
   return (
     <nav className={`mx-0 lg:mx-auto `}>
-      <div className={` lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center lg:pt-6`}>
-        <div className={`${scrollVisible && 'pb-6  backdrop-blur-sm transition-all border-base-300'} flex justify-between fixed  pt-6 items-center  w-full lg:static lg:w-auto z-20 px-10 lg:px-0`}>
+      <div className={` lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center lg:py-8`}>
+        <div className={`${scrollVisible && ' py-6 backdrop-blur-sm transition-all border-base-300'} py-6 lg:py-0 flex justify-between fixed  items-center  w-full lg:static lg:w-auto z-20 px-10 lg:px-0`}>
           <motion.a className='text-3xl font-black cursor-pointer'
             onClick={() => scrollIntoSection(homeRef)}
-            initial={{ y: -10, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial="hidden"
+            whileInView="visible"
             transition={{ ease: 'easeOut', delay: 0.2 }}
+            variants={fadeTopNameAnimationVariants}
             viewport={{ once: true }}>
             Mark <span className='text-secondary'>Mallari</span>
           </motion.a>
