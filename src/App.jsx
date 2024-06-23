@@ -37,9 +37,9 @@ function App() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          
+
           variants={fadeAnimationVariants}
-          
+
           ref={homeRef}>
           <Hero projectsRef={projectsRef} />
         </motion.section>
@@ -72,7 +72,7 @@ function App() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={fadeAnimationVariants}  
+          variants={fadeAnimationVariants}
           ref={contactRef}>
           <Contact />
         </motion.section>

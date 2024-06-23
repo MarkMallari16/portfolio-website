@@ -104,7 +104,7 @@ function Projects() {
                     {isExpand ? 'See Less' : 'See More'}
                     <motion.span
                         initial="unrotated"
-                        animate={isExpand ? "rotated" : "unrotated"}
+                        animate={isExpand ? "unrotated" : "rotated"}
                         variants={rotateChevronVariants}
                         transition={{ ease: 'easeOut', duration: 0.2 }}>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">

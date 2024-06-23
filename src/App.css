@@ -1,0 +1,74 @@
+.spinner {
+    width: 56px;
+    height: 56px;
+    border: 6.7px solid;
+    animation: spinner-kk2y8v 3s infinite;
+}
+
+@keyframes spinner-kk2y8v {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    15% {
+        transform: rotate(-90deg);
+    }
+
+    20%,
+    25% {
+        transform: rotate(-180deg);
+    }
+
+    30%,
+    35% {
+        transform: rotate(-270deg);
+    }
+
+    40%,
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes spinner-y0fdc1 {
+    0% {
+        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+
+    50% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+
+    100% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+}
+
+.profile {
+    background: url('assets/avatar.png');
+
+    background-repeat: no-repeat;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+
+    background-size: cover;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
