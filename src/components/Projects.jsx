@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
 import PortfolioPicture from '../assets/portfoliopicture.png'
+import StatQuickPicture from '../assets/statquick-ss.png'
 import SingleProject from './SingeProject';
 import { motion } from 'framer-motion'
 
@@ -49,11 +50,11 @@ function Projects() {
             projectGithubRepository: ""
         },
         {
-            projectPicture: DesktopTodoPicture,
-            projectTitle: "Quadratic Equation Calculator",
-            projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
+            projectPicture: StatQuickPicture,
+            projectTitle: "Calculate mean, median, mode, range, and more with StatQuick! ",
+            projectDescripton: "This website helps you calculate mean, median, mode, range, and more statistics quickly and easily.",
             projectStacks: ["HTML", "CSS", "JavaScript", "ChartJS"],
-            projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
+            projectLiveURL: "https://statquik.netlify.app/",
             projectGithubRepository: ""
         },
         {
@@ -63,7 +64,8 @@ function Projects() {
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
             projectGithubRepository: ""
-        }
+        },
+
     ]
 
     const sliceProjects = isExpand ? projects : projects.slice(0, 2);
@@ -72,11 +74,16 @@ function Projects() {
         setIsExpand(!isExpand);
     }
 
+    const rotateChevronVariants = {
+
+        rotated: { rotate: 180 },
+        unrotated: { rotate: 0 },
+    }
     return (
         <div className=' mx-auto lg:max-w-7xl'>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
-            <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20  w-full'>
+            <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20 lg:mt-4 w-full'>
 
                 {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants}>
@@ -93,7 +100,18 @@ function Projects() {
 
             </div >
             <div className='flex justify-center mt-10'>
-                <button className='btn btn-neutral text-center' onClick={toggleExpand}>{`${isExpand ? 'See Less' : 'See More'}`}</button>
+                <button className='btn  text-center' onClick={toggleExpand}>
+                    {isExpand ? 'See Less' : 'See More'}
+                    <motion.span
+                        initial="unrotated"
+                        animate={isExpand ? "rotated" : "unrotated"}
+                        variants={rotateChevronVariants}
+                        transition={{ duration: 0.2 }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
+                            <path fillRule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clipRule="evenodd" />
+                        </svg>
+                    </motion.span>
+                </button>
             </div>
         </div >
     )

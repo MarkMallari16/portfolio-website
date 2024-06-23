@@ -60,7 +60,7 @@ function Hero({ projectsRef }) {
 
 
                     <div className='mt-4 flex items-center gap-3'>
-                        <a href='#projects' onClick={() => scrollIntoSection(projectsRef)} className='btn btn-secondary text-white hover:bg-secondary-dark transition-colors duration-300'>Visit Projects</a>
+                        <a href='#projects' onClick={() => scrollIntoSection(projectsRef)} className='btn btn-secondary  hover:bg-secondary-dark transition-colors duration-300'>Visit Projects</a>
 
                         <ResumeBtn />
                     </div>
