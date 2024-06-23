@@ -67,7 +67,7 @@ function Projects() {
     ]
 
     const sliceProjects = isExpand ? projects : projects.slice(0, 2);
-    
+
     const toggleExpand = () => {
         setIsExpand(!isExpand);
     }
@@ -92,8 +92,8 @@ function Projects() {
 
 
             </div >
-            <div className='flex justify-center'>
-                <button className='btn btn-ghost text-center' onClick={toggleExpand}>{`${isExpand ? 'See Less' : 'See More'}`}</button>
+            <div className='flex justify-center mt-10'>
+                <button className='btn btn-neutral text-center' onClick={toggleExpand}>{`${isExpand ? 'See Less' : 'See More'}`}</button>
             </div>
         </div >
     )
