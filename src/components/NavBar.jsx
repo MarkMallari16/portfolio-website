@@ -20,7 +20,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
   return (
     <nav className={`mx-0 lg:mx-auto `}>
       <div className={` lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center lg:pt-6`}>
-        <div className={`flex justify-between fixed  pt-6 items-center  w-full lg:static lg:w-auto z-20 px-8 lg:px-0`}>
+        <div className={`${scrollVisible && 'pb-6  backdrop-blur-sm transition-all border-base-300'} flex justify-between fixed  pt-6 items-center  w-full lg:static lg:w-auto z-20 px-10 lg:px-0`}>
           <motion.a className='text-3xl font-black cursor-pointer'
             onClick={() => scrollIntoSection(homeRef)}
             initial={{ y: -10, opacity: 0 }}
