@@ -1,9 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import React from 'react'
-import useTheme from '../hooks/useTheme'
+import { useTheme } from '../components/ThemeProvider'
 
 function Theme() {
     const { theme, toggleTheme } = useTheme();
+    
     return (
         <div className='flex justify-end  w-full lg:w-auto lg:block'>
             <AnimatePresence>

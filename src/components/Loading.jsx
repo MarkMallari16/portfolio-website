@@ -1,19 +1,38 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import useTheme from '../hooks/useTheme';
+
 function Loading() {
-
-    const { theme } = useTheme();
-
+    const rotateVariants = {
+        start: {
+            opacity: 1,
+            rotate: 0
+        },
+        animate: {
+            opacity: 0,
+            rotate: ['0deg', '-90deg', '-180deg', '-270deg', '-360deg', '720deg']
+        }
+    }
     return (
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: 'easeInOut' }}
             className={`h-screen grid place-content-center `}>
-            <div class="spinner">
+            <motion.div class="spinner"
+                initial="start"
+                animate="animate"
+                variants={rotateVariants}
+                transition={
+                    {
+                        repeat: Infinity,
+                        duration: 1.5,
+                        ease: 'easeOut',
+                        times: [0, 0.1, 0.25, 0.4, 1]
 
-            </div>
+                    }
+                }>
+
+            </motion.div>
         </motion.div>
     )
 }
