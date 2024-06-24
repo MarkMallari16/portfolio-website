@@ -41,7 +41,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
             Mark <span className='text-secondary'>Mallari</span>
           </motion.a>
 
-          <div className='flex justify-end items-center mx-0'>
+          <div className='flex justify-end items-center'>
             <label className="btn btn-square swap swap-rotate lg:hidden">
               <input type="checkbox" checked={isMenuOpen} onClick={toggleMenu} />
 
