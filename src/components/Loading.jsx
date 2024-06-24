@@ -28,11 +28,11 @@ function Loading() {
                         duration: 1.5,
                         ease: 'easeOut',
                         times: [0, 0.1, 0.25, 0.4, 1]
-
                     }
                 }>
 
             </motion.div>
+
         </motion.div>
     )
 }
