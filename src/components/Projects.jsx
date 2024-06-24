@@ -75,15 +75,14 @@ function Projects() {
     }
 
     const rotateChevronVariants = {
-
         rotated: { rotate: 180 },
         unrotated: { rotate: 0 },
     }
     return (
-        <div className=' mx-auto lg:max-w-7xl'>
+        <div >
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
-            <div className='px-4 lg:px-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20 lg:mt-4 w-full'>
+            <div className='px-4 lg:px-0 pt-10 lg:pt-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20  w-full'>
 
                 {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants}>
@@ -97,9 +96,8 @@ function Projects() {
                 ))
                 }
 
-
-            </div >
-            <div className='flex justify-center mt-10'>
+            </div>
+            <div className='flex justify-center'>
                 <button className='btn  text-center' onClick={toggleExpand}>
                     {isExpand ? 'See Less' : 'See More'}
                     <motion.span

@@ -56,7 +56,7 @@ function Contact() {
           transition={{ ease: 'easeOut', delay: 0.3 }}
           viewport={{ once: true }}>
           <div className=' mb-4 '>
-            <h1 className='text-xl  uppercase font-medium'>Contact Me!</h1>
+            <h1 className='text-xl  uppercase font-medium'>Let's connect each other!</h1>
           </div>
           <form>
             <div className='mb-4'>
