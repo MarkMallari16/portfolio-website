@@ -10,7 +10,7 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
                 <div className='text-4xl lg:text-3xl font-black flex'>Mark
                     <span className='text-secondary'> Mallari</span>
                 </div>
-              
+
                 <nav className='w-full flex justify-center'>
                     <div className="grid grid-flow-col gap-6">
                         <a onClick={() => scrollIntoSection(homeRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Home</a>

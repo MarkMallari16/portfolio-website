@@ -11,7 +11,7 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className=' min-h-screen grid grid-cols-1  lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
+        <div className='min-h-screen grid grid-cols-1  lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
             <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full'
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -38,7 +38,7 @@ function Hero({ projectsRef }) {
                     <div className='text-6xl lg:text-5xl font-black w-full'>Hello, I'm Mark👋🏻
                     </div>
 
-                    <div className='mt-4 text-xl'>
+                    <div className='mt-4 text-2xl lg:text-xl'>
                         Aspiring <span className='font-bold text-secondary'>Web Developer</span> from the Philippines
                     </div>
 

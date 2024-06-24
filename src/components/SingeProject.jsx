@@ -44,10 +44,10 @@ function SingeProject({
                         <FaGithub className='text-xl' />
                         View Repository</a>
                     <div className='flex w-full items-center gap-2'>
-                        <div className='h-1 bg-secondary w-full rounded-lg'>
+                        <div className='h-1 bg-neutral w-full rounded-lg'>
 
                         </div>
-                        2024
+                        <span className='text-secondary font-medium'>2024</span>
                     </div>
                 </div>
             </div>

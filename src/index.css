@@ -6,3 +6,12 @@
 * {
   font-family: 'poppins', sans-serif;
 }
+
+
+
+html {
+  scrollbar-width: thin;
+
+  scrollbar-color: black;
+  scrollbar-gutter: 200px ;
+}
