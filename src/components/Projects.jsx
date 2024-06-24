@@ -63,7 +63,7 @@ function Projects() {
             projectDescripton: "I developed a website portfolio for me which I showcase my projects. I used tailwind CSS and daisyUI for user interface.",
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
-            projectGithubRepository: ""
+            projectGithubRepository: "https://markdev16.netlify.app/"
         },
 
     ]

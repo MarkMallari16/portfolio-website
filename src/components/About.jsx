@@ -18,7 +18,7 @@ function About({ contactRef }) {
   }
 
   return (
-    <div className='py-20 px-6 lg:px-0 '>
+    <div className='pb-20 px-6 lg:px-0 '>
       <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
         <motion.div
           initial="hidden"

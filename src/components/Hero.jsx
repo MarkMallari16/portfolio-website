@@ -35,9 +35,7 @@ function Hero({ projectsRef }) {
                 </motion.div>
 
                 <div>
-                    <div className=' w-full'>
-                        <div className='text-6xl lg:text-5xl font-black'>Hello, I'm Mark👋🏻
-                        </div>
+                    <div className='text-6xl lg:text-5xl font-black w-full'>Hello, I'm Mark👋🏻
                     </div>
 
                     <div className='mt-4 text-xl'>
