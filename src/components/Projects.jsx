@@ -47,7 +47,7 @@ function Projects() {
             projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
-            projectGithubRepository: ""
+            projectGithubRepository: "https://github.com/MarkMallari16/Simple-Todo-List-React"
         },
         {
             projectPicture: StatQuickPicture,
@@ -59,11 +59,11 @@ function Projects() {
         },
         {
             projectPicture: PortfolioPicture,
-            projectTitle: "Website Portfolio",
-            projectDescripton: "I developed a website portfolio for me which I showcase my projects. I used tailwind CSS and daisyUI for user interface.",
+            projectTitle: "Personal Website Portfolio",
+            projectDescripton: "I developed a website portfolio for me which I showcase my projects. I use ReactJS for this website.",
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
-            projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
-            projectGithubRepository: "https://markdev16.netlify.app/"
+            projectLiveURL: "https://markdev16.netlify.app/",
+            projectGithubRepository: "https://github.com/MarkMallari16/Portfolio"
         },
 
     ]
