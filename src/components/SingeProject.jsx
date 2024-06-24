@@ -47,7 +47,7 @@ function SingeProject({
                         <div className='h-1 bg-neutral w-full rounded-lg'>
 
                         </div>
-                        <span className='text-secondary font-medium'>2024</span>
+                        <span className='font-medium'>2024</span>
                     </div>
                 </div>
             </div>
