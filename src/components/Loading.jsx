@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 function Loading() {
     const rotateVariants = {
         start: {
-            opacity: 1,
+            opacity: 0,
             rotate: 0
         },
         animate: {
-            opacity: 0,
+            opacity: 1,
             rotate: ['0deg', '-90deg', '-180deg', '-270deg', '-360deg', '720deg']
         }
     }
@@ -22,6 +22,7 @@ function Loading() {
                 initial="start"
                 animate="animate"
                 variants={rotateVariants}
+                exit={{opacity: 0}}
                 transition={
                     {
                         repeat: Infinity,
