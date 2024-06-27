@@ -40,7 +40,7 @@ function SingeProject({
 
                             Demo</a>
                     )}
-                    <a href={projectGithubRepository} className='btn btn-outline font-semibold'>
+                    <a href={projectGithubRepository} className='btn btn-outline font-semibold' target='_blank'>
                         <FaGithub className='text-xl' />
                         View Repository</a>
                     <div className='block lg:flex  w-full items-center gap-2'>
