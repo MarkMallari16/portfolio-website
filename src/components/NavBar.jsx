@@ -56,7 +56,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
 
         {/*Hamburger Menu*/}
         <motion.ul
-          className={`pt-32 bg-secondary-content lg:bg-transparent transit fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center py-20 lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
+          className={`pt-32 bg-secondary-content lg:bg-transparent transit fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
           initial="hidden"
           whileInView="visible"
           animate={isMenuOpen ? "visible" : "hidden"}

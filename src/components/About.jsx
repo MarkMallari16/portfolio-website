@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useReducer, useState } from 'react'
 import AboutImage from '../assets/about1.jpg'
 import Avatar from '../assets/avatar.png';
 import { motion } from 'framer-motion'
 import useScrollSection from '../hooks/useScrollSection';
 
 function About({ contactRef }) {
-
   const { scrollIntoSection } = useScrollSection();
 
   const fadeRightAnimationVariants = {
@@ -19,6 +18,8 @@ function About({ contactRef }) {
 
   return (
     <div className='py-20 px-6 lg:px-0 '>
+     
+
       <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
         <motion.div
           initial="hidden"
