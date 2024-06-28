@@ -8,7 +8,7 @@ function useScrollSection() {
     const contactRef = useRef(null);
 
 
-    const scrollIntoSection = ( ref) => {
+    const scrollIntoSection = (ref) => {
         
         if (ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' })
