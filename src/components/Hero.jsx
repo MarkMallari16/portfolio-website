@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import useScrollSection from '../hooks/useScrollSection';
+import { FaXTwitter } from 'react-icons/fa6';
 
 
 function Hero({ projectsRef }) {
@@ -29,8 +30,8 @@ function Hero({ projectsRef }) {
                     <a href="https://www.linkedin.com/in/mark-christian-mallari-47850a279/" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="LinkIn">
                         <FiLinkedin className='size-6' />
                     </a>
-                    <a href="https://www.instagram.com/mrkymllari/" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="Instagram">
-                        <FaInstagram className='size-6' />
+                    <a href="https://x.com/markymallari16" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="X">
+                        <FaXTwitter className='text-2xl' />
                     </a>
                 </motion.div>
 
