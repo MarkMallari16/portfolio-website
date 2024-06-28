@@ -43,12 +43,6 @@ function SingeProject({
                     <a href={projectGithubRepository} className='btn btn-outline font-semibold' target='_blank'>
                         <FaGithub className='text-xl' />
                         View Repository</a>
-                    <div className='block lg:flex  w-full items-center gap-2'>
-                        <div className='ring-1 ring-neutral w-full rounded-lg'>
-
-                        </div>
-                        <span className='font-medium'>2024</span>
-                    </div>
                 </div>
             </div>
         </div>
