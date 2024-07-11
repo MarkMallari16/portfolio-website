@@ -36,7 +36,7 @@ function About({ contactRef }) {
           transition={{ ease: 'easeOut', delay: 0.3 }}
           viewport={{ once: true }}
           variants={fadeLeftAnimationVariants}>
-          <div className='text-xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
+          <div className='text-2xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
           <div className='pb-6'>
             <h1 className='text-3xl font-bold '>"Programs must be written for people to read, and only incidentally for machines to execute."</h1>
 
