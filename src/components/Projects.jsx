@@ -4,6 +4,8 @@ import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
 import PortfolioPicture from '../assets/portfoliopicture.png'
 import StatQuickPicture from '../assets/statquick-ss.png'
+import QuizGamePicture from '../assets/quiz-game-ss.png'
+import GuessGamePicture from '../assets/guess-game-ss.png'
 import SingleProject from './SingeProject';
 import { motion } from 'framer-motion'
 
@@ -36,7 +38,7 @@ function Projects() {
         {
             projectPicture: OnlineVotingPicture,
             projectTitle: "Online Voting System at STI College Bacoor",
-            projectDescripton: "This web application allows students to vote easily. It is my first capstone project, and it won Best in User Interface and System Development at the SHS Expo 2024 at our school.",
+            projectDescription: "This web application allows students to vote easily. It is my first capstone project, and it won Best in User Interface and System Development at the SHS Expo 2024 at our school.",
             projectStacks: ["Laravel", "ReactJS", "TailwindCSS", "Material Design", "Inertia", "MySQL"],
 
             projectGithubRepository: "https://github.com/MarkMallari16/Online-Voting-System-Version-2"
@@ -44,7 +46,7 @@ function Projects() {
         {
             projectPicture: DesktopTodoPicture,
             projectTitle: "To-do List Application",
-            projectDescripton: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
+            projectDescription: "I developed a user-friendly To-do list application to help users manage their daily tasks efficiently. Built with React JS and styled with Tailwind CSS and daisy UI, it features an intuitive interface for adding, editing, and organizing tasks.",
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://simple-todo-list-mark.netlify.app/",
             projectGithubRepository: "https://github.com/MarkMallari16/Simple-Todo-List-React"
@@ -52,7 +54,7 @@ function Projects() {
         {
             projectPicture: StatQuickPicture,
             projectTitle: "Calculate mean, median, mode, range, and more with StatQuick! ",
-            projectDescripton: "This website helps you calculate mean, median, mode, range, and more statistics quickly and easily.",
+            projectDescription: "This website helps you calculate mean, median, mode, range, and more statistics quickly and easily.",
             projectStacks: ["HTML", "CSS", "JavaScript", "ChartJS"],
             projectLiveURL: "https://statquik.netlify.app/",
             projectGithubRepository: ""
@@ -60,15 +62,31 @@ function Projects() {
         {
             projectPicture: PortfolioPicture,
             projectTitle: "Personal Website Portfolio",
-            projectDescripton: "I developed a website portfolio for me which I showcase my projects. I use ReactJS for this website.",
+            projectDescription: "I developed a website portfolio for me which I showcase my projects. I use ReactJS for this website.",
             projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
             projectLiveURL: "https://markdev16.netlify.app/",
             projectGithubRepository: "https://github.com/MarkMallari16/Portfolio"
         },
+        {
+            projectPicture: QuizGamePicture,
+            projectTitle: "Quiz Website",
+            projectDescription: "I developed a quiz website that has 4 categories: English, Science, Mathematics, and Programming.",
+            projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
+            projectLiveURL: "https://quiz-game-react-eywht4mbd-mark-mallaris-projects.vercel.app/",
+            projectGithubRepository: "https://github.com/MarkMallari16/quiz-game-react"
+        },
+        {
+            projectPicture: GuessGamePicture,
+            projectTitle: "Guessing Game",
+            projectDescription: "A fun and interactive game where players guess a randomly generated number within a specified range. The game includes multiple difficulty levels, visual and audio feedback, and is built using ReactJS and Daisy UI.",
+            projectStacks: ["ReactJS", "TailwindCSS", "Daisy UI"],
+            projectLiveURL: "https://guessinggamereact.netlify.app/",
+            projectGithubRepository: "https://github.com/MarkMallari16/Guess-the-number-react"
+        },
 
     ]
 
-    const sliceProjects = isExpand ? projects : projects.slice(0, 2);
+    const sliceProjects = isExpand ? projects : projects.slice(0, 4);
 
     const toggleExpand = () => {
         setIsExpand(!isExpand);
@@ -87,7 +105,7 @@ function Projects() {
                 {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants}>
 
-                        <SingleProject projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescripton={project.projectDescripton}
+                        <SingleProject projectPicture={project.projectPicture} projectTitle={project.projectTitle} projectDescription={project.projectDescription}
                             projectStacks={project.projectStacks}
                             projectLiveURL={project.projectLiveURL}
                             projectGithubRepository={project.projectGithubRepository}

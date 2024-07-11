@@ -28,7 +28,7 @@ function Loading() {
                         repeat: Infinity,
                         duration: 1.5,
                         ease: 'easeOut',
-                        times: [0, 0.1, 0.25, 0.4, 1]
+                        times: [0, 0.2, 0.25, 0.4, 1]
                     }
                 }>
 

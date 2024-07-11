@@ -6,7 +6,7 @@ import SkillIcon from './SkillIcon'
 function SingeProject({
     projectPicture,
     projectTitle,
-    projectDescripton,
+    projectDescription,
     projectStacks,
     projectLiveURL = null,
     projectGithubRepository }) {
@@ -21,7 +21,7 @@ function SingeProject({
             <div className='w-full h-60  rounded-xl'>
                 <h1 className='pt-8 text-2xl font-medium'>{projectTitle}</h1>
 
-                <p className='mt-4 text-base-content text-lg lg:text-lg leading-8 text-justify text-wrap'>{projectDescripton}</p>
+                <p className='mt-4 text-base-content text-lg lg:text-lg leading-8 text-justify text-wrap'>{projectDescription}</p>
 
                 <div className='flex flex-wrap mt-6 gap-3'>
                     {projectStacks.map((stack, index) => (

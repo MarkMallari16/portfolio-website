@@ -6,7 +6,7 @@ function SkillIcon({ icon, languageName }) {
             <div className='flex items-center gap-1'>
                 <p className='text-2xl'> {icon}</p>
 
-                <p >{languageName}</p>
+                <p className='select-none'>{languageName}</p>
             </div>
         </div>
     )
