@@ -107,6 +107,8 @@ function Skills() {
             },
         })
     }
+
+    const filterCategory = skills.filter((skill) => selectedCategory === 'all' || skill.category === selectedCategory);
     return (
         <div className=' mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Skills</div>
@@ -121,8 +123,7 @@ function Skills() {
                 <ul className='flex gap-5 justify-center flex-wrap '>
 
                     {
-                        skills
-                            .filter((skill) => selectedCategory === 'all' || skill.category === selectedCategory)
+                        filterCategory
                             .map(({ icon, languageName }, index) => (
                                 <motion.li className='flex gap-5 flex-wrap justify-center'
                                     key={index}

@@ -113,9 +113,7 @@ function Projects() {
                     </motion.div>
                 ))
                 }
-
-            </div>
-            <div className='flex justify-center'>
+                <div className='flex justify-center'>
                 <button className='btn  text-center' onClick={toggleExpand}>
                     {isExpand ? 'See Less' : 'See More'}
                     <motion.span
@@ -129,7 +127,8 @@ function Projects() {
                     </motion.span>
                 </button>
             </div>
-        </div >
+            </div>
+        </div>
     )
 }
 
