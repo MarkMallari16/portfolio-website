@@ -7,13 +7,13 @@ export const useTheme = () => {
 }
 export function ThemeProvider({ children }) {
     const initialTheme = () => {
-        localStorage.getItem("theme") || "emerald";
+        return localStorage.getItem("theme") || "night";
     }
-    const [theme, setTheme] = useState(initialTheme);
 
+    const [theme, setTheme] = useState(initialTheme);
+    
     useEffect(() => {
         document.body.setAttribute('data-theme', theme);
-
         localStorage.setItem("theme", theme);
     }, [theme])
 
