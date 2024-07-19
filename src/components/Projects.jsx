@@ -86,7 +86,7 @@ function Projects() {
 
     ]
 
-    const sliceProjects = isExpand ? projects : projects.slice(0, 4);
+    const sliceProjects = isExpand ? projects : projects.slice(0, 2);
 
     const toggleExpand = () => {
         setIsExpand(!isExpand);
@@ -100,8 +100,7 @@ function Projects() {
         <div >
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
-            <div className='px-4 lg:px-0 lg:pt-0 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-20  w-full'>
-
+            <div className='px-4 mt-10 mb-20 lg:px-0 lg:pt-0 grid grid-cols-1 lg:grid-cols-2 lg:gap-20 w-full'>
                 {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants}>
 
@@ -113,6 +112,10 @@ function Projects() {
                     </motion.div>
                 ))
                 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0193d9eea3ff06c7cda5e63af7c3b563661d16f1
                 <div className='flex justify-center col-span-2'>
                     <button className='btn  text-center' onClick={toggleExpand}>
                         {isExpand ? 'See Less' : 'See More'}
@@ -128,6 +131,7 @@ function Projects() {
                     </button>
                 </div>
             </div>
+
         </div>
     )
 }

@@ -1,19 +1,19 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
+import { ThemeContext } from '../context/ThemeContext';
 
-const ThemeContext = createContext(null);
 
 export const useTheme = () => {
     return useContext(ThemeContext);
 }
 export function ThemeProvider({ children }) {
+    const initialTheme = () => {
+        return localStorage.getItem("theme") || "night";
+    }
 
-    const [theme, setTheme] = useState(() => {
-        return localStorage.getItem("theme") || "emerald"
-    });
-
+    const [theme, setTheme] = useState(initialTheme);
+    
     useEffect(() => {
         document.body.setAttribute('data-theme', theme);
-
         localStorage.setItem("theme", theme);
     }, [theme])
 
