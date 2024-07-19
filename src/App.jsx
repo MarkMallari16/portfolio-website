@@ -27,7 +27,7 @@ function App() {
     isLoading ? (
       <Loading />
     ) : (
-      <div className='relative mx-auto lg:max-w-6xl w-full'>
+      <div className='relative mx-auto md:lg:max-w-6xl lg:max-w-6xl w-full'>
         <ProgressBar />
         <section>
           <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
