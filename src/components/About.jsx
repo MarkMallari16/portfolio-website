@@ -30,7 +30,7 @@ function About({ contactRef }) {
           </div>
 
         </motion.div>
-        <motion.div className='px-5 pt-8 lg:px-0 lg:pt-0  w-full'
+        <motion.div className='pt-8 lg:px-0 lg:pt-0  w-full'
           initial="hidden"
           whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.3 }}
