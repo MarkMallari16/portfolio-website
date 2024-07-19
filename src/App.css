@@ -8,11 +8,9 @@
 
 .profile {
     background: url('assets/avatar.png');
-
     background-repeat: no-repeat;
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
-
     background-size: cover;
 }
 
