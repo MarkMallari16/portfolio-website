@@ -15,11 +15,9 @@ function Projects() {
 
     const fadeInRightVariants = {
         hidden: {
-            x: -20,
             opacity: 0,
         },
         visible: {
-            x: 0,
             opacity: 1
         }
     }
@@ -110,15 +108,15 @@ function Projects() {
         <div className='min-h-screen '>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
-            <div className='px-4 my-10  lg:px-0 lg:pt-0 grid grid-cols-1 lg:grid-cols-2 lg:gap-20 w-full'>
+            <div className='px-4 my-10  lg:px-0 lg:pt-0 '>
                 {sliceProjects.map((project, id) => (
-                    <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants}>
-
+                    <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants} >
                         <SingleProject picture={project.picture} title={project.title} description={project.description}
                             stacks={project.stacks}
                             liveUrl={project.liveUrl}
                             githubRepository={project.githubRepository}
                         />
+
                     </motion.div>
                 ))
                 }

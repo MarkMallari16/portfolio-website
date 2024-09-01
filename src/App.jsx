@@ -13,6 +13,7 @@ import ProgressBar from './components/ProgressBar';
 import Loading from './components/Loading';
 import useScrollSection from './hooks/useScrollSection';
 import useLoading from './hooks/useLoading';
+import NewContact from "./components/NewContact";
 
 function App() {
   const { homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection } = useScrollSection();
@@ -74,7 +75,7 @@ function App() {
           viewport={{ once: true }}
           variants={fadeAnimationVariants}
           ref={contactRef}>
-          <Contact />
+          <NewContact />
         </motion.section>
 
         <Footer homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
