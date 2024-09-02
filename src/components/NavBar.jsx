@@ -76,7 +76,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
       }
     ]
   return (
-    <nav className={`mx-0 lg:mx-auto `}>
+    <nav className={`mx-0 lg:mx-auto`}>
       <div className={` lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center lg:py-8`}>
         <div className={`${scrollVisible && ' py-6 backdrop-blur-sm transition-all border-base-300'} py-6 lg:py-0 flex justify-between fixed  items-center  w-full lg:static lg:w-auto z-20 px-10 lg:px-0`}>
           <motion.a className='text-3xl font-black cursor-pointer'
@@ -104,7 +104,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
         {/*Hamburger Menu*/}
         {/*Links*/}
         <motion.ul
-          className={`pt-32 bg-secondary-content lg:bg-transparent transit fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
+          className={`min-h-screen pt-40 bg-secondary-content lg:bg-transparent transit fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
           initial="hidden"
           whileInView="visible"
           animate={isMenuOpen ? "visible" : "hidden"}
