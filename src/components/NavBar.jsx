@@ -104,7 +104,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
         {/*Hamburger Menu*/}
         {/*Links*/}
         <motion.ul
-          className={`min-h-screen pt-40 bg-secondary-content lg:bg-transparent transit fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
+          className={`min-h-screen lg:min-h-0 pt-40 bg-secondary-content lg:bg-transparent transit fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center lg:py-0 lg:flex-row lg:items-center gap-16 ${isMenuOpen ? 'flex' : 'hidden'}`}
           initial="hidden"
           whileInView="visible"
           animate={isMenuOpen ? "visible" : "hidden"}
