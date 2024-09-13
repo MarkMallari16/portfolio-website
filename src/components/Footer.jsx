@@ -3,7 +3,7 @@ import React from 'react'
 import { FaXTwitter } from "react-icons/fa6";
 
 function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
-
+    const linkStyle= "cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out";
     return (
         <footer>
             <div className="w-full px-6 lg:px-0 footer flex flex-col lg:flex-row justify-start items-center lg:justify-between py-6 bg-ghost  border-t-2 border-base-300" >
@@ -14,11 +14,11 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
 
                 <nav className='w-full flex justify-center'>
                     <div className="grid grid-flow-col gap-6">
-                        <a onClick={() => scrollIntoSection(homeRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Home</a>
-                        <a onClick={() => scrollIntoSection(aboutRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>About</a>
-                        <a onClick={() => scrollIntoSection(skillsRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Skills</a>
-                        <a onClick={() => scrollIntoSection(projectsRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Projects</a>
-                        <a onClick={() => scrollIntoSection(contactRef)} className='cursor-pointer hover:text-secondary hover:font-medium transition-all ease-out'>Contact</a>
+                        <a onClick={() => scrollIntoSection(homeRef)} className={linkStyle}>Home</a>
+                        <a onClick={() => scrollIntoSection(aboutRef)} className={linkStyle}>About</a>
+                        <a onClick={() => scrollIntoSection(skillsRef)} className={linkStyle}>Skills</a>
+                        <a onClick={() => scrollIntoSection(projectsRef)} className={linkStyle}>Projects</a>
+                        <a onClick={() => scrollIntoSection(contactRef)} className={linkStyle}>Contact</a>
                     </div>
                 </nav>
                 <nav>

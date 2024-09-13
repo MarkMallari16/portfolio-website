@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FaGithub } from 'react-icons/fa'
-import SkillIcon from './SkillIcon'
+import TextIcon from './TextIcon'
 
 function SingeProject({
     picture,
@@ -25,7 +25,7 @@ function SingeProject({
 
                 <div className='flex flex-wrap mt-6 gap-3'>
                     {stacks.map((stack, index) => (
-                        <SkillIcon key={index} languageName={stack} />
+                        <TextIcon key={index} languageName={stack} />
                     ))}
                 </div>
 

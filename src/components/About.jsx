@@ -17,7 +17,7 @@ function About({ contactRef }) {
   }
 
   return (
-    <div className='min-h-screen px-6 lg:px-0 '>
+    <div className='min-h-screen px-6 lg:px-0 lg:py-20'>
       <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
         <motion.div
           initial="hidden"
@@ -42,7 +42,7 @@ function About({ contactRef }) {
 
           </div>
           <p className='text-justify text-xl leading-9'>
-            Hello! I'm Mark Christian Mallari, a web developer based in the Philippines. I fell in love with programming at 16 year old and have been improving my skills ever since. I enjoy solving programming problems and creating great user interfaces and experiences.
+            Hello! I'm Mark Christian Mallari, a web developer based in the Philippines. I discovered my passion for programming at 16 and have been honing my skills ever since. I enjoy solving complex programming challenges and crafting intuitive user interfaces and experiences.
           </p>
           <button className='btn btn-outline btn-secondary mt-6 flex items-center justify-center py-3 px-5 text-white  rounded-lg hover:bg-blue-700 transition duration-300' onClick={() => scrollIntoSection(contactRef)}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
