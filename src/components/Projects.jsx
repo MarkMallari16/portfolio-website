@@ -37,7 +37,7 @@ function Projects() {
         {
             picture: MoviePicture,
             title: "Movie Mania",
-            description: "Movie Mania is a movie website that use api of TMDB.",
+            description: "Movie Mania is a movie website that uses the api of TMDB.",
             stacks: ["ReactJS", "TailwindCSS", "DaisyUI"],
             liveUrl: "https://moviemania-psi.vercel.app/",
             githubRepository: "https://github.com/MarkMallari16/movie-website"
