@@ -13,12 +13,12 @@ function SingeProject({
 
     return (
 
-        <div className='mb-56 lg:mb-20'>
+        <div className='pb-56 lg:pb-20'>
             <div className='h-80 rounded-xl ' style={{
                 backgroundImage: `url('${picture}')`,
                 backgroundSize: 'cover'
             }}></div>
-            <div className='w-full h-60  rounded-xl'>
+            <div className='w-full h-64  rounded-xl'>
                 <h1 className='pt-8 text-2xl font-medium'>{title}</h1>
 
                 <p className='mt-4 text-base-content text-lg  text-justify '>{description}</p>

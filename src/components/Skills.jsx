@@ -110,16 +110,17 @@ function Skills() {
 
     const filterCategory = skills.filter((skill) => selectedCategory === 'all' || skill.category === selectedCategory);
 
-    const filterTabActive = "'tab-active bg-secondary text-white rounded-lg transition-all ease-in-out duration-300'"
+    const filterTabActive = "'tab-active bg-secondary text-white  transition-all ease-in-out duration-300'"
+    
     return (
         <div className=' mx-auto lg:max-w-7xl mb-20 h-1/2 '>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Skills</div>
             <p className='text-center text-slate-400  mb-10 font-light'>Here are my skills</p>
             <motion.div role='tablist' className='tabs flex justify-center  pb-4' >
-                <a role="tab" className={`tab ${selectedCategory === 'all' ? `${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('all')}>All</a>
-                <a role="tab" className={`tab ${selectedCategory === 'frontend' ? `${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('frontend')}>Frontend</a>
-                <a role="tab" className={`tab ${selectedCategory === 'backend' ?`${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('backend')}>Backend</a>
-                <a role="tab" className={`tab ${selectedCategory === 'other' ?`${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('other')}>Other</a>
+                <a role="tab" className={`rounded-lg tab ${selectedCategory === 'all' ? `${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('all')}>All</a>
+                <a role="tab" className={`rounded-lg tab ${selectedCategory === 'frontend' ? `${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('frontend')}>Frontend</a>
+                <a role="tab" className={`rounded-lg tab ${selectedCategory === 'backend' ?`${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('backend')}>Backend</a>
+                <a role="tab" className={`rounded-lg tab ${selectedCategory === 'other' ?`${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('other')}>Other</a>
             </motion.div>
             <div className='mt-5 px-4 lg:p-0'>
                 <ul className='flex gap-5 justify-center flex-wrap '>
