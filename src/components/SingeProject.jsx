@@ -13,7 +13,7 @@ function SingeProject({
 
     return (
 
-        <div className='pb-56 lg:pb-20'>
+        <div className='pb-60 lg:pb-20'>
             <div className='h-80 rounded-xl ' style={{
                 backgroundImage: `url('${picture}')`,
                 backgroundSize: 'cover'
