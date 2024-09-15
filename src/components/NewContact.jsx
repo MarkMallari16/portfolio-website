@@ -14,15 +14,17 @@ const NewContact = () => {
     return (
         <div className='pt-20 pb-40 px-6 lg:px-0 overflow-hidden'>
             <div viewport={{ once: true }}>
-                <motion.h2
+                <motion.div
                     initial="hidden"
                     whileInView="visible"
                     variants={fadeInAnimationVariants}
                     transition={{ ease: 'easeInOut' }}
-                    className='text-4xl font-medium'
                     viewport={{ once: true }}>
-                    Contact Me!
-                </motion.h2>
+                    <h2 className='text-4xl font-medium'>
+                        Contact Me!
+                    </h2>
+                    <p className=' text-slate-400 font-light'>Let's connect each other</p>
+                </motion.div>
                 <motion.h1
                     initial="hidden"
                     whileInView="visible"
