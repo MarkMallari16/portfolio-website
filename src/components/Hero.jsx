@@ -13,7 +13,7 @@ function Hero({ projectsRef }) {
 
     return (
         <div className='min-h-screen grid grid-cols-1  lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
-            <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full'
+            <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full overflow-hidden'
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ ease: 'easeOut', delay: 0.3 }}
@@ -54,7 +54,7 @@ function Hero({ projectsRef }) {
 
             </motion.div>
 
-            <motion.div className='hidden lg:block '
+            <motion.div className='hidden lg:block overflow-hidden'
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ ease: 'easeInOut', delay: 0.58, duration: 0.3 }}
