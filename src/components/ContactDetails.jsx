@@ -4,7 +4,6 @@ function ContactDetails({ contactIcon, contactTitle, contactDescription }) {
     return (
         <div className=' py-2 rounded-xl flex items-center gap-4'>
             <div className='bg-secondary p-2 rounded-lg text-base-100'>
-
                 {contactIcon}
             </div>
             <div >
