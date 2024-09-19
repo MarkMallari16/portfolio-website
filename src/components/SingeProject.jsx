@@ -22,7 +22,7 @@ function SingeProject({
 
                 <p className='mt-4 text-base-content text-lg  text-justify '>{description}</p>
 
-                <div className='flex flex-wrap mt-6 gap-3'>
+                <div className='flex flex-wrap mt-6 gap-3 overflow-hidden rounded-lg'>
                     {stacks.map((stack, index) => (
                         <TextIcon key={index} languageName={stack} />
                     ))}
