@@ -33,7 +33,7 @@ const NewContact = () => {
                     viewport={{ once: true }}
                     className='mt-8 text-5xl md:text-6xl lg:text-9xl font-black hover:text-secondary break-all transition-colors ease-in-out duration-200'>
                     <a href="mailto:mallariftw01@gmail.com">
-                        mark
+                        mark.
                         mallari16
                         @gmail.com</a>
                 </motion.h1>
