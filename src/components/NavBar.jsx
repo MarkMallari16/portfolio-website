@@ -119,10 +119,11 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
               </a>
             </li>
           ))}
-          <li>
+          <li className='lg:flex lg:items-center'>
             {/*Theme*/}
             <Theme />
           </li>
+         
         </motion.ul>
 
       </div>
