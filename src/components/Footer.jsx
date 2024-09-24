@@ -2,6 +2,7 @@ import React from 'react'
 
 import { FaXTwitter } from "react-icons/fa6";
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import SocialLink from './SocialLink';
 
 function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollIntoSection }) {
     const linkStyle = "cursor-pointer hover:text-secondary font-medium transition-all ease-out";
@@ -24,16 +25,15 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
                 </nav>
                 <nav>
                     <div className="grid grid-flow-col gap-3 w-full">
-                        <a href='https://www.facebook.com/Markccmllari.16/' className='p-2 bg-base-300 rounded-md hover:bg-secondary hover:text-base-300 transition-all ease-in-out'>
+                        <SocialLink link="https://github.com/MarkMallari16" dataTip="GitHub" position='top'>
                             <FiGithub className='size-6' />
-                        </a>
-                        <a href='https://www.youtube.com/channel/UCjmHlbLg0GEGH4SOS04jQPg' className='p-2 bg-base-300 rounded-md hover:bg-secondary hover:text-base-300 transition-all ease-in-out'>
+                        </SocialLink>
+                        <SocialLink link="https://www.linkedin.com/in/mark-christian-mallari-47850a279/" dataTip="LinkIn" position='top'>
                             <FiLinkedin className='size-6' />
-                        </a>
-
-                        <a href='https://x.com/markymallari16' className='p-2 bg-base-300 rounded-md hover:bg-secondary hover:text-base-300 transition-all ease-in-out'>
+                        </SocialLink>
+                        <SocialLink link="https://x.com/markymallari16" dataTip="X" position='top'>
                             <FaXTwitter className='size-6' />
-                        </a>
+                        </SocialLink>
                     </div>
                 </nav>
             </div>

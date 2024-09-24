@@ -23,7 +23,7 @@ function Hero({ projectsRef }) {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ ease: 'easeOut', delay: 0.6 }}
                     viewport={{ once: true }}>
-                    <a href="https://github.com/MarkMallari16" className=' tooltip hover:tooltip-open tooltip-right   hover:text-secondary transition-colors duration-200' data-tip="Github">
+                    <a href="https://github.com/MarkMallari16" className='tooltip hover:tooltip-open tooltip-right hover:text-secondary transition-colors duration-200' data-tip="GitHub">
                         <FiGithub className='size-6' />
                     </a>
                     <a href="https://www.linkedin.com/in/mark-christian-mallari-47850a279/" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="LinkIn">
@@ -35,8 +35,8 @@ function Hero({ projectsRef }) {
                 </motion.div>
 
                 <div>
-                    <div className='text-5xl font-black w-full'>Hello, I'm Mark👋🏻
-                    </div>
+                    <h1 className='text-5xl font-black w-full'>Hello, I'm Mark👋🏻
+                    </h1>
 
                     <div className='mt-4 text-2xl lg:text-xl'>
                         Aspiring <span className='font-bold text-secondary'>Web Developer</span> from the Philippines
@@ -50,8 +50,6 @@ function Hero({ projectsRef }) {
                     </div>
 
                 </div>
-
-
             </motion.div>
 
             <motion.div className='hidden lg:block overflow-hidden'
