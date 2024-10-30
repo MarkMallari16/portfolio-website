@@ -10,9 +10,9 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
         <footer>
             <div className="w-full px-6 lg:px-0 footer flex flex-col lg:flex-row justify-start items-center lg:justify-between py-6 bg-ghost  border-t-2 border-base-300" >
 
-                <div className='text-4xl lg:text-3xl font-black flex'>Mark
+                <a onClick={() => scrollIntoSection(homeRef)} className='text-4xl lg:text-3xl font-black flex cursor-pointer'>Mark
                     <span className='text-secondary'> Mallari</span>
-                </div>
+                </a>
 
                 <nav className='w-full flex justify-center'>
                     <div className="grid grid-flow-col gap-6">
