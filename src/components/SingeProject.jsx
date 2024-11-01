@@ -12,7 +12,7 @@ function SingeProject({
     githubRepository }) {
 
     return (
-        <div className='pb-60 lg:pb-20'>
+        <div className='pb-60 lg:pb-16'>
             <div className='h-80 rounded-xl ' style={{
                 backgroundImage: `url('${picture}')`,
                 backgroundSize: 'cover'
