@@ -7,7 +7,6 @@ import NavBar from './components/NavBar'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ScrollBtn from './components/ScrollBtn'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ProgressBar from './components/ProgressBar';
 import Loading from './components/Loading';
