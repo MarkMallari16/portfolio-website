@@ -46,7 +46,7 @@ const projects = [
         description: "This website helps you calculate mean, median, mode, range, and more statistics quickly and easily.",
         stacks: ["HTML", "CSS", "JavaScript", "ChartJS"],
         liveUrl: "https://statquik.netlify.app/",
-        githubRepository: "https://statquik.netlify.app/"
+        githubRepository: "https://github.com/MarkMallari16/mean-median-mode-calculator"
     },
     {
         picture: PortfolioPicture,

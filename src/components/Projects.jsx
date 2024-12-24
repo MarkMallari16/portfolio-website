@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import projects from '../data/projectsData';
 
-import SingleProject from './SingeProject';
+import SingleProject from './SingleProject';
 import { motion } from 'framer-motion'
 
 function Projects() {
