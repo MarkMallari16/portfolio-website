@@ -19,6 +19,7 @@ function About({ contactRef }) {
   return (
     <div className='min-h-screen px-6 lg:px-0 lg:py-10 overflow-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
+
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -30,6 +31,7 @@ function About({ contactRef }) {
           </div>
 
         </motion.div>
+
         <motion.div className='pt-8 lg:px-0 lg:pt-0  w-full'
           initial="hidden"
           whileInView="visible"
