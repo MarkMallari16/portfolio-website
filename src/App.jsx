@@ -1,6 +1,6 @@
 
-import { motion } from "framer-motion";
 import './App.css'
+import { motion } from "framer-motion";
 import About from './components/About'
 import Hero from './components/Hero'
 import NavBar from './components/NavBar'
@@ -21,8 +21,8 @@ function App() {
   const fadeAnimationVariants = {
     hidden: { opacity: 0, transform: 0 },
     visible: { opacity: 1, transform: 1 },
-
   }
+  
   return (
     isLoading ? (
       <Loading />
