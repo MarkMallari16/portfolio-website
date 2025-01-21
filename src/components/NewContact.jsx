@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const NewContact = () => {
     const fadeInAnimationVariants = {
         hidden: {
-            x: -20,
+            x: -60,
             opacity: 0
         },
         visible: {

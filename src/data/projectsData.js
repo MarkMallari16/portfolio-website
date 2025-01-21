@@ -12,7 +12,7 @@ const projects = [
         picture: TrackBudgetPicture,
         title: "Budget Tracker",
         description: "A Budget Tracker website to help users manage and keep track of their expenses effectively.",
-        stacks: ["Vue", "TailwindCSS", "DaisyUI"],
+        stacks: ["Vue", "TailwindCSS", "DaisyUI","Firebase"],
         liveUrl: "https://my-project-iota-seven.vercel.app/",
         githubRepository: "https://github.com/MarkMallari16/vue-firebase-project"
     },
