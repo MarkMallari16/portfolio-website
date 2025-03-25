@@ -1,14 +1,18 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { delay, motion } from 'framer-motion'
 const NewContact = () => {
     const fadeInAnimationVariants = {
         hidden: {
             x: -60,
-            opacity: 0
+            opacity: 0,
         },
         visible: {
             x: 0,
-            opacity: 1
+            opacity: 1,
+            transition: {
+                delay: 0.2,
+                duration: 0.5
+            }
         }
     }
     return (

@@ -22,7 +22,7 @@ function App() {
     hidden: { opacity: 0, transform: 0 },
     visible: { opacity: 1, transform: 1 },
   }
-  
+
   return (
     isLoading ? (
       <Loading />
@@ -77,6 +77,7 @@ function App() {
         <Footer homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
 
         <ScrollBtn />
+
       </div>
     )
 
