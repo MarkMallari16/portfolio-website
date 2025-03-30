@@ -6,7 +6,6 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import useScrollSection from '../hooks/useScrollSection';
 import { FaXTwitter } from 'react-icons/fa6';
 
-
 function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
