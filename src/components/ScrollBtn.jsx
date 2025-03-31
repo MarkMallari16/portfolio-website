@@ -15,7 +15,7 @@ function ScrollBtn() {
         hidden: { opacity: 0, y: 0 },
         visible: { opacity: scrollVisible ? 1 : 0, y: scrollVisible ? -20 : 0 }
     }
-    
+
     return (
         <motion.div
             className={`fixed bottom-0 right-0 me-10 mb-10`}

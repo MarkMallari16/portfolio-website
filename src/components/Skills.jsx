@@ -69,11 +69,12 @@ function Skills() {
             languageName: 'Git',
             category: 'other'
         },
-        {
-            icon: <SiInertia />,
-            languageName: 'Inertia',
-            category: 'other'
-        }, {
+        // {
+        //     icon: <SiInertia />,
+        //     languageName: 'Inertia',
+        //     category: 'other'
+        // }, 
+        ,{
             icon: <FaJava />,
             languageName: 'Java',
             category: 'other'
