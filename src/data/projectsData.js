@@ -12,7 +12,7 @@ const projects = [
     {
         picture: EmployeeManagementPicture,
         title: "Employee Mangement System with Attendance and Payroll",
-        description: "A Desktop Application that allows users to manage employee records, including adding, updating, and deleting employee information. It also includes attendance tracking and payroll management features.",
+        description: "A Desktop Application that allows admin to manage employee records, including adding, updating, and deleting employee information. It also includes attendance tracking and payroll management features.",
         stacks: ["Java", "JavaSwing", "MySQL"],
         githubRepository: "https://github.com/MarkMallari16/flatlaf-java"
     },
