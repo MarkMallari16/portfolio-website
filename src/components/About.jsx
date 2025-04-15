@@ -17,7 +17,7 @@ function About({ contactRef }) {
   }
 
   return (
-    <div className='min-h-screen px-6 lg:px-0 lg:py-10 overflow-hidden'>
+    <div className='min-h-screen px-6 lg:px-0 lg:pt-36  overflow-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
 
         <motion.div
