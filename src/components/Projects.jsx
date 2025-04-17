@@ -41,7 +41,7 @@ function Projects() {
     return (
         <div className='min-h-screen overflow-hidden'>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
-            <p className='text-center text-slate-400 font-light pb-8'>Here are my recent works</p>
+            <p className='text-center text-slate-400 font-light pb-12'>Here are my recent works</p>
             <div className='px-4 lg:px-0'>
                 {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants} >
@@ -54,7 +54,7 @@ function Projects() {
                     </motion.div>
                 ))
                 }
-                <div className={`flex justify-center col-span-2`}>
+                <div className="flex justify-center">
                     <button className='btn text-center' onClick={toggleExpand}>
                         {isExpand ? 'See Less' : 'See More'}
                         <motion.span
