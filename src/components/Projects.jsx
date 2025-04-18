@@ -10,11 +10,17 @@ function Projects() {
 
     const fadeInRightVariants = {
         hidden: {
+            x: -20,
             opacity: 0,
         },
         visible: {
-            opacity: 1
-        }
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.6,
+                ease: 'easeInOut',
+            }
+        },
     }
 
     const fadeInLeftVariants = {
@@ -24,8 +30,13 @@ function Projects() {
         },
         visible: {
             x: 0,
-            opacity: 1
-        }
+            opacity: 1,
+            transition: {
+                duration: 0.6,
+                ease: 'easeInOut',
+            }
+        },
+        duration: 0.8
     }
     const sliceProjects = isExpand ? projects : projects.slice(0, 3);
 
@@ -39,7 +50,7 @@ function Projects() {
     }
 
     return (
-        <div className='min-h-screen overflow-hidden pt-20'>
+        <div className='min-h-screen overflow-hidden pt-36'>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light pb-12'>Here are my recent works</p>
             <div className='px-4 lg:px-0'>

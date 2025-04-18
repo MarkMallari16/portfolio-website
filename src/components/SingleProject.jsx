@@ -12,12 +12,12 @@ function SingeProject({
     githubRepository }) {
 
     return (
-        <div className='mb-48 lg:mb-16'>
-            <div className='h-96 rounded-xl ' style={{
+        <div className='pb-16 lg:pb-16'>
+            <div className='h-80 rounded-xl ' style={{
                 backgroundImage: `url('${picture}')`,
                 backgroundSize: 'cover'
             }}></div>
-            <div className='w-full h-64  rounded-xl'>
+            <div className='w-full rounded-xl'>
                 <h1 className='mt-8 text-2xl font-medium'>{title}</h1>
 
                 <p className='mt-4 text-base-content text-lg  text-justify '>{description}</p>
