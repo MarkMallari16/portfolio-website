@@ -114,7 +114,7 @@ function Skills() {
     const filterTabActive = "'tab-active bg-secondary text-white  transition-all ease-in-out duration-300'"
 
     return (
-        <div className='h-[70vh] mx-auto lg:max-w-7xl pt-20 lg:pt-0 pb-36'>
+        <div className='h-[70vh] mx-auto lg:max-w-7xl pt-20 lg:pt-0'>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Skills</div>
             <p className='text-center text-slate-400 font-light  mb-10 '>Here are my skills</p>
             <motion.div role='tablist' className='tabs flex justify-center  pb-4' >
