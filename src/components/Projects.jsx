@@ -50,7 +50,7 @@ function Projects() {
     }
 
     return (
-        <div className='min-h-screen overflow-hidden pt-36'>
+        <div className='min-h-screen overflow-hidden'>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
             <p className='text-center text-slate-400 font-light pb-12'>Here are my recent works</p>
             <div className='px-4 lg:px-0'>
