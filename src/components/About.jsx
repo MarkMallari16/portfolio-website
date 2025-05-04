@@ -17,7 +17,7 @@ function About({ contactRef }) {
   }
 
   return (
-    <div className='min-h-screen px-6 lg:px-0 lg:pt-36  overflow-hidden'>
+    <div className=' px-6 lg:px-0 lg:pt-36 lg:mb-80  overflow-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center   mx-auto lg:gap-40'>
 
         <motion.div
@@ -27,12 +27,12 @@ function About({ contactRef }) {
           viewport={{ once: true }}
           variants={fadeRightAnimationVariants}
         >
-          <div className='bg-secondary rounded-xl flex items-center justify-center w-full lg:h-44'>
-            <img src={Avatar} alt="avatar" className='w-full rounded-md lg:w-5/6' />
+          <div className='bg-secondary rounded-xl flex items-center justify-center w-full lg:h-24'>
+            <img src={Avatar} alt="avatar" className='w-full rounded-full' />
           </div>
         </motion.div>
 
-        <motion.div className='pt-8 lg:px-0 lg:pt-0  w-full'
+        <motion.div className='pt-8 lg:px-0 lg:pt-0 w-full'
           initial="hidden"
           whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.3 }}
