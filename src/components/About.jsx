@@ -1,6 +1,6 @@
-import React, { useReducer, useState } from 'react'
-import AboutImage from '../assets/about1.jpg'
-import Avatar from '../assets/avatar.png';
+import React from 'react'
+
+import Avatar from '../assets/mark-shs-profile-transparent.png';
 import { motion } from 'framer-motion'
 import useScrollSection from '../hooks/useScrollSection';
 
@@ -18,18 +18,18 @@ function About({ contactRef }) {
 
   return (
     <div className='min-h-screen px-6 lg:px-0 lg:pt-36  overflow-hidden'>
-      <div className='grid grid-cols-1 lg:grid-cols-2   mx-auto lg:gap-40'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center   mx-auto lg:gap-40'>
 
         <motion.div
           initial="hidden"
           whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.2 }}
           viewport={{ once: true }}
-          variants={fadeRightAnimationVariants}>
-          <div className='bg-secondary  rounded-xl lg:w-[35rem]'>
-            <img src={Avatar} alt="avatar" />
+          variants={fadeRightAnimationVariants}
+        >
+          <div className='bg-secondary rounded-xl flex items-center justify-center w-full lg:h-44'>
+            <img src={Avatar} alt="avatar" className='w-full rounded-md lg:w-5/6' />
           </div>
-
         </motion.div>
 
         <motion.div className='pt-8 lg:px-0 lg:pt-0  w-full'
