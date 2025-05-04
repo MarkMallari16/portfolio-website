@@ -28,7 +28,7 @@ function About({ contactRef }) {
           variants={fadeRightAnimationVariants}
         >
           <div className='bg-secondary rounded-xl flex items-center justify-center w-full lg:h-24'>
-            <img src={Avatar} alt="avatar" className='w-full rounded-full' />
+            <img src={Avatar} alt="avatar" className='w-full lg:rounded-full rounded-xl' />
           </div>
         </motion.div>
 
