@@ -72,11 +72,8 @@ function App() {
           ref={contactRef}>
           <NewContact />
         </motion.section>
-
         <Footer homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
-
         <ScrollBtn />
-
       </div>
     )
 

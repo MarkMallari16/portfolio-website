@@ -24,7 +24,7 @@ const NewContact = () => {
                     variants={fadeInAnimationVariants}
                     transition={{ ease: 'easeInOut' }}
                     viewport={{ once: true }}>
-                    <h2 className='text-4xl font-medium'>
+                    <h2 className='text-3xl lg:text-4xl font-medium'>
                         Contact Me!
                     </h2>
                     <p className=' text-slate-400 font-light'>Let's connect each other</p>
@@ -35,7 +35,7 @@ const NewContact = () => {
                     variants={fadeInAnimationVariants}
                     transition={{ ease: 'easeInOut' }}
                     viewport={{ once: true }}
-                    className='mt-8 text-5xl md:text-6xl lg:text-9xl font-black hover:text-secondary break-all transition-colors ease-in-out duration-200'>
+                    className='mt-8 text-6xl md:text-6xl lg:text-9xl font-black hover:text-secondary break-all transition-colors ease-in-out duration-200'>
                     <a href="mailto:mallariftw01@gmail.com">
                         mark.
                         mallari16

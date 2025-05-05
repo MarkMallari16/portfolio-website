@@ -77,7 +77,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
     ]
   return (
     <nav className={`mx-0 lg:mx-auto`}>
-      <div className={` lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center lg:py-8`}>
+      <div className={`lg:px-0 flex flex-col lg:flex-row  lg:justify-between items-start lg:items-center lg:py-8`}>
         <div className={`${scrollVisible && 'py-6 backdrop-blur-sm transition-all border-base-300'} py-6 lg:py-0 flex justify-between fixed  items-center  w-full lg:static lg:w-auto z-20 px-8 lg:px-0`}>
           <motion.a className='text-3xl font-black cursor-pointer'
             onClick={() => scrollIntoSection(homeRef)}
@@ -123,7 +123,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
             {/*Theme*/}
             <Theme />
           </li>
-         
+
         </motion.ul>
 
       </div>
