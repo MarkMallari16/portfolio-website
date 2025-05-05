@@ -24,10 +24,10 @@ const NewContact = () => {
                     variants={fadeInAnimationVariants}
                     transition={{ ease: 'easeInOut' }}
                     viewport={{ once: true }}>
-                    <h2 className='text-3xl lg:text-4xl font-medium'>
+                    <h2 className='uppercase text-3xl  font-medium'>
                         Contact Me!
                     </h2>
-                    <p className=' text-slate-400 font-light'>Let's connect each other</p>
+                    <p className='text-slate-400 font-light'>Let's connect each other</p>
                 </motion.div>
                 <motion.h1
                     initial="hidden"
