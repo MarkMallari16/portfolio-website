@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { FaGithub } from 'react-icons/fa'
 import TextIcon from './TextIcon'
@@ -11,12 +11,27 @@ function SingeProject({
     liveUrl = null,
     githubRepository }) {
 
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = picture;
+        img.onload = () => setIsLoaded(true);
+    }, [picture]);
+
     return (
         <div className='pb-16 lg:pb-16'>
-            <div className='h-80 rounded-xl ' style={{
-                backgroundImage: `url('${picture}')`,
-                backgroundSize: 'cover'
-            }}></div>
+            {!isLoaded && (
+                <div className='h-80 rounded-xl skeleton animate-pulse'></div>
+            )}
+
+            {isLoaded && (
+                <div className='h-80 rounded-xl' style={{
+                    backgroundImage: `url('${picture}')`,
+                    backgroundSize: 'cover'
+                }}></div>
+            )
+            }
             <div className='w-full rounded-xl'>
                 <h1 className='mt-8 text-2xl font-medium'>{title}</h1>
 
