@@ -113,7 +113,10 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
           variants={fadeTopAnimationVariants}>
           {links.map((link, index) => (
             <li key={index} className='lg:tooltip  lg:tooltip-bottom' data-tip={link.title}>
-              <a href={link.path} className='flex gap-2 hover:text-secondary transition-all ease-in-out duration-300' onClick={() => scrollIntoSection(link.linkRef)} >
+              <a href={link.path} className='flex gap-2 hover:text-secondary transition-all ease-in-out duration-300' onClick={() => {
+                scrollIntoSection(link.linkRef);
+                setIsMenuOpen(false);
+              }} >
                 {link.icon}
                 <h1 className='text-4xl font-black lg:hidden'>{link.title}</h1>
               </a>

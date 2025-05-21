@@ -17,7 +17,7 @@ function About({ contactRef }) {
   }
 
   return (
-    <div className='px-6 lg:px-0 lg:pt-40 lg:mb-80  overflow-hidden'>
+    <div className='px-6 pt-24 lg:px-0 lg:pt-40 lg:mb-80  overflow-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto lg:gap-40'>
 
         <motion.div

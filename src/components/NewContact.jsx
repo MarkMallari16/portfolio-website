@@ -16,7 +16,7 @@ const NewContact = () => {
         }
     }
     return (
-        <div className='pt-20 pb-40 px-6 lg:px-0 overflow-hidden'>
+        <div className='pt-24 lg:pt-20 pb-40 px-6 lg:px-0 overflow-hidden'>
             <div viewport={{ once: true }}>
                 <motion.div
                     initial="hidden"
