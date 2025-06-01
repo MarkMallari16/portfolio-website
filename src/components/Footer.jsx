@@ -8,7 +8,7 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
     const linkStyle = "cursor-pointer hover:text-secondary font-medium transition-all ease-out";
     return (
         <footer>
-            <div className="w-full px-6 lg:px-0 footer flex flex-col lg:flex-row justify-start items-center lg:justify-between py-6 bg-ghost  border-t-2 border-base-300" >
+            <div className="w-full px-6 lg:px-0 footer flex flex-col lg:flex-row justify-start items-center lg:justify-between py-6 bg-ghost border-t-2 border-base-300" >
                 <a onClick={() => scrollIntoSection(homeRef)} className='text-4xl lg:text-3xl font-black flex cursor-pointer'>Mark
                     <span className='text-secondary'> Mallari</span>
                 </a>
@@ -35,6 +35,11 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
                         </SocialLink>
                     </div>
                 </nav>
+            </div>
+            <div className='bottom text-center'>
+                <p className='font-light text-sm text-base-content '>
+                  © {new Date().getFullYear()}  Mark Christian Mallari. All rights reserved.
+                </p>
             </div>
         </footer>
 
