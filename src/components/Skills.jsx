@@ -22,75 +22,90 @@ function Skills() {
         {
             icon: <FaHtml5 />,
             languageName: 'HTML',
-            category: 'frontend'
+            category: 'frontend',
+            bgColor: 'bg-orange-600'
         },
         {
             icon: <FaCss3Alt />,
             languageName: 'CSS',
-            category: 'frontend'
+            category: 'frontend',
+            bgColor: 'bg-blue-600'
         },
         {
             icon: <DiJavascript />,
             languageName: 'JavaScript',
-            category: 'frontend'
+            category: 'frontend',
+            bgColor: 'bg-yellow-600'
         },
         {
             icon: <FaReact />,
             languageName: 'React JS',
-            category: 'frontend'
+            category: 'frontend',
+            bgColor: 'bg-cyan-600'
         },
         {
             icon: <FaBootstrap />,
             languageName: 'Bootsrap',
-            category: 'frontend'
+            category: 'frontend',
+            bgColor: 'bg-purple-600'
         },
         {
             icon: <RiTailwindCssFill />,
             languageName: 'Tailwind',
-            category: 'frontend'
+            category: 'frontend',
+            bgColor: 'bg-sky-600'
         },
         {
             icon: <SiPhp />,
             languageName: 'PHP',
-            category: 'backend'
+            category: 'backend',
+            bgColor: 'bg-purple-600'
         },
         {
             icon: <FaLaravel />,
             languageName: 'Laravel',
-            category: 'backend'
+            category: 'backend',
+            bgColor: 'bg-red-600'
         },
         {
             icon: <GrMysql />,
             languageName: 'SQL',
-            category: 'backend'
+            category: 'backend',
+            bgColor: 'bg-blue-600'
         },
         {
             icon: <FaGitAlt />,
             languageName: 'Git',
-            category: 'other'
+            category: 'other',
+            bgColor: 'bg-orange-600'
         },
-        // {
-        //     icon: <SiInertia />,
-        //     languageName: 'Inertia',
-        //     category: 'other'
-        // }, 
+        {
+            icon: <SiInertia />,
+            languageName: 'Inertia',
+            category: 'other',
+            bgColor: 'bg-green-600'
+        },
         , {
             icon: <FaJava />,
             languageName: 'Java',
-            category: 'other'
+            category: 'other',
+            bgColor: 'bg-red-600'
         }, {
             icon: <SiCsharp />,
             languageName: 'C#',
-            category: 'other'
+            category: 'other',
+            bgColor: 'bg-blue-600'
         }, {
             icon: <SiAndroidstudio />,
             languageName: 'Android Studio',
-            category: 'other'
+            category: 'other',
+            bgColor: 'bg-green-600'
         },
         {
             icon: <TbBrandFramerMotion />,
             languageName: 'Framer Motion',
-            category: 'frontend'
+            category: 'frontend',
+            bgColor: 'bg-purple-600'
         },
     ]
 
@@ -127,7 +142,7 @@ function Skills() {
                 <ul className='flex gap-5 justify-center flex-wrap '>
                     {
                         filterCategory
-                            .map(({ icon, languageName }, index) => (
+                            .map(({ icon, languageName, bgColor }, index) => (
                                 <motion.li className='flex gap-5 flex-wrap justify-center'
                                     key={index}
                                     variants={fadeInAnimationVariants}
@@ -138,7 +153,7 @@ function Skills() {
                                     }}
                                     custom={index}
                                 >
-                                    <TextIcon icon={icon} languageName={languageName} />
+                                    <TextIcon icon={icon} languageName={languageName} className={bgColor} />
                                 </motion.li>
                             ))
                     }
