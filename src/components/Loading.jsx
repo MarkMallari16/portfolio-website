@@ -22,7 +22,7 @@ function Loading() {
                 initial="start"
                 animate="animate"
                 variants={rotateVariants}
-                exit={{opacity: 0}}
+                exit={{ opacity: 0 }}
                 transition={
                     {
                         repeat: Infinity,

@@ -23,89 +23,76 @@ function Skills() {
             icon: <FaHtml5 />,
             languageName: 'HTML',
             category: 'frontend',
-            bgColor: 'bg-orange-600'
         },
         {
             icon: <FaCss3Alt />,
             languageName: 'CSS',
             category: 'frontend',
-            bgColor: 'bg-blue-600'
         },
         {
             icon: <DiJavascript />,
             languageName: 'JavaScript',
             category: 'frontend',
-            bgColor: 'bg-yellow-600'
         },
         {
             icon: <FaReact />,
             languageName: 'React JS',
             category: 'frontend',
-            bgColor: 'bg-cyan-600'
         },
         {
             icon: <FaBootstrap />,
             languageName: 'Bootsrap',
             category: 'frontend',
-            bgColor: 'bg-purple-600'
         },
         {
             icon: <RiTailwindCssFill />,
             languageName: 'Tailwind',
             category: 'frontend',
-            bgColor: 'bg-sky-600'
         },
         {
             icon: <SiPhp />,
             languageName: 'PHP',
             category: 'backend',
-            bgColor: 'bg-purple-600'
         },
         {
             icon: <FaLaravel />,
             languageName: 'Laravel',
             category: 'backend',
-            bgColor: 'bg-red-600'
         },
         {
             icon: <GrMysql />,
             languageName: 'SQL',
             category: 'backend',
-            bgColor: 'bg-blue-600'
         },
         {
             icon: <FaGitAlt />,
             languageName: 'Git',
             category: 'other',
-            bgColor: 'bg-orange-600'
         },
         {
             icon: <SiInertia />,
             languageName: 'Inertia',
             category: 'other',
-            bgColor: 'bg-green-600'
         },
         , {
             icon: <FaJava />,
             languageName: 'Java',
             category: 'other',
-            bgColor: 'bg-red-600'
+
         }, {
             icon: <SiCsharp />,
             languageName: 'C#',
             category: 'other',
-            bgColor: 'bg-blue-600'
+
         }, {
             icon: <SiAndroidstudio />,
             languageName: 'Android Studio',
             category: 'other',
-            bgColor: 'bg-green-600'
         },
         {
             icon: <TbBrandFramerMotion />,
             languageName: 'Framer Motion',
             category: 'frontend',
-            bgColor: 'bg-purple-600'
         },
     ]
 
