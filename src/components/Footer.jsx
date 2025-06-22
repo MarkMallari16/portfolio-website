@@ -36,7 +36,7 @@ function Footer({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
                     </div>
                 </nav>
             </div>
-            <div className='bottom text-center'>
+            <div className='bottom text-center lg:hidden'>
                 <p className='font-light text-sm text-base-content '>
                   © {new Date().getFullYear()}  Mark Christian Mallari. All rights reserved.
                 </p>
