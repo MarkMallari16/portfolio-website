@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Avatar from '../assets/mark-shs-profile-transparent.png';
 import { motion } from 'framer-motion'
 import useScrollSection from '../hooks/useScrollSection';

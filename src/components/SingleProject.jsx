@@ -10,7 +10,6 @@ function SingeProject({
     stacks,
     liveUrl = null,
     githubRepository }) {
-
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
@@ -20,13 +19,13 @@ function SingeProject({
     }, [picture]);
 
     return (
-        <div className='pb-16 lg:pb-16'>
+        <div className='px-10 pt-12 pb-16 lg:pb-16 my-6'>
             {!isLoaded && (
                 <div className='h-80 rounded-xl skeleton animate-pulse'></div>
             )}
 
             {isLoaded && (
-                <div className='h-80 rounded-xl' style={{
+                <div className='h-96 rounded-xl ring-1 ring-base-300' style={{
                     backgroundImage: `url('${picture}')`,
                     backgroundSize: 'cover'
                 }}></div>
