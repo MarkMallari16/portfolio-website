@@ -31,6 +31,7 @@ function SingeProject({
                 }}></div>
             )
             }
+
             <div className='w-full rounded-xl'>
                 <h1 className='mt-8 text-2xl font-medium'>{title}</h1>
 
