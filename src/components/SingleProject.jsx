@@ -19,7 +19,7 @@ function SingeProject({
     }, [picture]);
 
     return (
-        <div className='px-10 pt-12 pb-16 lg:pb-16 my-6'>
+        <div className='pt-12 pb-16 lg:pb-16 my-6'>
             {!isLoaded && (
                 <div className='h-80 rounded-xl skeleton animate-pulse'></div>
             )}
