@@ -27,6 +27,7 @@ function App() {
     isLoading ? (
       <Loading />
     ) : (
+
       <motion.div initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -39,7 +40,7 @@ function App() {
           backgroundSize: "32px 32px, 32px 32px, 100% 100%",
         }}>
 
-        <div className='relative mx-auto  lg:max-w-6xl md:lg:max-w-6xl w-full min-h-screen ' >
+        <div className='relative mx-auto lg:max-w-6xl md:lg:max-w-6xl w-full' >
           <ProgressBar />
           <section ref={homeRef}>
             <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
