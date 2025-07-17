@@ -7,16 +7,16 @@ import GuessGamePicture from '../assets/guess-game-ss.png'
 import MoviePicture from '../assets/movie-ss.png'
 import TrackBudgetPicture from '../assets/track-budget-picture.png'
 import EmployeeManagementPicture from '../assets/employee-management-ss.png'
+import FitnessTrackerPicture from '../assets/fitness-tracker-picture.png'
 
 const projects = [
     {
-        picture: EmployeeManagementPicture,
-        title: "Employee Mangement System with Attendance and Payroll",
-        description: "A Desktop Application that allows admin to manage employee records, including adding, updating, and deleting employee information. It also includes attendance tracking and payroll management features.",
-        stacks: ["Java", "JavaSwing", "MySQL"],
-        githubRepository: "https://github.com/MarkMallari16/flatlaf-java"
+        picture: FitnessTrackerPicture,
+        title: "Fitness Tracker",
+        description: "A Fitness Tracker website that allows users to track their workouts.",
+        stacks: ["ReactTS", "TailwindCSS", "DaisyUI", "ExpressJS", "MongoDB", "Node JS"],
+        githubRepository: "https://github.com/MarkMallari16/fitness-tracker"
     },
-
     {
         picture: TrackBudgetPicture,
         title: "BadyetWise - Budget Tracker",
@@ -25,6 +25,7 @@ const projects = [
         liveUrl: "https://badyetwise.vercel.app/",
         githubRepository: "https://github.com/MarkMallari16/badyetwise-vue-firebase-project"
     },
+
     {
         picture: MoviePicture,
         title: "Movie Mania",
@@ -32,6 +33,13 @@ const projects = [
         stacks: ["ReactJS", "TailwindCSS", "DaisyUI"],
         liveUrl: "https://moviemania-psi.vercel.app/",
         githubRepository: "https://github.com/MarkMallari16/movie-website"
+    },
+    {
+        picture: EmployeeManagementPicture,
+        title: "Employee Mangement System with Attendance and Payroll",
+        description: "A Desktop Application that allows admin to manage employee records, including adding, updating, and deleting employee information. It also includes attendance tracking and payroll management features.",
+        stacks: ["Java", "JavaSwing", "MySQL"],
+        githubRepository: "https://github.com/MarkMallari16/flatlaf-java"
     },
     {
         picture: OnlineVotingPicture,
