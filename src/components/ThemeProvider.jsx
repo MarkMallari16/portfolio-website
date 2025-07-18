@@ -11,7 +11,7 @@ export function ThemeProvider({ children }) {
     }
 
     const [theme, setTheme] = useState(initialTheme);
-    
+
     useEffect(() => {
         document.body.setAttribute('data-theme', theme);
         localStorage.setItem("theme", theme);

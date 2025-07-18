@@ -3,40 +3,39 @@ import React, { useState } from 'react'
 import projects from '../data/projectsData';
 
 import SingleProject from './SingleProject';
-import { motion } from 'framer-motion'
+import { delay, motion } from 'framer-motion'
 
 function Projects() {
     const [isExpand, setIsExpand] = useState(false);
 
-    const fadeInRightVariants = {
-        hidden: {
-            x: -20,
-            opacity: 0,
-        },
-        visible: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.6,
-                ease: 'easeInOut',
-            }
-        },
-    }
+    // const fadeInRightVariants = {
+    //     hidden: {
+    //         x: -20,
+    //         opacity: 0,
+    //     },
+    //     visible: {
+    //         x: 0,
+    //         opacity: 1,
+    //         transition: {
+    //             duration: 0.6,
+    //             ease: 'easeInOut',
+    //         }
+    //     },
+    // }
 
-    const fadeInLeftVariants = {
+    const fadeScaleVariants = {
         hidden: {
-            x: 20,
+            scale: 0.90,
             opacity: 0
         },
         visible: {
-            x: 0,
+            scale: 1,
             opacity: 1,
             transition: {
-                duration: 0.6,
+                duration: 0.8,
                 ease: 'easeInOut',
             }
         },
-        duration: 0.8
     }
     const sliceProjects = isExpand ? projects : projects.slice(0, 3);
 
@@ -55,7 +54,7 @@ function Projects() {
             <p className='text-center text-slate-400 font-light pb-12'>Here are my recent works</p>
             <div className='px-4 lg:px-0'>
                 {sliceProjects.map((project, id) => (
-                    <motion.div key={id} initial="hidden" whileInView="visible" transition={{ ease: 'easeInOut', duration: 0.5 }} viewport={{ once: true }} variants={id % 2 !== 0 ? fadeInLeftVariants : fadeInRightVariants} >
+                    <motion.div key={id} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} viewport={{ once: true, amount: 0.3 }} variants={fadeScaleVariants} >
                         <SingleProject picture={project.picture} title={project.title} description={project.description}
                             stacks={project.stacks}
                             liveUrl={project.liveUrl}
@@ -83,7 +82,7 @@ function Projects() {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

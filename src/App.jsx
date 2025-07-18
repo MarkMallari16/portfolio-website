@@ -90,8 +90,6 @@ function App() {
         </div>
       </motion.div>
     )
-
-
   )
 }
 

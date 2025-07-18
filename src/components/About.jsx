@@ -14,6 +14,11 @@ function About({ contactRef }) {
     visible: { x: 0, opacity: 1 }
   }
 
+  const viewPortVariants = {
+    once: true,
+    amount: 0.3
+  }
+
   return (
     <div className='px-6 pt-24 lg:px-0 lg:pt-40 lg:mb-80  overflow-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto lg:gap-40'>
@@ -22,7 +27,7 @@ function About({ contactRef }) {
           initial="hidden"
           whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.4, duration: 0.6 }}
-          viewport={{ once: true }}
+          viewport={viewPortVariants}
           variants={fadeRightAnimationVariants}
         >
           <div className='bg-secondary rounded-xl flex items-center justify-center w-full lg:h-24'>
@@ -34,7 +39,7 @@ function About({ contactRef }) {
           initial="hidden"
           whileInView="visible"
           transition={{ ease: 'easeOut', delay: 0.2, duration: 0.6 }}
-          viewport={{ once: true }}
+          viewport={viewPortVariants}
           variants={fadeLeftAnimationVariants}>
           <div className='text-2xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
           <div className='pb-6'>

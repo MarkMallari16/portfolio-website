@@ -10,6 +10,7 @@ import { GrMysql } from "react-icons/gr";
 import { SiInertia, SiPhp, SiCsharp, SiAndroidstudio } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { motion } from 'framer-motion';
+import { IoLogoVercel } from 'react-icons/io5';
 
 function Skills() {
 
@@ -94,6 +95,11 @@ function Skills() {
             languageName: 'Framer Motion',
             category: 'frontend',
         },
+        {
+            icon: <IoLogoVercel />,
+            languageName: 'Vercel',
+            category: 'other'
+        }
     ]
 
     const fadeInAnimationVariants = {
