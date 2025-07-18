@@ -22,6 +22,14 @@ function App() {
     hidden: { opacity: 0, transform: 0 },
     visible: { opacity: 1, transform: 1 },
   }
+  const bg = {
+    backgroundImage: `
+    linear-gradient(to right, rgba(71,85,105,0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(71,85,105,0.3) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(139,92,246,0.15) 0%, transparent 70%)
+  `,
+    backgroundSize: '32px 32px, 32px 32px, 100% 100%',
+  }
 
   return (
     isLoading ? (
@@ -31,15 +39,7 @@ function App() {
       <motion.div initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeAnimationVariants} style={{
-          backgroundImage: `
-        linear-gradient(to right, rgba(71,85,105,0.3) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(71,85,105,0.3) 1px, transparent 1px),
-        radial-gradient(circle at 50% 50%, rgba(139,92,246,0.15) 0%, transparent 70%)
-      `,
-          backgroundSize: "32px 32px, 32px 32px, 100% 100%",
-        }}>
-
+        variants={fadeAnimationVariants} >
         <div className='relative mx-auto lg:max-w-6xl md:lg:max-w-6xl w-full' >
           <ProgressBar />
           <section ref={homeRef}>

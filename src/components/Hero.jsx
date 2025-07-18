@@ -10,14 +10,14 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className='min-h-screen grid grid-cols-1  lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
+        <div className='ms-8 lg:ms-0 min-h-screen grid grid-cols-1  lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
             <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full overflow-hidden'
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ ease: 'easeOut', delay: 0.3 }}
                 viewport={{ once: true }}>
 
-                <motion.div className='flex flex-row ms-10 mt-6 gap-5 lg:ms-0 lg:mt-0 lg:gap-0 lg:flex-col lg:space-y-6 '
+                {/* <motion.div className='flex flex-row ms-10 mt-6 gap-5 lg:ms-0 lg:mt-0 lg:gap-0 lg:flex-col lg:space-y-6 '
                     initial={{ y: -20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ ease: 'easeOut', delay: 0.6 }}
@@ -32,12 +32,14 @@ function Hero({ projectsRef }) {
                     <a href="https://x.com/markymallari16" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="X">
                         <FaXTwitter className='size-6' />
                     </a>
-                </motion.div>
+                </motion.div> */}
 
                 <div>
                     <h1 className='text-5xl font-black w-full'>Hello, I'm Mark👋🏻
                     </h1>
+                    <div className='mt-2 h-1 w-28 bg-secondary'>
 
+                    </div>
                     <div className='mt-4 text-2xl lg:text-xl'>
                         Aspiring <span className='font-bold text-secondary'>Web Developer</span> from the Philippines
                     </div>
@@ -61,7 +63,7 @@ function Hero({ projectsRef }) {
             <motion.div className='hidden lg:block overflow-hidden'
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ ease: 'easeInOut', delay: 0.58, duration: 0.3 }}
+                transition={{ ease: 'easeInOut', delay: 0.48, duration: 0.3 }}
                 viewport={{ once: true }}>
                 <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary ">
                 </div>
