@@ -26,7 +26,7 @@ function Contact() {
           initial={{ x: -20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', delay: 0.3 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true, amount: 0.4 }}>
 
           <ContactDetails contactIcon={contactIcons[0]} contactTitle="Mail" contactDescription="mallariftw01@gmail.com" />
           <ContactDetails contactIcon={contactIcons[1]} contactTitle="Address" contactDescription="Bacoor City, Cavite Philippines" />
@@ -39,7 +39,7 @@ function Contact() {
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', delay: 0.3 }}
-          viewport={{ once: true }}>
+          viewport={{ once: true, amount: 0.4 }}>
           <div className=' mb-4 '>
             <h1 className='text-xl  uppercase font-medium'>Let's connect each other!</h1>
           </div>

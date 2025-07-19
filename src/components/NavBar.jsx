@@ -99,7 +99,6 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
             </label>
           </div>
         </div>
-
         {/*Hamburger Menu*/}
         {/*Links*/}
         <motion.ul
