@@ -102,7 +102,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
         {/*Hamburger Menu*/}
         {/*Links*/}
         <motion.ul
-          className={`min-h-screen lg:min-h-0 pt-40 bg-secondary-content lg:bg-transparent  fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto items-center lg:py-0 lg:flex-row  gap-16 ${isMenuOpen ? 'flex' : 'hidden'} `}
+          className={`min-h-screen lg:min-h-0 pt-40 bg-secondary-content lg:bg-transparent  fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto ps-10 lg:py-0 lg:flex-row  gap-16 ${isMenuOpen ? 'flex' : 'hidden'} `}
           initial="hidden"
           whileInView="visible"
           animate={isMenuOpen ? "visible" : "hidden"}
@@ -120,9 +120,10 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
               </a>
             </li>
           ))}
-          <li className='lg:flex lg:items-center'>
+          <li className='flex gap-2 lg:items-center'>
             {/*Theme*/}
             <Theme />
+          
           </li>
 
         </motion.ul>
