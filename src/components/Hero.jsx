@@ -10,8 +10,8 @@ function Hero({ projectsRef }) {
     const { scrollIntoSection } = useScrollSection();
 
     return (
-        <div className='ms-8 lg:ms-0 min-h-screen grid grid-cols-1  lg:grid-cols-2 gap-0 lg:gap-32 items-center lg:items-center lg:justify-center lg:px-0'>
-            <motion.div className='flex flex-col-reverse lg:flex-row lg:items-center space-x-10 w-full overflow-hidden'
+        <div className='ms-8  lg:ms-0 min-h-screen flex justify-between items-center lg:px-0'>
+            <motion.div
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ ease: 'easeOut', delay: 0.3 }}
@@ -35,12 +35,12 @@ function Hero({ projectsRef }) {
                 </motion.div> */}
 
                 <div>
-                    <h1 className='text-5xl font-black w-full'>Hello, I'm Mark👋🏻
+                    <h1 className='text-6xl md:text-5xl lg:text-5xl font-black w-full'>Hello, I'm Mark👋🏻
                     </h1>
                     <div className='mt-2 h-1 w-28 bg-secondary'>
 
                     </div>
-                    <div className='mt-4 text-2xl lg:text-xl'>
+                    <div className='mt-4 text-2xl md:text-2xl lg:text-xl'>
                         Aspiring <span className='font-bold text-secondary'>Web Developer</span> from the Philippines
                     </div>
 

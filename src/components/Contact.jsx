@@ -27,12 +27,9 @@ function Contact() {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ ease: 'easeOut', delay: 0.3 }}
           viewport={{ once: true, amount: 0.4 }}>
-
           <ContactDetails contactIcon={contactIcons[0]} contactTitle="Mail" contactDescription="mallariftw01@gmail.com" />
           <ContactDetails contactIcon={contactIcons[1]} contactTitle="Address" contactDescription="Bacoor City, Cavite Philippines" />
           <ContactDetails contactIcon={contactIcons[2]} contactTitle="Mobile Number" contactDescription=" 09105264925" />
-
-
         </motion.div>
 
         <motion.div className='w-full '
