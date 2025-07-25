@@ -25,7 +25,7 @@ function SingeProject({
             )}
 
             {isLoaded && (
-                <div className='h-96 rounded-xl ring-1 ring-base-300' style={{
+                <div className='h-[30rem] rounded-xl ring-1 ring-base-300 ' style={{
                     backgroundImage: `url('${picture}')`,
                     backgroundSize: 'cover'
                 }}></div>

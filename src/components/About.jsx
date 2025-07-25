@@ -43,7 +43,9 @@ function About({ contactRef }) {
           variants={fadeLeftAnimationVariants}>
           <div className='text-2xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
           <div className='pb-6'>
-            <h1 className='text-3xl font-bold '>"Programs must be written for people to read, and only incidentally for machines to execute."</h1>
+            <h1 className='text-3xl font-bold '>
+              "Programs must be written for people to read, and only incidentally for machines to execute."
+            </h1>
 
           </div>
           <p className='text-justify text-xl leading-9'>
