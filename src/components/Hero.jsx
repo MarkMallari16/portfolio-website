@@ -21,7 +21,7 @@ function Hero({ projectsRef }) {
         }
     }
     return (
-        <div className='ms-8  lg:ms-0 min-h-screen flex justify-between items-center lg:px-0'>
+        <div className='ms-8 min-h-screen lg:ms-0  flex justify-between items-center lg:px-0'>
             <motion.div
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -46,7 +46,7 @@ function Hero({ projectsRef }) {
                 </motion.div> */}
 
                 <div>
-                    <h1 className='text-6xl md:text-5xl lg:text-5xl font-black w-full'>Hello, I'm Mark👋🏻
+                    <h1 className='text-5xl md:text-5xl lg:text-5xl font-black w-full'>Hello, I'm Mark👋🏻
                     </h1>
                     <div className='mt-2 h-1 w-28 bg-secondary'>
 

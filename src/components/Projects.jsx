@@ -51,7 +51,7 @@ function Projects() {
     return (
         <div className='min-h-screen overflow-hidden pt-24 lg:pt-0'>
             <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
-            <p className='text-center text-slate-400 font-light pb-12'>Here are my recent works</p>
+            <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
             <div className='px-4 lg:px-0'>
                 {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} viewport={{ once: true, amount: 0.3 }} variants={fadeScaleVariants} >
@@ -76,7 +76,6 @@ function Projects() {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
                                 <path fillRule="evenodd" d="M11.47 7.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clipRule="evenodd" />
                             </svg>
-
                         </motion.span>
                     </button>
                 </div>
