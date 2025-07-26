@@ -21,7 +21,7 @@ function Hero({ projectsRef }) {
         }
     }
     return (
-        <div className='ms-8 min-h-screen lg:ms-0  flex justify-between items-center lg:px-0'>
+        <div className='px-8 min-h-screen lg:ms-0  flex justify-between items-center lg:px-0'>
             <motion.div
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
