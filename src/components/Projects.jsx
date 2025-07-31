@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import projects from '../data/projectsData';
 
 import SingleProject from './SingleProject';
-import { delay, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 function Projects() {
     const [isExpand, setIsExpand] = useState(false);

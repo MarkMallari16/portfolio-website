@@ -7,7 +7,7 @@
 }
 
 .profile {
-    background: url('assets/mark-shs-profile-transparent.png');
+    background: url('assets/mark-shs-profile-transparent.webp');
     background-repeat: no-repeat;
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;

@@ -1,13 +1,13 @@
-import OnlineVotingPicture from '../assets/onlinevoting-ss.png'
+import OnlineVotingPicture from '../assets/onlinevoting-ss.webp'
 import DesktopTodoPicture from '../assets/todo-ss1.png'
 import PortfolioPicture from '../assets/portfoliopicture.png'
 import StatQuickPicture from '../assets/statquick-ss.png'
 import QuizGamePicture from '../assets/quiz-game-ss.png'
 import GuessGamePicture from '../assets/guess-game-ss.png'
-import MoviePicture from '../assets/movie-ss.png'
-import TrackBudgetPicture from '../assets/track-budget-picture.png'
-import EmployeeManagementPicture from '../assets/employee-management-ss.png'
-import FitnessTrackerPicture from '../assets/fitness-tracker-picture.png'
+import MoviePicture from '../assets/movie-ss.webp'
+import TrackBudgetPicture from '../assets/track-budget-picture.webp'
+import EmployeeManagementPicture from '../assets/employee-management-ss.webp'
+import FitnessTrackerPicture from '../assets/fitness-tracker-picture.webp'
 
 const projects = [
     {
