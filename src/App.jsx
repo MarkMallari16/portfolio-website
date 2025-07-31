@@ -30,7 +30,6 @@ function App() {
   `,
     backgroundSize: '32px 32px, 32px 32px, 100% 100%',
   }
-
   return (
     isLoading ? (
       <Loading />
