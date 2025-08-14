@@ -15,11 +15,13 @@ function Hero({ projectsRef }) {
             modalRef.current.showModal();
         }
     }
+    
     const closeModal = () => {
         if (modalRef?.current) {
             modalRef.current.close();
         }
     }
+
     return (
         <div className='pt-52 lg:pt-0 px-8 lg:min-h-screen lg:ms-0  flex justify-between items-center lg:px-0'>
             <motion.div

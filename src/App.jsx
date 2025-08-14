@@ -37,8 +37,8 @@ function App() {
       <motion.div initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        variants={fadeAnimationVariants} >
-        <div className='relative mx-auto max-w-6xl w-full' >
+        variants={fadeAnimationVariants} className='relative mx-auto max-w-6xl w-full  md:px-10' >
+        <div>
           <ProgressBar />
           <section ref={homeRef}>
             <NavBar homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef} scrollIntoSection={scrollIntoSection} />
