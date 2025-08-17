@@ -15,7 +15,7 @@ function Hero({ projectsRef }) {
             modalRef.current.showModal();
         }
     }
-    
+
     const closeModal = () => {
         if (modalRef?.current) {
             modalRef.current.close();
@@ -27,31 +27,17 @@ function Hero({ projectsRef }) {
             <motion.div
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ ease: 'easeOut', delay: 0.3 }}
+                transition={{ ease: 'easeOut', delay: 0.3, duration: 0.4 }}
                 viewport={{ once: true }}>
 
-                {/* <motion.div className='flex flex-row ms-10 mt-6 gap-5 lg:ms-0 lg:mt-0 lg:gap-0 lg:flex-col lg:space-y-6 '
-                    initial={{ y: -20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ ease: 'easeOut', delay: 0.6 }}
-                    viewport={{ once: true }}>
-
-                    <a href="https://github.com/MarkMallari16" className='tooltip hover:tooltip-open tooltip-right hover:text-secondary transition-colors duration-200' data-tip="GitHub">
-                        <FiGithub className='size-6' />
-                    </a>
-                    <a href="https://www.linkedin.com/in/mark-christian-mallari-47850a279/" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="LinkIn">
-                        <FiLinkedin className='size-6' />
-                    </a>
-                    <a href="https://x.com/markymallari16" className='tooltip hover:tooltip-open tooltip-right  hover:text-secondary transition-colors duration-200' data-tip="X">
-                        <FaXTwitter className='size-6' />
-                    </a>
-                </motion.div> */}
-
                 <div>
-                    <h1 className='text-5xl md:text-5xl lg:text-5xl font-black w-full'>Hello, I'm Mark👋🏻
+                    <h1 className='text-5xl md:text-5xl lg:text-5xl font-black w-full'>Hello, I'm Mark<motion.span className='inline-block transform' animate={{ rotate: [0, 14, -8, 14, -4, 10, 0] }} transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        repeatDelay: 0.5
+                    }}>👋🏻</motion.span>
                     </h1>
-                    <div className='mt-2 h-1 w-28 bg-secondary'>
-
+                    <div className='mt-2 h-1 w-36 bg-secondary'>
                     </div>
                     <div className='mt-4 text-2xl md:text-2xl lg:text-xl'>
                         Aspiring <span className='font-bold text-secondary'>Web Developer</span> from the Philippines
@@ -101,7 +87,7 @@ function Hero({ projectsRef }) {
             <motion.div className='hidden lg:block overflow-hidden '
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ ease: 'easeInOut', delay: 0.48, duration: 0.3 }}
+                transition={{ ease: 'easeInOut', delay: 0.5 }}
                 viewport={{ once: true }}>
                 <div className="profile w-[30rem] h-[30rem] object-cover border-8 border-secondary ">
                 </div>
