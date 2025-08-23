@@ -13,6 +13,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
     setIsMenuOpen(!isMenuOpen);
   };
 
+  //my name
   const fadeTopNameAnimationVariants = {
     hidden: {
       y: -10,
@@ -24,9 +25,48 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
     }
   }
 
-  const fadeTopAnimationVariants = {
-    "hidden": { y: -20, opacity: 0 },
-    "visible": { y: 0, opacity: 1 }
+  //menu animation
+  const menuVariants = {
+    hidden: {
+      opacity: 0,
+      y: -20,
+      transition: {
+        duration: 0.3,
+        ease: 'easeInOut'
+      }
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeOut",
+        staggerChildren: 0.3,
+      },
+    }
+  }
+
+  //items animation
+  const itemVariants = {
+    hidden:
+    {
+      opacity: 0,
+      y: -50,
+      transition: {
+        duration: 0.3,
+        ease: 'easeInOut',
+      }
+    },
+
+    visible:
+    {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        ease: 'easeInOut',
+      }
+    },
   }
   const links =
     [
@@ -84,7 +124,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
             onClick={() => scrollIntoSection(homeRef)}
             initial="hidden"
             whileInView="visible"
-            transition={{ ease: 'easeOut', delay: 0.2 }}
+            transition={{ ease: 'easeOut', delay: 0.1 }}
             variants={fadeTopNameAnimationVariants}
             viewport={{ once: true }}>
             Mark <span className='text-secondary'>Mallari</span>
@@ -106,11 +146,13 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
           initial="hidden"
           whileInView="visible"
           animate={isMenuOpen ? "visible" : "hidden"}
-          transition={{ ease: 'easeOut', delay: 0.4 }}
           viewport={{ once: true }}
-          variants={fadeTopAnimationVariants}>
+          variants={menuVariants}>
           {links.map((link, index) => (
-            <li key={index} className='lg:tooltip  lg:tooltip-bottom' data-tip={link.title}>
+            <motion.li key={index}
+              className='lg:tooltip  lg:tooltip-bottom'
+              variants={itemVariants}
+              data-tip={link.title}>
               <a href={link.path} className='flex gap-2 hover:text-secondary transition-all ease-in-out duration-300' onClick={() => {
                 scrollIntoSection(link.linkRef);
                 setIsMenuOpen(false);
@@ -118,14 +160,12 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
                 {link.icon}
                 <h1 className='text-4xl font-black lg:hidden'>{link.title}</h1>
               </a>
-            </li>
+            </motion.li>
           ))}
-          <li className='flex gap-2 lg:items-center'>
+          <motion.li className='flex gap-2 lg:items-center' variants={itemVariants}>
             {/*Theme*/}
             <Theme />
-
-          </li>
-
+          </motion.li>
         </motion.ul>
 
       </div>
