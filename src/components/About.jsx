@@ -20,9 +20,8 @@ function About({ contactRef }) {
   }
 
   return (
-    <div className='px-6 lg:px-0 pt-24 lg:pt-10 lg:mb-80  overflow-hidden'>
+    <div className='px-6 lg:px-0 pt-24 lg:pt-40 lg:mb-80 overflow-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto lg:gap-40'>
-
         <motion.div
           initial="hidden"
           whileInView="visible"
