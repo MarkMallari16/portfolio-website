@@ -37,8 +37,7 @@ function Hero({ projectsRef }) {
                         repeatDelay: 0.5
                     }}>👋🏻</motion.span>
                     </h1>
-                    <div className='mt-2 h-1 w-36 bg-secondary'>
-                    </div>
+                    <span className="block w-36 h-1 bg-secondary mt-2 rounded"></span>
                     <div className='mt-4 text-2xl md:text-2xl lg:text-xl'>
                         Aspiring <span className='font-bold text-secondary'>Web Developer</span> from the Philippines
                     </div>

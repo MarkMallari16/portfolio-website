@@ -43,6 +43,7 @@ const NewContact = () => {
     return (
         <div className='pt-24 lg:pt-20 pb-40 px-6 lg:px-0 overflow-hidden'>
             <div viewport={{ once: false }}>
+
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -51,8 +52,10 @@ const NewContact = () => {
                     <h2 className='uppercase text-3xl  font-medium'>
                         Contact Me!
                     </h2>
+                    <span className="block w-28 h-1 bg-secondary mt-2 mb-3 rounded"></span>
                     <p className='text-slate-400 font-light'>Let's connect each other</p>
                 </motion.div>
+
                 <motion.h1
                     initial="hidden"
                     whileInView="visible"
