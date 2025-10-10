@@ -40,12 +40,16 @@ function About({ contactRef }) {
           transition={{ ease: 'easeOut', delay: 0.2, duration: 0.6 }}
           viewport={viewPortVariants}
           variants={fadeLeftAnimationVariants}>
-          <div className='text-2xl uppercase font-medium pt-5 lg:pt-10 pb-6'>About Me</div>
+          <section className='mb-6'>
+            <h2 className="text-3xl font-semibold uppercase relative inline-block">
+              About Me
+              <span className="block w-16 h-1 bg-secondary mt-2 rounded"></span>
+            </h2>
+          </section>
           <div className='pb-6'>
-            <h1 className='text-3xl font-bold '>
+            <h1 className='text-3xl font-bold'>
               "Programs must be written for people to read, and only incidentally for machines to execute."
             </h1>
-
           </div>
           <p className='text-justify text-xl leading-9'>
             Hello! I'm Mark Christian Mallari, a web developer based in the Philippines. I discovered my passion for programming at 16 and have been honing my skills ever since. I enjoy solving complex programming challenges and crafting intuitive user interfaces and experiences.

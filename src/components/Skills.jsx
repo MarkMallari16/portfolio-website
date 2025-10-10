@@ -24,81 +24,97 @@ function Skills() {
             icon: <FaHtml5 />,
             languageName: 'HTML',
             category: 'frontend',
+            textColor: "text-orange-500"
         },
         {
             icon: <FaCss3Alt />,
             languageName: 'CSS',
             category: 'frontend',
+            textColor: "text-blue-500"
         },
         {
             icon: <DiJavascript />,
             languageName: 'JavaScript',
             category: 'frontend',
+            textColor: "text-yellow-500"
+
         },
         {
             icon: <FaReact />,
             languageName: 'React JS',
             category: 'frontend',
+            textColor: "text-blue-500"
         },
         {
             icon: <FaBootstrap />,
             languageName: 'Bootsrap',
             category: 'frontend',
+            textColor: "text-violet-500"
         },
         {
             icon: <RiTailwindCssFill />,
             languageName: 'Tailwind',
             category: 'frontend',
+            textColor: "text-cyan-500"
         },
         {
             icon: <SiPhp />,
             languageName: 'PHP',
             category: 'backend',
+            textColor: "text-indigo-500"
         },
         {
             icon: <FaLaravel />,
             languageName: 'Laravel',
             category: 'backend',
+            textColor: "text-red-500"
         },
         {
             icon: <GrMysql />,
             languageName: 'SQL',
             category: 'backend',
+            textColor: "text-orange-500"
         },
         {
             icon: <FaGitAlt />,
             languageName: 'Git',
             category: 'other',
+            textColor: "text-red-500"
         },
         {
             icon: <SiInertia />,
             languageName: 'Inertia',
             category: 'other',
+            textColor: "text-violet-500"
         },
         , {
             icon: <FaJava />,
             languageName: 'Java',
             category: 'other',
+            textColor: "text-amber-500"
 
         }, {
             icon: <SiCsharp />,
             languageName: 'C#',
             category: 'other',
+            textColor: "text-violet-500"
 
         }, {
             icon: <SiAndroidstudio />,
             languageName: 'Android Studio',
             category: 'other',
+            textColor: "text-green-500"
         },
         {
             icon: <TbBrandFramerMotion />,
-            languageName: 'Framer Motion',
+            languageName: 'Motion',
             category: 'frontend',
+            textColor: "text-yellow-500"
         },
         {
             icon: <IoLogoVercel />,
             languageName: 'Vercel',
-            category: 'other'
+            category: 'other',
         }
     ]
 
@@ -123,8 +139,13 @@ function Skills() {
 
     return (
         <div className='mx-auto lg:max-w-7xl pt-24 lg:pt-0 my-20 lg:mt-0 lg:mb-96'>
-            <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Skills</div>
-            <p className='text-center text-slate-400 font-light  mb-10 '>Here are my skills</p>
+            <section className="py-10 text-center">
+                <h2 className="text-3xl font-semibold uppercase relative inline-block">
+                    My Skills
+                    <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded"></span>
+                </h2>
+                <p className="text-slate-400 font-light mt-4 mb-10">Technologies I work with</p>
+            </section>
             <motion.div role='tablist' className='tabs flex justify-center  pb-4' >
                 <a role="tab" className={`rounded-lg tab ${selectedCategory === 'all' ? `${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('all')}>All</a>
                 <a role="tab" className={`rounded-lg tab ${selectedCategory === 'frontend' ? `${filterTabActive}` : ''}`} onClick={() => handleCategoryChange('frontend')}>Frontend</a>
@@ -135,7 +156,7 @@ function Skills() {
                 <ul className='flex gap-5 justify-center flex-wrap '>
                     {
                         filterCategory
-                            .map(({ icon, languageName, bgColor }, index) => (
+                            .map(({ icon, languageName, textColor }, index) => (
                                 <motion.li className='flex gap-5 flex-wrap justify-center'
                                     key={index}
                                     variants={fadeInAnimationVariants}
@@ -146,14 +167,13 @@ function Skills() {
                                     }}
                                     custom={index}
                                 >
-                                    <TextIcon icon={icon} languageName={languageName} className={bgColor} />
+                                    <TextIcon icon={icon} languageName={languageName} className={`py-3 hover:bg-base-300 ${textColor}`} />
                                 </motion.li>
                             ))
                     }
 
                 </ul>
             </div>
-
         </div>
     )
 }

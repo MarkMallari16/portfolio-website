@@ -39,7 +39,7 @@ function SingeProject({
 
                 <div className='flex flex-wrap mt-6 gap-3 overflow-hidden rounded-lg'>
                     {stacks.map((stack, index) => (
-                        <TextIcon key={index} languageName={stack} />
+                        <TextIcon key={index} languageName={stack} className="py-1 hover:bg-secondary"/>
                     ))}
                 </div>
 

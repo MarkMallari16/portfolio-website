@@ -50,8 +50,13 @@ function Projects() {
 
     return (
         <div className='min-h-screen overflow-hidden pt-24 lg:pt-0'>
-            <div className='text-medium uppercase text-center text-3xl font-medium pt-10'>My Projects</div>
-            <p className='text-center text-slate-400 font-light'>Here are my recent works</p>
+            <section className="py-10 text-center">
+                <h2 className="text-3xl font-semibold uppercase relative inline-block">
+                    My Projects
+                    <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded"></span>
+                </h2>
+                <p className="text-slate-400 font-light mt-4 mb-10">Here are some of the projects I’ve built recently.</p>
+            </section>
             <div className='px-4 lg:px-0'>
                 {sliceProjects.map((project, id) => (
                     <motion.div key={id} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} viewport={{ once: true, amount: 0.3 }} variants={fadeScaleVariants} >
@@ -60,7 +65,6 @@ function Projects() {
                             liveUrl={project.liveUrl}
                             githubRepository={project.githubRepository}
                         />
-
                     </motion.div>
                 ))
                 }
