@@ -8,21 +8,6 @@ import { motion } from 'framer-motion'
 function Projects() {
     const [isExpand, setIsExpand] = useState(false);
 
-    // const fadeInRightVariants = {
-    //     hidden: {
-    //         x: -20,
-    //         opacity: 0,
-    //     },
-    //     visible: {
-    //         x: 0,
-    //         opacity: 1,
-    //         transition: {
-    //             duration: 0.6,
-    //             ease: 'easeInOut',
-    //         }
-    //     },
-    // }
-
     const fadeScaleVariants = {
         hidden: {
             scale: 0.90,
