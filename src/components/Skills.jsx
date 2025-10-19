@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import TextIcon from './TextIcon'
-import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { FaLaravel, FaJava } from "react-icons/fa6";
 
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -43,7 +43,7 @@ function Skills() {
             icon: <FaReact />,
             languageName: 'React JS',
             category: 'frontend',
-            textColor: "text-blue-500"
+            textColor: "text-blue-400"
         },
         {
             icon: <FaBootstrap />,
@@ -79,7 +79,12 @@ function Skills() {
             icon: <FaGitAlt />,
             languageName: 'Git',
             category: 'other',
-            textColor: "text-red-500"
+            textColor: "text-red-600"
+        },
+        {
+            icon: <FaGithub />,
+            languageName: 'GitHub',
+            category: 'other',
         },
         {
             icon: <SiInertia />,
