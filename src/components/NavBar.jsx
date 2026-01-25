@@ -13,6 +13,17 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   //my name
   const fadeTopNameAnimationVariants = {
     hidden: {
@@ -145,7 +156,7 @@ function NavBar({ homeRef, aboutRef, skillsRef, projectsRef, contactRef, scrollI
           className={`min-h-screen lg:min-h-0 pt-40  bg-secondary-content lg:bg-transparent  fixed lg:static lg:flex flex-col z-10 w-full lg:w-auto ps-10 lg:py-0 lg:flex-row gap-16 ${isMenuOpen ? 'flex' : 'hidden'} `}
           initial="hidden"
           whileInView="visible"
-          animate={isMenuOpen ? "visible" : "hidden"}
+          animate={isDesktop || isMenuOpen ? "visible" : "hidden"}
           viewport={{ once: true }}
           variants={menuVariants}>
           {links.map((link, index) => (

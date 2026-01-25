@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import projects from '../data/projectsData';
 
 import SingleProject from './SingleProject';
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 function Projects() {
     const [isExpand, setIsExpand] = useState(false);
@@ -11,7 +11,7 @@ function Projects() {
     const fadeScaleVariants = {
         hidden: {
             scale: 0.90,
-            opacity: 0
+            opacity: 0,
         },
         visible: {
             scale: 1,
@@ -21,6 +21,14 @@ function Projects() {
                 ease: 'easeInOut',
             }
         },
+        exit: {
+            scale: 0.90,
+            opacity: 0,
+            transition: {
+                duration: 0.5,
+                ease: 'easeInOut',
+            }
+        }
     }
     const sliceProjects = isExpand ? projects : projects.slice(0, 3);
 
@@ -43,16 +51,25 @@ function Projects() {
                 <p className="text-slate-400 font-light mt-4 mb-10">Here are some of the projects I’ve built recently.</p>
             </section>
             <div className='px-4 lg:px-0'>
-                {sliceProjects.map((project, id) => (
-                    <motion.div key={id} initial="hidden" whileInView="visible" transition={{ duration: 0.5 }} viewport={{ once: true, amount: 0.3 }} variants={fadeScaleVariants} >
-                        <SingleProject picture={project.picture} title={project.title} description={project.description}
-                            stacks={project.stacks}
-                            liveUrl={project.liveUrl}
-                            githubRepository={project.githubRepository}
-                        />
-                    </motion.div>
-                ))
-                }
+                <AnimatePresence>
+                    {sliceProjects.map((project, id) => (
+                        <motion.div
+                            layout
+                            key={id}
+                            initial="hidden"
+                            whileInView="visible"
+                            exit="exit"
+                            viewport={{ once: true, amount: 0.3 }}
+                            variants={fadeScaleVariants} >
+                            <SingleProject picture={project.picture} title={project.title} description={project.description}
+                                stacks={project.stacks}
+                                liveUrl={project.liveUrl}
+                                githubRepository={project.githubRepository}
+                            />
+                        </motion.div>
+                    ))
+                    }
+                </AnimatePresence>
                 <div className="flex justify-center">
                     <button className='btn text-center' onClick={toggleExpand}>
                         {isExpand ? 'See Less' : 'See More'}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { FaGithub } from 'react-icons/fa'
 import TextIcon from './TextIcon'
+import { motion } from 'framer-motion'
 
 function SingeProject({
     picture,
@@ -21,14 +22,18 @@ function SingeProject({
     return (
         <div className='pb-10 lg:pb-16 my-6'>
             {!isLoaded && (
-                <div className='h-80 rounded-xl skeleton animate-pulse'></div>
+                <div className='h-[30rem] w-full rounded-xl skeleton animate-pulse bg-base-300'></div>
             )}
 
             {isLoaded && (
-                <div className='h-[30rem] rounded-xl ring-1 ring-base-300 ' style={{
-                    backgroundImage: `url('${picture}')`,
-                    backgroundSize: 'cover'
-                }}></div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className='h-[30rem] rounded-xl ring-1 ring-base-300 ' style={{
+                        backgroundImage: `url('${picture}')`,
+                        backgroundSize: 'cover'
+                    }}></motion.div>
             )
             }
 
