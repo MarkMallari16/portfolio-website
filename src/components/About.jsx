@@ -1,17 +1,31 @@
+import React, { useState, useEffect } from 'react';
 import Avatar from '../assets/mark-shs-profile-transparent.png';
 import { motion } from 'framer-motion'
 import useScrollSection from '../hooks/useScrollSection';
 
 function About({ contactRef }) {
   const { scrollIntoSection } = useScrollSection();
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    // Set initial value
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const fadeRightAnimationVariants = {
-    hidden: { x: -50, opacity: 0 },
-    visible: { x: 0, opacity: 1 }
+    hidden: { x: isDesktop ? -50 : 0, y: isDesktop ? 0 : 30, opacity: 0 },
+    visible: { x: 0, y: 0, opacity: 1 }
   }
   const fadeLeftAnimationVariants = {
-    hidden: { x: 50, opacity: 0 },
-    visible: { x: 0, opacity: 1 }
+    hidden: { x: isDesktop ? 50 : 0, y: isDesktop ? 0 : 30, opacity: 0 },
+    visible: { x: 0, y: 0, opacity: 1 }
   }
 
   const viewPortVariants = {
