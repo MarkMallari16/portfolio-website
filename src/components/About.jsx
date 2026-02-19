@@ -63,6 +63,7 @@ function About({ contactRef }) {
           <div className='pb-6'>
             <h1 className='text-3xl font-bold'>
               "Programs must be written for people to read, and only incidentally for machines to execute."
+              <span className='font-medium text-2xl text-secondary italic'> - Harold Abelson</span>
             </h1>
           </div>
           <p className='text-justify text-xl leading-9'>
