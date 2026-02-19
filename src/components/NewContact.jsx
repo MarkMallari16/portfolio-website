@@ -52,7 +52,7 @@ const NewContact = () => {
                         Contact Me!
                     </h2>
                     <span className="block w-16 h-1 bg-secondary mt-2 mb-4 rounded"></span>
-                    <p className='text-slate-400 font-normal'>Let's connect each other</p>
+                    <p className='text-slate-400 font-light'>Let's connect each other</p>
                 </motion.div>
 
                 <motion.h1
