@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Avatar from '../assets/mark-shs-profile-transparent.png';
+import Avatar from '../assets/images/mark-shs-profile-transparent.png';
 import { motion } from 'framer-motion'
 import useScrollSection from '../hooks/useScrollSection';
 
