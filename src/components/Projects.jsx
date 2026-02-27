@@ -42,13 +42,13 @@ function Projects() {
     }
 
     return (
-        <div className='min-h-screen overflow-hidden pt-24 lg:pt-0'>
+        <div className='min-h-screen overflow-hidden pt-24 lg:pt-0 lg:mx-0 mx-4'>
             <section className="py-10 text-center">
                 <h2 className="text-3xl font-semibold uppercase relative inline-block">
                     My Projects
                     <span className="block w-16 h-1 bg-secondary mx-auto mt-2 rounded"></span>
                 </h2>
-                <p className="text-slate-400 font-light mt-4 mb-10">Here are some of the projects I’ve built recently.</p>
+                <p className="text-wrap text-slate-400 font-light mt-4 mb-10 lead ">Here are some of the projects I’ve built recently. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit quaerat nesciunt nihil quam dolorem deleniti officia consequatur quisquam libero!</p>
             </section>
             <div className='px-4 lg:px-0'>
                 <AnimatePresence>
