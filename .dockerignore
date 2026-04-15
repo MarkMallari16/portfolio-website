@@ -1,6 +1,9 @@
 node_modules
-build
-.dockerignore
-Dockerfile
+dist
 .git
 .gitignore
+README.md
+.vscode
+.env*
+.DS_Store
+*.log
