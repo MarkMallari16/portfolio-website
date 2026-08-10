@@ -3,14 +3,14 @@ import MoviePicture from '../assets/images/movie-ss.webp'
 import TrackBudgetPicture from '../assets/images/track-budget-picture.webp'
 import EmployeeManagementPicture from '../assets/images/employee-management-ss.webp'
 import FitnessTrackerPicture from '../assets/images/fitness-tracker-picture.webp'
-
+import EasytoYouPicture from '../assets/images/easytoyou-picture.webp'
 const projects = [
     {
-        picture: FitnessTrackerPicture,
-        title: "Fitness Tracker",
-        description: "A Fitness Tracker website that allows users to track their workouts.",
-        stacks: ["ReactTS", "TailwindCSS", "DaisyUI", "ExpressJS", "MongoDB", "Node JS"],
-        githubRepository: "https://github.com/MarkMallari16/fitness-tracker"
+        picture: EasytoYouPicture,
+        title: "Easy to You",
+        description: "A student reminder system for managing deadlines and building productive study habits. ",
+        liveUrl: "https://www.easytoyou.app/",
+        stacks: ["ReactTS", "React Native", "Supabase", "TailwindCSS"],
     },
     {
         picture: TrackBudgetPicture,
