@@ -2,7 +2,6 @@ import OnlineVotingPicture from '../assets/images/onlinevoting-ss.webp'
 import MoviePicture from '../assets/images/movie-ss.webp'
 import TrackBudgetPicture from '../assets/images/track-budget-picture.webp'
 import EmployeeManagementPicture from '../assets/images/employee-management-ss.webp'
-import FitnessTrackerPicture from '../assets/images/fitness-tracker-picture.webp'
 import EasytoYouPicture from '../assets/images/easytoyou-picture.webp'
 const projects = [
     {
